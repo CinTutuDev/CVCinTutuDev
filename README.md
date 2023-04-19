@@ -3,6 +3,11 @@
  ![banner-125](https://user-images.githubusercontent.com/71487857/233059265-2fb3ff6c-24b4-4919-a708-c3121bd44c1f.png)
  </p> 
  
+ ## 🎮  Creo el proyecto con las URL :
 
+* Framework: Angular
 
+```
+https://angular.io/cli
+```
  
