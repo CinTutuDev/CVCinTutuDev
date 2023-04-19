@@ -384,8 +384,10 @@ a:not([href]):not([tabindex]) {
 }
 
 .home .bgScroll {
-    animation: 40s linear 0s normal none infinite running bgScroll;
+    animation: 30s linear 0s normal none  running bgScroll;
     background: black url(../images/bg/scroll.jpeg) repeat scroll center top;
+
+    /* background: black url(../images/bg/scroll.jpeg) repeat scroll center top; */
 }
 
 .bgScroll {
