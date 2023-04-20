@@ -157,10 +157,13 @@ a:not([href]):not([tabindex]) {
     transition: all .3s;
     position: relative;
     color: #FFF;
-    background-color: #333;
+/*     background-image: linear-gradient(#212121, #212121); */
     z-index: 20;
     letter-spacing: 2px;
     overflow: hidden;
+    background: rgb(18, 65, 103);
+    box-shadow: 0 0 25px  rgb(18, 65, 103);
+    opacity: 0.8
 }
 
 .btn:hover {
@@ -185,8 +188,12 @@ a:not([href]):not([tabindex]) {
 .btn-download:hover {
     border: none;
     color: #FFF;
-    background-color: #333;
+    box-shadow:  0 0 30px  #e60073;
+    /* background-color: #9699b8; */
     letter-spacing: 2px;
+    background: rgb(230, 0, 115);
+    box-shadow: 0 0 25px  rgb(230, 0, 115);
+    
 }
 
 .btn-download:before {
@@ -383,8 +390,10 @@ a:not([href]):not([tabindex]) {
     background-size: cover;
 }
 
+
+
 .home .bgScroll {
-    animation: 30s linear 0s normal none  running bgScroll;
+    animation: 40s linear 0s normal none infinite running bgScroll;
     background: black url(../images/bg/scroll.jpeg) repeat scroll center top;
 
     /* background: black url(../images/bg/scroll.jpeg) repeat scroll center top; */
@@ -396,8 +405,6 @@ a:not([href]):not([tabindex]) {
     width: 100%;
     z-index: -1;
 }
-
-
 @-webkit-keyframes bgScroll {
     0% {
         -webkit-transform: translateY(0);
@@ -1012,24 +1019,71 @@ h2.menu-item:after {
 .social a {
     color: #FFF;
     display: inline-block;
-    height: 35px;
-    width: 35px;
-    transition: all 0.5s;
+    height: 48px;
+    width: 48px;
+    font-size: 28px;
+    border-radius: 50%;
+    transition: all .8s;
 }
 
+
+.social a:hover .fa-facebook-f {
+    font-size: 30px;
+    color: #1877f2;
+    box-shadow:  0 0 30px #1877f2;
+    border-radius: 50%;
+}
+.social a:hover .fa-linkedin-in {
+    font-size: 30px;
+    color: #0e76a8;
+    box-shadow:  0 0 30px #0e76a8;
+    border-radius: 50%;
+}
+.social a:hover .fa-instagram {
+    font-size: 30px;
+    color: #833AB4;
+    box-shadow:  0 0 30px #833AB4;
+    border-radius: 50%;
+}
+.social a:hover .fa-github-alt {
+    font-size: 30px;
+    color: 	#9FBA36;
+    box-shadow:  0 0 30px 	#9FBA36;
+    border-radius: 50%;
+}
+.social a:hover .fa-discord {
+    font-size: 30px;
+    color: #5865F2;
+    box-shadow:  0 0 30px #5865F2;
+    border-radius: 50%;
+}
+.social a:hover .fa-whatsapp{
+    font-size: 30px;
+    color: #25D366;
+    box-shadow:  0 0 30px #25D366;
+    border-radius: 50%;
+}
+.social a:hover .fa-codepen{
+    font-size: 30px;
+    color:  #e60073;
+    box-shadow:  0 0 30px  #e60073;
+    border-radius: 50%;
+}
 .social li i {
     line-height: 32px;
     font-size: 16px;
+    color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    font-size: 1.7rem;
 }
-
-.social a:hover {
-    opacity: 0.7
-}
-
+/* 
 .dark .social a {
     border: 2px solid #333;
     color: #333;
-}
+} */
 
 /*-------------------------------------------------------------------
 
@@ -1158,6 +1212,7 @@ h2.menu-item:after {
     color: #666;
 }
 
+ 
 .timeline {
     position: relative;
 }
@@ -2159,6 +2214,7 @@ h4.package {
 -------------------------------------------------------------------*/
 
 @media (min-width:1920px) {
+
     .name-block {
         -ms-transform: rotate(-34deg);
         -webkit-transform: rotate(-34deg);
