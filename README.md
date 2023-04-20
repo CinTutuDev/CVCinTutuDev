@@ -17,3 +17,9 @@ Node: 18.12.1
 Package Manager: npm 8.19.2
 OS: win32 x64
 ```
+## Tpis comandos
+
+* Componente sin archivo de prueba
+```
+ng g c resumen --skip-tests
+```
