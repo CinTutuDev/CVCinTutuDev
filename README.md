@@ -23,3 +23,19 @@ OS: win32 x64
 ```
 ng g c resumen --skip-tests
 ```
+## Creo la Base de Datos en firebase
+
+* 1º Creo proyecto en firebase:
+```
+https://firebase.google.com/
+```
+* 2º Voy a Compilación lo despliego entro en Real Database
+* 3º Seleccona el proyecto de Cloud Firestore:
+```
+Modo de prueba
+Es el modo recomendado si recién comienzas a usar las bibliotecas cliente para dispositivos móviles y la Web, pero permite que todos lean y reemplacen tus datos. Después de realizar las pruebas, asegúrate de revisar la sección Protege tus datos.
+Si quieres comenzar a usar la Web, las plataformas de Apple o el SDK de Android, selecciona el modo de prueba.
+Modo bloqueado
+```
+
+
