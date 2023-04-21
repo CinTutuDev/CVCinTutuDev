@@ -57,4 +57,19 @@ Modo bloqueado
 ```
 https://cintutudev-default-rtdb.firebaseio.com/Educaci%C3%B3n.json
 ```
- 
+## Crear servicio 
+```
+ng g s services/bdcintutdev  --skip-tests
+```
+* Creo enviroments
+* Hago peticion y compruebo:
+```
+
+  AptitudesBD() {
+    this.http.get<any>(`${URL}/Aptitudes.json`).subscribe((res) => {
+      this.aptitudes = res;
+      console.log(res);
+    });
+  }
+  ´´´
+
