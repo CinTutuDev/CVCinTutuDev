@@ -23,3 +23,54 @@ OS: win32 x64
 ```
 ng g c resumen --skip-tests
 ```
+## Creo la Base de Datos en firebase
+
+* 1º Creo proyecto en firebase:
+```
+https://firebase.google.com/
+```
+* 2º Voy a Compilación lo despliego entro en Real Database
+* 3º Seleccona el proyecto de Cloud Firestore:
+```
+Modo de prueba
+Es el modo recomendado si recién comienzas a usar las bibliotecas cliente para dispositivos móviles y la Web, pero permite que todos lean y reemplacen tus datos. Después de realizar las pruebas, asegúrate de revisar la sección Protege tus datos.
+Si quieres comenzar a usar la Web, las plataformas de Apple o el SDK de Android, selecciona el modo de prueba.
+Modo bloqueado
+```
+* 4º Vamos a Database y en reglas ponemos solo lectura: 
+```
+{
+  "rules": {
+    ".read": true,
+    ".write": false
+  }
+}
+```
+* 5º Imagen de la elboración de la BD:
+
+![imgBDfirebas](https://user-images.githubusercontent.com/71487857/233594497-3a48378e-a7d8-4599-a140-b03356fa267b.PNG)
+
+* 6º Para coger la url y JSON: 
+
+![urlJSON](https://user-images.githubusercontent.com/71487857/233630122-74973d23-1010-438c-98dc-18999e5d07a8.png)
+
+```
+https://cintutudev-default-rtdb.firebaseio.com/Educaci%C3%B3n.json
+```
+## Crear servicio 
+```
+ng g s services/bdcintutdev  --skip-tests
+```
+* Creo enviroments
+* Hago peticion y compruebo:
+```
+
+  AptitudesBD() {
+    this.http.get<any>(`${URL}/Aptitudes.json`).subscribe((res) => {
+      this.aptitudes = res;
+      console.log(res);
+    });
+  }
+ ```
+ 
+
