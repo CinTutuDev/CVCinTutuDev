@@ -1,9 +1,13 @@
 <section class="content" id="about">
   <div class="block-content">
-    <h3 class="block-title">Del manejo de pequeñas empresas al desarrollo web</h3>
+    <h3 class="block-title">
+      Del manejo de pequeñas empresas al desarrollo web
+    </h3>
     <h3 class="subheading">
       ¡Hola! soy Cinta Tafur
-      <strong>una desarrolladora web junior especializada en tecnologías front-end </strong>
+      <strong
+        >una desarrolladora web junior especializada en tecnologías front-end
+      </strong>
     </h3>
     <p>
       Soy una apasionada de la programación y he trabajado en gestión de pymes
@@ -47,58 +51,107 @@
       <div class="col-sm-6"><span>Interes : </span> Frelance, Full-Time</div>
     </div>
   </div>
+  <!----------------------------------------- Aptitudes ------------------------------------------------>
   <div class="block-content">
-    <h3 class="block-title">Profesional</h3>
-    <!--      <div *ngFor="let profex of cv.profesional">
-       <label class="progress-bar-label">{{ profex.nombre }}</label>
-       <div class="progress">
-           <div [style.width.%]=profex.valor class="progress-bar" role="progressbar" attr.aria-valuenow="{{ profex.valor }}" aria-valuemin="0" aria-valuemax="100">
-               <span>{{ profex.valor }}%</span>
-           </div>
-       </div>
-   </div> -->
+    <h3 class="block-title">Aptitudes</h3>
+    <div *ngFor="let aptitudesI of Bd.aptitudes">
+      <label class="progress-bar-label">{{ aptitudesI.nombre }}</label>
+      <div class="progress">
+        <div
+          [style.width.%]="aptitudesI.valor"
+          class="progress-bar"
+          role="progressbar"
+          attr.aria-valuenow="{{ aptitudesI.valor }}"
+          aria-valuemin="0"
+          aria-valuemax="100"
+        >
+          <span>{{ aptitudesI.valor }}%</span>
+        </div>
+      </div>
+    </div>
   </div>
+  <!----------------------------------------- Experiencia ------------------------------------------------>
   <div class="block-content">
     <h3 class="block-title">Experiencia</h3>
-    <div class="timeline experience">
+    <div class="timeline education">
       <div class="row">
         <div class="col-md-12">
           <div class="exp-holder">
-            <!--       <div *ngFor="let expex of cv.experiencia">
-                       <div class="exp">
-                           <div class="hgroup">
-                               <h4><span>{{ expex.Empresa }}</span> - {{ expex.Cargo }}</h4>
-                               <h5> {{ expex.Fecha }} </h5>
-                           </div>
-                           <p>{{ expex.Descripcion }}</p>
-                       </div>
-                   </div> -->
+            <div *ngFor="let experienciaI of Bd.experiencia">
+              <div class="exp" *ngIf="experienciaI">
+                <div class="hgroup">
+                  <h4>
+                    <span>{{ experienciaI.empresa }}</span> -
+                    {{ experienciaI.cargo }}
+                  </h4>
+                  <h5>{{ experienciaI.fecha }}</h5>
+                </div>
+                <p>{{ experienciaI.descripcion }}</p>
+              </div>
+            </div>
           </div>
         </div>
       </div>
     </div>
   </div>
+
+  <!----------------------------------------- Educacion ------------------------------------------------>
   <div class="block-content">
     <h3 class="block-title">Educación</h3>
     <div class="timeline education">
       <div class="row">
         <div class="col-md-12">
           <div class="exp-holder">
-            <!-- <div *ngFor="let edux of cv.educacion"> -->
-            <!--  <div *ngFor="let edux of cv.educacion">
-                     <div class="exp">
-                         <div class="hgroup">
-                             <h4>{{ edux.Nombre }} | <a href="{{ edux.Url }}" target="_blank"><span>Ver Certificado</span></a></h4>
-                             <h5>{{ edux.Fecha }}</h5>
-                         </div>
-                         <p>{{ edux.Descripcion }}</p>
-                     </div>
-                   </div> -->
+            <div *ngFor="let educacionI of Bd.educacion">
+              <div class="exp" *ngIf="educacionI">
+                <div class="hgroup">
+                  <h4>
+                    <span>{{ educacionI.institucion }}</span> -
+                    {{ educacionI.titulo }}
+                  </h4>
+                  <h5>{{ educacionI.fecha }}</h5>
+                </div>
+                <p>{{ educacionI.descripcion }}</p>
+              </div>
+            </div>
           </div>
         </div>
       </div>
     </div>
   </div>
+
+  <!----------------------------------------- Certificaciones ------------------------------------------------>
+  <div class="block-content">
+    <h3 class="block-title">Certificaciones</h3>
+    <div class="timeline education">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="exp-holder">
+            <div *ngFor="let certificacion of Bd.certificaciones">
+              <div class="exp" *ngIf="certificacion">
+                <div class="hgroup">
+                  <h4>
+                    {{ certificacion.nombre }}
+                    <a
+                      *ngIf="certificacion.URL"
+                      href="{{ certificacion.URL }}"
+                      target="_blank"
+                      ><br /><span class="btn-certificacion">Ver Certificado</span></a
+                    >
+                  </h4>
+                  <h5 *ngIf="certificacion.Fecha">{{ certificacion.fecha }}</h5>
+                </div>
+                <p *ngIf="certificacion.descripcion">
+                  {{ certificacion.descripcion }}
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
   <div class="block-content">
     <h3 class="block-title">Servicios</h3>
     <div class="row">

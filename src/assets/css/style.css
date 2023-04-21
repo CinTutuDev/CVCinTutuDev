@@ -9,7 +9,6 @@
 
 -------------------------------------------------------------------*/
 
-
 /*------------------------------------------------------------------
 
     [Table of contents]
@@ -1255,12 +1254,14 @@ h2.menu-item:after {
     line-height: 45px;
 }
 
+
 .timeline.experience:after {
     content: '\f356';
 }
 
 .timeline.education:after {
     content: '\f349';
+    color: #7e6f90;
 }
 
 .exp {
