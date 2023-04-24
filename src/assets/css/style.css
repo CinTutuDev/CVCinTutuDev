@@ -33,7 +33,7 @@
                         0. General Styles
 
 -------------------------------------------------------------------*/
-
+/* 
 body {
     font: 400 14px 'Poppins', sans-serif;
     -webkit-font-smoothing: antialiased;
@@ -65,11 +65,11 @@ img {
     height: auto;
     transition: all 0.3s;
 }
-
+ */
 
 /* texts */
 
-h1,
+/* h1,
 h2,
 h3,
 h4,
@@ -137,9 +137,9 @@ strong,
 small {
     color: #333;
 }
-
+ */
 /* Buttons */
-
+/* 
 a:not([href]):not([tabindex]) {
     color: #FFF;
     cursor: pointer;
@@ -156,7 +156,7 @@ a:not([href]):not([tabindex]) {
     transition: all .3s;
     position: relative;
     color: #FFF;
-    /*     background-image: linear-gradient(#212121, #212121); */
+  
     z-index: 20;
     letter-spacing: 2px;
     overflow: hidden;
@@ -188,7 +188,7 @@ a:not([href]):not([tabindex]) {
     border: none;
     color: #FFF;
     box-shadow: 0 0 30px #e60073;
-    /* background-color: #9699b8; */
+    
     letter-spacing: 2px;
     background: rgb(230, 0, 115);
     box-shadow: 0 0 25px rgb(230, 0, 115);
@@ -267,13 +267,13 @@ a:not([href]):not([tabindex]) {
 .lowercase {
     text-transform: lowercase;
 }
-
+ */
 /*-------------------------------------------------------------------
 
                         1. Preloader
 
 -------------------------------------------------------------------*/
-
+/* 
 .preloader {
     position: fixed;
     left: 0;
@@ -324,8 +324,8 @@ a:not([href]):not([tabindex]) {
     transform: translate3d(100%, 0, 0);
     will-change: transform;
 }
-
-@-webkit-keyframes pulse {
+ */
+/* @-webkit-keyframes pulse {
     0% {
         -webkit-transform: scale3d(1, 1, 1);
         transform: scale3d(1, 1, 1)
@@ -371,14 +371,14 @@ a:not([href]):not([tabindex]) {
     animation-iteration-count: infinite;
     -webkit-animation-name: pulse;
     animation-name: pulse;
-}
+} */
 
 /*-------------------------------------------------------------------
 
                         2. Home Styles
 
 -------------------------------------------------------------------*/
-
+/* 
 .home {
     width: 100%;
     height: 100vh;
@@ -399,7 +399,7 @@ a:not([href]):not([tabindex]) {
     animation: 40s linear 0s normal none infinite running bgScroll;
     background: black url(../images/bg/scroll.jpeg) repeat scroll center top;
 
-    /* background: black url(../images/bg/scroll.jpeg) repeat scroll center top; */
+   
 }
 
 .bgScroll {
@@ -408,8 +408,8 @@ a:not([href]):not([tabindex]) {
     width: 100%;
     z-index: -1;
 }
-
-@-webkit-keyframes bgScroll {
+ */
+/* @-webkit-keyframes bgScroll {
     0% {
         -webkit-transform: translateY(0);
         transform: translateY(0);
@@ -432,8 +432,8 @@ a:not([href]):not([tabindex]) {
         transform: translateY(-1934px);
     }
 }
-
-.overlay {
+ */
+/* .overlay {
     background-color: rgba(0, 0, 0, 1);
     height: 100%;
     position: fixed;
@@ -494,9 +494,9 @@ a:not([href]):not([tabindex]) {
     position: fixed;
     width: 100%;
 }
-
+ */
 /* HERO SLIDER*/
-
+/* 
 #lionhero {
     z-index: 0;
 }
@@ -575,14 +575,14 @@ a:not([href]):not([tabindex]) {
 .player {
     display: none;
 }
-
+ */
 /*-------------------------------------------------------------------
 
                         3. Menu Styles
 
 -------------------------------------------------------------------*/
 
-.menu-blocks {
+/* .menu-blocks {
     transition: all 0.5s;
 }
 
@@ -667,10 +667,10 @@ h2.menu-item:after {
 .menu-block:hover {
     background: rgba(0, 0, 0, 0.1);
 }
-
+ */
 /* --- Inline Menu --- */
 
-.inline-menu-container {
+/* .inline-menu-container {
     background: #F1F3F6;
     position: fixed;
     height: 40px;
@@ -831,7 +831,7 @@ h2.menu-item:after {
 
 .content-blocks.pop.showx .close-pop {
     top: 0;
-}
+} */
 
 /*-------------------------------------------------------------------
 
@@ -839,7 +839,7 @@ h2.menu-item:after {
 
 -------------------------------------------------------------------*/
 
-.content-blocks {
+/* .content-blocks {
     position: fixed;
     width: 70%;
     height: 100vh;
@@ -912,14 +912,14 @@ h2.menu-item:after {
     margin-bottom: 30px;
     font-weight: 600;
 }
-
+ */
 /*-------------------------------------------------------------------
 
                         5. NAME BLOCK
 
 -------------------------------------------------------------------*/
-
-.name-block {
+/* link redes/contacto */
+/* .name-block {
     position: absolute;
     width: 700px;
     height: 700px;
@@ -1091,7 +1091,7 @@ h2.menu-item:after {
     transform: translate(-50%, -50%);
     font-size: 1.7rem;
 }
-
+ */
 /* 
 .dark .social a {
     border: 2px solid #333;
@@ -1104,7 +1104,7 @@ h2.menu-item:after {
 
 -------------------------------------------------------------------*/
 
-.about-block {
+/* .about-block {
     position: absolute;
     width: 430px;
     height: 300px;
@@ -1478,14 +1478,14 @@ h4.package {
     border-top: 1px solid #F1F3F6;
     width: 100%;
 }
-
+ */
 /*-------------------------------------------------------------------
 
                         7. PORTFOLIO BLOCK
 
 -------------------------------------------------------------------*/
 
-.portfolio-block {
+/* .portfolio-block {
     position: absolute;
     width: 430px;
     height: 400px;
@@ -1511,10 +1511,10 @@ h4.package {
     -webkit-transform: rotate(34deg);
     transform: rotate(34deg);
 }
+ */
+/* Portfolio/Proyecto */
 
-/* Portfolio */
-
-.portfolio-container {
+/* .portfolio-container {
     overflow: hidden;
     position: relative;
 }
@@ -1755,13 +1755,13 @@ h4.package {
 .post-nav a:hover {
     color: #333;
 }
-
+ */
 /*-------------------------------------------------------------------
 
                         8. BLOG BLOCK
 
 -------------------------------------------------------------------*/
-
+/* 
 .blog-block {
     position: absolute;
     width: 430px;
@@ -2109,13 +2109,13 @@ h4.package {
 .form-submit {
     text-align: right;
 }
-
+ */
 /*-------------------------------------------------------------------
 
                         9. CONTACT BLOCK
 
 -------------------------------------------------------------------*/
-
+/* 
 .contact-block {
     position: absolute;
     width: 430px;
@@ -2221,7 +2221,7 @@ h4.package {
     background: url('../images/map-marker.png') no-repeat;
     height: 75px;
     width: 80px;
-}
+} */
 
 /*-------------------------------------------------------------------
 
@@ -2229,7 +2229,7 @@ h4.package {
 
 -------------------------------------------------------------------*/
 
-@media (min-width:1920px) {
+/* @media (min-width:1920px) {
 
     .name-block {
         -ms-transform: rotate(-34deg);
@@ -2955,14 +2955,14 @@ h4.package {
         width: 100%;
     }
 }
-
+ */
 /*-------------------------------------------------------------------
 
                          Buy Now Button
 
 -------------------------------------------------------------------*/
 
-.buy-now {
+/* .buy-now {
     background-color: #82B441;
     color: #FFF;
     display: block;
@@ -3006,4 +3006,4 @@ h4.package {
 
 .no-cursor .cursor {
     background-color: transparent;
-}
+} */
