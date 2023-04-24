@@ -80,6 +80,7 @@
             <div *ngFor="let experienciaI of Bd.experiencia">
               <div class="exp" *ngIf="experienciaI">
                 <div class="hgroup">
+                  
                   <h4>
                     <span>{{ experienciaI.empresa }}</span
                     ><br />
@@ -90,17 +91,9 @@
                   </h4>
                   <br />
                 </div>
-
                 <div>
-                  <label
-                    [innerHTML]="experienciaI.descripcion | slice : 0 : parrafo"
-                  ></label>
-                  <label
-                    color="primary"
-                    (click)="parrafo = 5000"
-                    *ngIf="parrafo !== 5000"
-                    >Leer más!</label
-                  >
+                  <label [innerHTML]="experienciaI.descripcion | slice:0:(experienciaI.leerMas ? undefined : parrafo)"></label>
+                  <label (click)="experienciaI.leerMas = !experienciaI.leerMas" class="leerMas">{{ experienciaI.leerMas ? 'Leer menos' : '... Leer más!' }}</label>
                 </div>
               </div>
             </div>
@@ -121,12 +114,19 @@
               <div class="exp" *ngIf="educacionI">
                 <div class="hgroup">
                   <h4>
-                    <span>{{ educacionI.institucion }}</span> -
+                    <span>{{ educacionI.institucion }}</span>
+                    <br />
                     {{ educacionI.titulo }}
+                    <br />
+                    {{ educacionI.fecha }}
                   </h4>
-                  <h5>{{ educacionI.fecha }}</h5>
+                  <br />
                 </div>
-                <p>{{ educacionI.descripcion }}</p>
+                <div>
+                  <label [innerHTML]="educacionI.descripcion | slice:0:(educacionI.leerMas ? undefined : parrafo)" ></label>
+                  <label  (click)="educacionI.leerMas = !educacionI.leerMas" class="leerMas">{{ educacionI.leerMas ? 'Leer menos' : '... Leer más!' }}</label>
+                </div>
+
               </div>
             </div>
           </div>
@@ -142,25 +142,30 @@
       <div class="row">
         <div class="col-md-12">
           <div class="exp-holder">
-            <div *ngFor="let certificacion of Bd.certificaciones">
-              <div class="exp" *ngIf="certificacion">
+
+            <div *ngFor="let certificacionI of Bd.certificaciones">
+              <div class="exp" *ngIf="certificacionI">
                 <div class="hgroup">
                   <h4>
-                    {{ certificacion.nombre }}
+                    <span>{{ certificacionI.empresa }}</span><br>
+                    {{ certificacionI.nombre }}
+                    <br />
+                    {{ certificacionI.fecha }}<br>
+                   <h4>Id: {{ certificacionI.idCredencial }}</h4> 
                     <a
-                      *ngIf="certificacion.URL"
-                      href="{{ certificacion.URL }}"
+                      *ngIf="certificacionI.URL"
+                      href="{{ certificacionI.URL }}"
                       target="_blank"
-                      ><br /><span class="btn-certificacion"
+                      ><br /><span class="certificado"
                         >Ver Certificado</span
                       ></a
                     >
                   </h4>
-                  <h5 *ngIf="certificacion.Fecha">{{ certificacion.fecha }}</h5>
                 </div>
-                <p *ngIf="certificacion.descripcion">
-                  {{ certificacion.descripcion }}
-                </p>
+                <div>
+                  <label [innerHTML]="certificacionI.descripcion | slice:0:(certificacionI.leerMas ? undefined : parrafo)" ></label>
+                  <label  (click)="certificacionI.leerMas = !certificacionI.leerMas" class="leerMas">{{ certificacionI.leerMas ? 'Leer menos' : '... Leer más!' }}</label>
+                </div>
               </div>
             </div>
           </div>
