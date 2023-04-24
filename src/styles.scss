@@ -29,6 +29,21 @@
 
 ------------------------------------ General Styles---------------------------*/
 
+/* Varoiables globales*/
+$color-primario: #55A;
+$background-blue: rgb(18, 65, 103);
+$color-texto: #666;
+
+$espaciado-estandar: 10px;
+$espaciado-doble: 20px;
+
+$fuente-normal: 1em;
+$fuente-pequena: 0.8em;
+$fuente-grande: 1em;
+$fuente-h4: rgb(18, 65, 103);
+
+$tipografia-general: arial, verdana, sans-serif;
+$tipografia-alternativa: 'Times New Roman', Times, serif;
 /*------------------------- body ----------------------*/
 body {
   font: 400 14px "Poppins", sans-serif;
@@ -98,7 +113,7 @@ h3 {
 }
 
 h4 {
-  font-size: 16px;
+  font-size: 1.1em;
   line-height: 24px;
   margin-top: 0;
   margin-bottom: 0;
@@ -154,8 +169,8 @@ a:not([href]):not([tabindex]) {
   z-index: 20;
   letter-spacing: 2px;
   overflow: hidden;
-  background: rgb(18, 65, 103);
-  box-shadow: 0 0 25px rgb(18, 65, 103);
+  background:$background-blue;
+  box-shadow: 0 0 25px $background-blue;
   opacity: 0.8;
 }
 
@@ -1249,7 +1264,7 @@ h2.menu-item:after {
 }
 
 .exp .hgroup h4 span {
- color: #666;
+ color: $fuente-h4;
 }
 
 .exp .hgroup h5 {

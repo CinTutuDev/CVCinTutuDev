@@ -8,6 +8,9 @@ import { Component , OnInit} from '@angular/core';
 })
 export class ResumenComponent implements OnInit {
 
+  parrafo = 150;
+
+
 
   constructor(public Bd: BdcintutdevService){
 

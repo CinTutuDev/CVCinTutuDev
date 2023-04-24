@@ -37,18 +37,18 @@
       consolidar y mejorar mis habilidades en esta área
     </p>
     <div class="info-list row">
-      <div class="col-sm-6"><span>Nombre : </span> Anderson Bastidas</div>
+      <div class="col-sm-6"><span>Nombre : </span>Cinta Tafur</div>
       <div class="col-sm-6">
-        <span>Fecha de Nacimiento : </span> Junio 10, 1987
+        <span>Fecha de Nacimiento : </span> Septiembre 23, 1981
       </div>
       <div class="col-sm-6">
-        <span>Dirección : </span> Perú, Lima, Carabayllo.
+        <span>Dirección : </span> España, Pontevedra, Vigo.
       </div>
+      <div class="col-sm-6"><span>Email : </span> cintatafur@gmail.com</div>
+      <div class="col-sm-6"><span>Telefono : </span> + 34 665 828 070</div>
       <div class="col-sm-6">
-        <span>Email : </span> davisanderson87@gmail.com
+        <span>Interes : </span> Desarrollo Web, Fullstack
       </div>
-      <div class="col-sm-6"><span>Telefono : </span> + 51 959 747 175</div>
-      <div class="col-sm-6"><span>Interes : </span> Frelance, Full-Time</div>
     </div>
   </div>
   <!----------------------------------------- Aptitudes ------------------------------------------------>
@@ -81,12 +81,27 @@
               <div class="exp" *ngIf="experienciaI">
                 <div class="hgroup">
                   <h4>
-                    <span>{{ experienciaI.empresa }}</span> -
+                    <span>{{ experienciaI.empresa }}</span
+                    ><br />
                     {{ experienciaI.cargo }}
+
+                    <br />
+                    {{ experienciaI.fecha }}
                   </h4>
-                  <h5>{{ experienciaI.fecha }}</h5>
+                  <br />
                 </div>
-                <p>{{ experienciaI.descripcion }}</p>
+
+                <div>
+                  <label
+                    [innerHTML]="experienciaI.descripcion | slice : 0 : parrafo"
+                  ></label>
+                  <label
+                    color="primary"
+                    (click)="parrafo = 5000"
+                    *ngIf="parrafo !== 5000"
+                    >Leer más!</label
+                  >
+                </div>
               </div>
             </div>
           </div>
@@ -136,7 +151,9 @@
                       *ngIf="certificacion.URL"
                       href="{{ certificacion.URL }}"
                       target="_blank"
-                      ><br /><span class="btn-certificacion">Ver Certificado</span></a
+                      ><br /><span class="btn-certificacion"
+                        >Ver Certificado</span
+                      ></a
                     >
                   </h4>
                   <h5 *ngIf="certificacion.Fecha">{{ certificacion.fecha }}</h5>
