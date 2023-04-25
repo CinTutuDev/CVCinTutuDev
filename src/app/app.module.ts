@@ -10,7 +10,10 @@ import { HttpClientModule } from "@angular/common/http";
 import { RecursosComponent } from './recursos/recursos.component';
 import { ContactoComponent } from './contacto/contacto.component';
 import { ProyectosComponent } from './proyectos/proyectos.component';
+/* angular material */
 
+import {MatCardModule} from '@angular/material/card';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 @NgModule({
   declarations: [
     AppComponent,
@@ -23,7 +26,9 @@ import { ProyectosComponent } from './proyectos/proyectos.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    MatCardModule,
+    BrowserAnimationsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -1,3 +1,40 @@
+
+// Custom Theming for Angular Material
+// For more information: https://material.angular.io/guide/theming
+@use '@angular/material' as mat;
+// Plus imports for other components in your app.
+
+// Include the common styles for Angular Material. We include this here so that you only
+// have to load a single css file for Angular Material in your app.
+// Be sure that you only ever include this mixin once!
+@include mat.core();
+
+// Define the palettes for your theme using the Material Design palettes available in palette.scss
+// (imported above). For each palette, you can optionally specify a default, lighter, and darker
+// hue. Available color palettes: https://material.io/design/color/
+$RecursosCinTutuDev-primary: mat.define-palette(mat.$indigo-palette);
+$RecursosCinTutuDev-accent: mat.define-palette(mat.$pink-palette, A200, A100, A400);
+
+// The warn palette is optional (defaults to red).
+$RecursosCinTutuDev-warn: mat.define-palette(mat.$red-palette);
+
+// Create the theme object. A theme consists of configurations for individual
+// theming systems such as "color" or "typography".
+$RecursosCinTutuDev-theme: mat.define-light-theme((
+  color: (
+    primary: $RecursosCinTutuDev-primary,
+    accent: $RecursosCinTutuDev-accent,
+    warn: $RecursosCinTutuDev-warn,
+  )
+));
+
+// Include theme styles for core and each component used in your app.
+// Alternatively, you can import and @include the theme mixins for each component
+// that you are using.
+@include mat.all-component-themes($RecursosCinTutuDev-theme);
+
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
+
 /*------------------------------------------------------------------
 
     [Indice de contenido]
@@ -33,21 +70,24 @@
 /* Varoiables globales*/
 $background-pink: rgb(230, 0, 115);
 $background-blue: rgb(18, 65, 103);
-$color-texto: #666;
+$background-timeline:  #7e6f90;
 
 $espaciado-estandar: 10px;
 $espaciado-doble: 20px;
 
-$fuente-normal: 1em;
-$fuente-pequena: 0.8em;
-$fuente-grande: 1em;
+$color-texto: #6c6868;
 $fuente-h4: rgb(18, 65, 103);
 $fuente-LeerMas: rgb(230, 0, 115);
 
-$tipografia-general: arial, verdana, sans-serif;
+$fuente-normal: 1em;
+$fuente-pequena: 0.8em;
+$fuente-grande: 1em;
+
+
 $tipografia-alternativa: "Times New Roman", Times, serif;
+$tipografia-general: "Poppins", serif;
 /*------------------------- body ----------------------*/
-body {
+/* body {
   font: 400 14px "Poppins", sans-serif;
   -webkit-font-smoothing: antialiased;
   line-height: 30px;
@@ -55,6 +95,16 @@ body {
   font-size: 16px;
   font-weight: 300;
   line-height: 2.2;
+  overflow-x: hidden;
+} */
+body {
+  font: 400 14px $tipografia-general, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  line-height: 30px;
+  color: $color-texto;
+  font-size: $fuente-normal;
+  font-weight: 300;
+  line-height: $espaciado-doble;
   overflow-x: hidden;
 }
 
@@ -1297,7 +1347,7 @@ h2.menu-item:after {
 
 .timeline.education:after {
   content: "\f349";
-  color: #7e6f90;
+  color: $background-timeline;
 }
 
 .exp {
@@ -3416,3 +3466,6 @@ h4.package {
 .no-cursor .cursor {
   background-color: transparent;
 }
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
