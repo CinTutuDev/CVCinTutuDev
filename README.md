@@ -1,6 +1,6 @@
 
-# <p align="center"><img src="https://readme-typing-svg.demolab.com?  font=Libre+Baskerville&size=45&duration=3100&pause=500&color=ff3d5c&center=true&vCenter=true&width=940&lines=RecursosCinTutuDev" align="middle" alt="fotosgram"  width="100%"/>
-  ![landinYop2](https://user-images.githubusercontent.com/71487857/234250949-5875442f-6800-47de-ab00-bb5bbd40e774.png)
+# <p align="center"><img src="https://readme-typing-svg.demolab.com?  font=Libre+Baskerville&size=45&duration=3100&pause=500&color=ff3d5c&center=true&vCenter=true&width=940&lines=CVWebCinTutuDev" align="middle" alt="fotosgram"  width="100%"/>
+![bannerGH2](https://user-images.githubusercontent.com/71487857/234256705-f0b3ae7e-de83-46fb-9050-52208533e533.png)
  </p> 
  
  <header>
