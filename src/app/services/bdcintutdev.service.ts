@@ -13,13 +13,15 @@ export class BdcintutdevService {
   educacion: any[] = [];
   experiencia: any[] = [];
   reconocimientos: any[] = [];
+  servicio: any[] = [];
 
   constructor(private http: HttpClient) {
     this.AptitudesBD();
     this.CertificacionesBD();
     this.EducacionBD();
     this.ExperienciaBD();
-    this.ReconociminetosBD();
+    this.ReconocimientoBD();
+    this.ServicioBD();
   }
 
   AptitudesBD() {
@@ -45,13 +47,19 @@ export class BdcintutdevService {
   ExperienciaBD() {
     this.http.get<any>(`${URL}/Experiencia.json`).subscribe((res) => {
       this.experiencia = res || [];
-     
     });
   }
 
-  ReconociminetosBD() {
-    this.http.get<any>(`${URL}/Reconocimientos.json`).subscribe((res) => {
+  ReconocimientoBD() {
+    this.http.get<any>(`${URL}/Reconocimiento.json`).subscribe((res) => {
       this.reconocimientos = res || [];
+      console.log(this.reconocimientos);
+    });
+  }
+
+  ServicioBD() {
+    this.http.get<any>(`${URL}/Servicios.json`).subscribe((res) => {
+      this.servicio = res || [];
     });
   }
 }

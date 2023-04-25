@@ -17,6 +17,7 @@
         donde van componetes:(<app-proyectos></app-proyectos>...)
     5. Name Block
        link redes/contacto 
+       iconos 
     6. About Block
     7. PROYECTOS BLOCK
        portfolio
@@ -239,6 +240,73 @@ a:not([href]):not([tabindex]) {
 }
 
 .btn-download:hover:after {
+  width: 50px;
+  height: 70px;
+  right: -5px;
+  top: -5px;
+  -ms-transform: rotate(15deg);
+  -webkit-transform: rotate(15deg);
+  transform: rotate(15deg);
+}
+/* ------------------------------------------------------------------- */
+.btn-download1 {
+  border: none;
+  font-size: 14px;
+  padding: 16px 55px 16px 25px;
+}
+
+.btn-download1:hover {
+  border: none;
+  color: #fff;
+  box-shadow: 0 0 30px #e60073;
+  /* background-color: #9699b8; */
+  letter-spacing: 2px;
+  background: rgb(230, 0, 115);
+  box-shadow: 0 0 25px rgb(230, 0, 115);
+}
+
+.btn-download1:before {
+  position: absolute;
+  content: "\f1d8";
+  font-family: "Font Awesome 5 Free";
+  top: 12px;
+  right: 16px;
+  font-size: 18px;
+}
+/* .btn-download:before {
+  position: absolute;
+  content: "\f407";
+  font-family: "Ionicons";
+  top: 12px;
+  right: 16px;
+  font-size: 24px; */
+
+.btn-download1:hover:before {
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+  -webkit-animation-name: fadeOutDown;
+  animation-name: fadeOutDown;
+  -webkit-transform-origin: center bottom;
+  transform-origin: center bottom;
+}
+
+.btn-download1:after {
+  content: "";
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.2);
+  right: 0;
+  top: 0;
+  height: 100%;
+  width: 0;
+  z-index: -1;
+  transition: all 0.3s;
+}
+
+.btn-download1:hover:after {
   width: 50px;
   height: 70px;
   right: -5px;
@@ -986,7 +1054,7 @@ h2.menu-item:after {
   display: block;
   text-transform: capitalize;
 }
-
+/* iconos */
 .social {
   position: absolute;
   bottom: 15%;
@@ -1056,7 +1124,13 @@ h2.menu-item:after {
   box-shadow: 0 0 30px #e60073;
   border-radius: 50%;
 }
-
+.btn {
+  lowercase {
+    i.fa-google {
+      color: red;
+    }
+  }
+}
 .social li i {
   line-height: 32px;
   font-size: 16px;
@@ -1301,10 +1375,13 @@ label.leerMas:hover {
   font-size: 14px;
 }
 
-.service-icon {
+.serviceIcon {
   font-size: 30px;
   margin-bottom: 10px;
-  color: #666;
+  color: $background-blue;
+}
+.serviceIcon:hover {
+  color:$fuente-LeerMas;
 }
 
 .awards {

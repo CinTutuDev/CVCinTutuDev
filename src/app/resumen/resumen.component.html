@@ -80,7 +80,6 @@
             <div *ngFor="let experienciaI of Bd.experiencia">
               <div class="exp" *ngIf="experienciaI">
                 <div class="hgroup">
-                  
                   <h4>
                     <span>{{ experienciaI.empresa }}</span
                     ><br />
@@ -92,8 +91,19 @@
                   <br />
                 </div>
                 <div>
-                  <label [innerHTML]="experienciaI.descripcion | slice:0:(experienciaI.leerMas ? undefined : parrafo)"></label>
-                  <label (click)="experienciaI.leerMas = !experienciaI.leerMas" class="leerMas">{{ experienciaI.leerMas ? 'Leer menos' : '... Leer más!' }}</label>
+                  <label
+                    [innerHTML]="
+                      experienciaI.descripcion
+                        | slice : 0 : (experienciaI.leerMas ? undefined : 250)
+                    "
+                  ></label>
+                  <label
+                    (click)="experienciaI.leerMas = !experienciaI.leerMas"
+                    class="leerMas"
+                    >{{
+                      experienciaI.leerMas ? "Leer menos" : "... Leer más!"
+                    }}</label
+                  >
                 </div>
               </div>
             </div>
@@ -123,10 +133,20 @@
                   <br />
                 </div>
                 <div>
-                  <label [innerHTML]="educacionI.descripcion | slice:0:(educacionI.leerMas ? undefined : parrafo)" ></label>
-                  <label  (click)="educacionI.leerMas = !educacionI.leerMas" class="leerMas">{{ educacionI.leerMas ? 'Leer menos' : '... Leer más!' }}</label>
+                  <label
+                    [innerHTML]="
+                      educacionI.descripcion
+                        | slice : 0 : (educacionI.leerMas ? undefined : 250)
+                    "
+                  ></label>
+                  <label
+                    (click)="educacionI.leerMas = !educacionI.leerMas"
+                    class="leerMas"
+                    >{{
+                      educacionI.leerMas ? "Leer menos" : "... Leer más!"
+                    }}</label
+                  >
                 </div>
-
               </div>
             </div>
           </div>
@@ -142,29 +162,38 @@
       <div class="row">
         <div class="col-md-12">
           <div class="exp-holder">
-
             <div *ngFor="let certificacionI of Bd.certificaciones">
               <div class="exp" *ngIf="certificacionI">
                 <div class="hgroup">
                   <h4>
-                    <span>{{ certificacionI.empresa }}</span><br>
+                    <span>{{ certificacionI.empresa }}</span
+                    ><br />
                     {{ certificacionI.nombre }}
                     <br />
-                    {{ certificacionI.fecha }}<br>
-                   <h4>Id: {{ certificacionI.idCredencial }}</h4> 
+                    {{ certificacionI.fecha }}<br />
+                    <h4>Id: {{ certificacionI.idCredencial }}</h4>
                     <a
                       *ngIf="certificacionI.URL"
                       href="{{ certificacionI.URL }}"
                       target="_blank"
-                      ><br /><span class="certificado"
-                        >Ver Certificado</span
-                      ></a
+                      ><br /><span class="certificado">Ver Certificado</span></a
                     >
                   </h4>
                 </div>
                 <div>
-                  <label [innerHTML]="certificacionI.descripcion | slice:0:(certificacionI.leerMas ? undefined : parrafo)" ></label>
-                  <label  (click)="certificacionI.leerMas = !certificacionI.leerMas" class="leerMas">{{ certificacionI.leerMas ? 'Leer menos' : '... Leer más!' }}</label>
+                  <label
+                    [innerHTML]="
+                      certificacionI.descripcion
+                        | slice : 0 : (certificacionI.leerMas ? undefined : 250)
+                    "
+                  ></label>
+                  <label
+                    (click)="certificacionI.leerMas = !certificacionI.leerMas"
+                    class="leerMas"
+                    >{{
+                      certificacionI.leerMas ? "Leer menos" : "... Leer más!"
+                    }}</label
+                  >
                 </div>
               </div>
             </div>
@@ -173,73 +202,72 @@
       </div>
     </div>
   </div>
-
+  <!----------------------------------------- Servicios ------------------------------------------------>
   <div class="block-content">
     <h3 class="block-title">Servicios</h3>
     <div class="row">
-      <div class="col-md-4 col-sm-6 service">
-        <div class="service-icon">
-          <i class="ion-laptop"></i>
+      <div
+        class="col-md-4 col-sm-6 service"
+        *ngFor="let servicioI of Bd.servicio"
+      >
+        <div class="serviceIcon">
+          <i [class]="servicioI.icono"></i>
         </div>
-        <h4>Diseño Web</h4>
-        <p>
-          Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
-          nonummy nibh euismod tincidunt ut laoreet.
-        </p>
-      </div>
-      <div class="col-md-4 col-sm-6 service">
-        <div class="service-icon">
-          <i class="ion-pie-graph"></i>
+        <h4>{{ servicioI.nombre }}</h4>
+        <div>
+          <label
+            [innerHTML]="
+              servicioI.descripcion
+                | slice : 0 : (servicioI.leerMas ? undefined : 60)
+            "
+          ></label>
+          <label
+            (click)="servicioI.leerMas = !servicioI.leerMas"
+            class="leerMas"
+            >{{ servicioI.leerMas ? "Leer menos" : "... Leer más!" }}</label
+          >
         </div>
-        <h4>Desarrollo de Aplicaciones</h4>
-        <p>
-          Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
-          nonummy nibh euismod tincidunt ut laoreet.
-        </p>
-      </div>
-      <div class="col-md-4 col-sm-6 service">
-        <div class="service-icon">
-          <i class="ion-paintbucket"></i>
-        </div>
-        <h4>Diseño Grafico</h4>
-        <p>
-          Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
-          nonummy nibh euismod tincidunt ut laoreet.
-        </p>
-      </div>
-      <div class="col-md-4 col-sm-6 service">
-        <div class="service-icon">
-          <i class="ion-printer"></i>
-        </div>
-        <h4>Print Design</h4>
-        <p>
-          Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
-          nonummy nibh euismod tincidunt ut laoreet.
-        </p>
-      </div>
-      <div class="col-md-4 col-sm-6 service">
-        <div class="service-icon">
-          <i class="ion-qr-scanner"></i>
-        </div>
-        <h4>Graphic Design</h4>
-        <p>
-          Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
-          nonummy nibh euismod tincidunt ut laoreet.
-        </p>
-      </div>
-      <div class="col-md-4 col-sm-6 service">
-        <div class="service-icon">
-          <i class="ion-social-buffer"></i>
-        </div>
-        <h4>Print Design</h4>
-        <p>
-          Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
-          nonummy nibh euismod tincidunt ut laoreet.
-        </p>
       </div>
     </div>
   </div>
-  <!--  <div class="block-content">
+
+  <!----------------------------------------- Reconocimientos ------------------------------------------------>
+
+  <div class="block-content">
+    <h3 class="block-title">Reconocimientos</h3>
+    <div class="row">
+      <div id="liontestimonial" class="owl-carousel owl-theme">
+        <div *ngFor="let reconocientoI of Bd.reconocimientos">
+          <div class="item testimonials">
+            <img src="assets\images\testimonials\1.jpeg" alt="" />
+            <blockquote>
+              {{ reconocientoI.descripcion }}
+              <p class="quote">
+                <span>{{ reconocientoI.nombre }}</span> -
+                {{ reconocientoI.cargo }}
+              </p>
+            </blockquote>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ----------------------------------------------Correo-------------------------------------------------- -->
+
+  <div class="row text-center">
+    <div class="col-md-12 btn-email">
+      <a
+        class="btn btn-download1"
+        href="https://mail.google.com/mail/u/0/#inbox?compose=new"
+        target="_blank"
+        >cintatafur@gmail.com</a
+      >
+    </div>
+  </div>
+</section>
+
+<!--  <div class="block-content">
      <h3 class="block-title">Awards</h3>
      <div class="row">
          <div class="col-md-3 col-sm-6 awards">
@@ -256,24 +284,3 @@
          </div>
      </div>
  </div> -->
-  <div class="block-content">
-    <h3 class="block-title">Testimonios</h3>
-    <div class="row">
-      <div id="liontestimonial" class="owl-carousel owl-theme">
-        <!--      <div *ngFor="let testix of cv.testimonio">
-               <div class="item testimonials">
-                   <img src="assets\images\testimonials\1.jpeg" alt="">
-                   <blockquote>{{ testix.Descripcion }}
-                       <p class="quote"><span>{{ testix.Nombre }}</span> - {{ testix.Cargo }}</p>
-                   </blockquote>
-               </div>
-           </div> -->
-      </div>
-    </div>
-  </div>
-  <div class="row text-center">
-    <div class="col-md-12 btn-email">
-      <a class="btn lowercase">davisanderson87@gmail.com</a>
-    </div>
-  </div>
-</section>
