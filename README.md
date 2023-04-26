@@ -3,6 +3,19 @@
 ![bannerGH2](https://user-images.githubusercontent.com/71487857/234256705-f0b3ae7e-de83-46fb-9050-52208533e533.png)
  </p> 
  
+# 🚀 Descripción del proyecto
+
+Mi proyecto de Curriculum Vitae (CV) desarrollado con Angular CLI 15 y Angular Material te permitirá visualizar toda la información sobre mi experiencia laboral, educación, habilidades y demás en tiempo real y de manera interactiva.<br> Ya no más aburridas listas sin vida, ahora podrás conocerme de manera más amena y divertida.
+
+## Funcionalidades
+
+* Visualización de información en tiempo real y de manera interactiva.
+* Actualización automática de los datos gracias a la conexión a una base de datos en Firebase.
+* Sección de experiencia laboral, educación, habilidades y otros datos personales.
+* Diseño amigable y moderno.
+* Con esta sección, quiero que conozcas las habilidades y conocimientos que he puesto en práctica en este proyecto y cómo puedo destacar en el mundo laboral gracias a él. Espero que lo disfrutes tanto como yo he disfrutado desarrollándolo.
+
+ 
  <header>
   <div class="profile" align="center">
     <img src="https://user-images.githubusercontent.com/71487857/234249382-58656620-3cb9-4d49-b99c-10ff0ae2bb82.png" alt="Foto de perfil">
@@ -78,5 +91,15 @@ ng g s services/bdcintutdev  --skip-tests
     });
   }
  ```
- 
+
+
+## Créditos y Agradecimientos
+
+- Plantilla de Github utilizada como base para este proyecto: https://github.com/Anders87x/Template_CVAbastidas_Angular
+- Creador de la plantilla: Anders87x
+
+
+<p align="center" style="width: 100%;">
+  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=cintutudev&repo=CVCinTutuDev&show_icons=true&locale=es&layout=compact&theme=radical&langs_count=6" alt="cintutudev" />
+</p>
 
