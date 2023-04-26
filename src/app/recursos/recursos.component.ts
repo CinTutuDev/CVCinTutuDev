@@ -15,20 +15,5 @@ constructor(public Bd: BdcintutdevService,  private donSanitizer: DomSanitizer){
   ngOnInit(): void {
     
   }
-/*   getUrl(url: any){
-    let video;
-    let results;
 
-    if (!url) {
-        return '';
-    }
-
-    if (typeof url !== 'string') {
-        return '';
-    }
-
-    results = url.match('[\\?&]v=([^&#]*)');
-    video = (results === null) ? url : results[1];
-    return this.donSanitizer.bypassSecurityTrustResourceUrl('https://github.com/devblackops/Terminal-Icons/' + video);
-} */
 }

@@ -3,7 +3,8 @@
 
   <!-- repos -->
   <div class="block-content">
-    <h4 class="block-title">Repos</h4>
+    <h4 class="block-title" style="padding: 20px 16px 16px;">Repos 🌳</h4>
+
   <div class="row" style="width: 100%; margin: 0 auto;">
     <div class="col-md-10 mx-auto">
       <mat-card class="cardRec" *ngFor="let repoGH of Bd.repo">
@@ -13,7 +14,7 @@
           </div>
           <mat-card-title>
             <div class="post-title">
-              <a href="#"><h2>{{ repoGH.titulo }}</h2></a>
+              <a href="#"><h3>{{ repoGH.titulo }}</h3></a>
             </div>
           </mat-card-title>
          <!--  <mat-card-subtitle>Dog Breed</mat-card-subtitle> -->
@@ -38,7 +39,7 @@
 
 
 <div class="block-content">
-  <h4 class="block-title">Angular</h4>
+  <h4 class="block-title" style="padding: 20px 16px 16px;">Angular 🔧🔩</h4>
 <div class="row" style="width: 100%; margin: 0 auto;">
   <div class="col-md-10 mx-auto">
     <mat-card class="cardRec" *ngFor="let angular of Bd.angular">
@@ -48,7 +49,7 @@
         </div>
         <mat-card-title>
           <div class="post-title">
-            <a href="#"><h2>{{ angular.titulo }}</h2></a>
+            <h3>{{ angular.titulo }}</h3>
           </div>
         </mat-card-title>
        <!--  <mat-card-subtitle>Dog Breed</mat-card-subtitle> -->
@@ -70,6 +71,38 @@
 </div>
 </div>
 
-
+<div class="block-content">
+  <h4 class="block-title" style="padding: 20px 16px 16px;">Inspiración💡</h4>
+<div class="row" style="width: 100%; margin: 0 auto;">
+  <div class="col-md-10 mx-auto">
+    <mat-card class="cardRec" *ngFor="let InspiracionI of Bd.inspiraciones">
+      <mat-card-header>
+        <div mat-card-avatar>
+          <img src="{{ InspiracionI.logoIco }}" alt="Avatar">
+        </div>
+        <mat-card-title>
+          <div class="post-title">
+            <h3>{{ InspiracionI.titulo }}</h3>
+          </div>
+        </mat-card-title>
+       <!--  <mat-card-subtitle>Dog Breed</mat-card-subtitle> -->
+      </mat-card-header>
+      <div mat-card-image>
+        <img src="{{ InspiracionI.src }}" alt="srcImg">
+      </div>
+      <mat-card-actions>
+        <div class="serviceIcon">
+          <a class="btn-download3" target="_blank" href="{{ InspiracionI.url }}">
+            <i [class]="InspiracionI.icono"></i>
+            Web
+          </a>
+        </div>
+        
+        </mat-card-actions>
+    </mat-card>
+  </div>
 </div>
+</div>
+</div>
+
 
