@@ -1,3 +1,8 @@
+
+# <p align="center"><img src="https://readme-typing-svg.demolab.com?  font=Libre+Baskerville&size=45&duration=3100&pause=500&color=ff3d5c&center=true&vCenter=true&width=940&lines=CVWebCinTutuDev" align="middle" alt="fotosgram"  width="100%"/>
+![bannerGH2](https://user-images.githubusercontent.com/71487857/234256705-f0b3ae7e-de83-46fb-9050-52208533e533.png)
+ </p> 
+ 
 # 🚀 Descripción del proyecto
 
 Mi proyecto de Curriculum Vitae (CV) desarrollado con Angular CLI 15 y Angular Material te permitirá visualizar toda la información sobre mi experiencia laboral, educación, habilidades y demás en tiempo real y de manera interactiva.<br> Ya no más aburridas listas sin vida, ahora podrás conocerme de manera más amena y divertida.
@@ -10,9 +15,6 @@ Mi proyecto de Curriculum Vitae (CV) desarrollado con Angular CLI 15 y Angular M
 * Diseño amigable y moderno.
 * Con esta sección, quiero que conozcas las habilidades y conocimientos que he puesto en práctica en este proyecto y cómo puedo destacar en el mundo laboral gracias a él. Espero que lo disfrutes tanto como yo he disfrutado desarrollándolo.
 
-# <p align="center"><img src="https://readme-typing-svg.demolab.com?  font=Libre+Baskerville&size=45&duration=3100&pause=500&color=ff3d5c&center=true&vCenter=true&width=940&lines=CVWebCinTutuDev" align="middle" alt="fotosgram"  width="100%"/>
-![bannerGH2](https://user-images.githubusercontent.com/71487857/234256705-f0b3ae7e-de83-46fb-9050-52208533e533.png)
- </p> 
  
  <header>
   <div class="profile" align="center">
