@@ -62,6 +62,7 @@ $RecursosCinTutuDev-theme: mat.define-light-theme((
     8. RECURSOS BLOCK
        blog-block
        post
+       cardRec
     9. CONTACTO BLOCK
    10. Responsive
 
@@ -323,13 +324,6 @@ a:not([href]):not([tabindex]) {
   right: 16px;
   font-size: 18px;
 }
-/* .btn-download:before {
-  position: absolute;
-  content: "\f407";
-  font-family: "Ionicons";
-  top: 12px;
-  right: 16px;
-  font-size: 24px; */
 
 .btn-download1:hover:before {
   -webkit-animation-duration: 1s;
@@ -357,6 +351,73 @@ a:not([href]):not([tabindex]) {
 }
 
 .btn-download1:hover:after {
+  width: 50px;
+  height: 70px;
+  right: -5px;
+  top: -5px;
+  -ms-transform: rotate(15deg);
+  -webkit-transform: rotate(15deg);
+  transform: rotate(15deg);
+}
+/* ----------------------------------------------------------------- */
+.btn-download3 {
+  border: none;
+  font-size: 16px; 
+  padding: 6px 20px
+}
+.btn-download3 i {
+  font-size: 24px; /* se aumenta el tamaño del icono */
+  margin-right: 5px; /* se añade un margen derecho al icono para separarlo del texto */
+}
+.btn-download3 span {
+  font-size: 20px; /* se aumenta el tamaño del texto */
+}
+
+.btn-download3:hover {
+  border: none;
+  color: #fff;
+  box-shadow: 0 0 30px #e60073;
+  /* background-color: #9699b8; */
+  letter-spacing: 2px;
+  background: rgb(230, 0, 115);
+  box-shadow: 0 0 25px rgb(230, 0, 115);
+}
+
+.btn-download3:before {
+  position: absolute;
+/*   content: "\f1d8";
+  font-family: "Font Awesome 5 Free"; */
+  top: 12px;
+  right: 16px;
+  font-size: 20px;
+}
+
+.btn-download3:hover:before {
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+  -webkit-animation-name: fadeOutDown;
+  animation-name: fadeOutDown;
+  -webkit-transform-origin: center bottom;
+  transform-origin: center bottom;
+}
+
+.btn-download3:after {
+  content: "";
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.2);
+  right: 0;
+  top: 0;
+  height: 100%;
+  width: 0;
+  z-index: -1;
+  transition: all 0.3s;
+}
+
+.btn-download3:hover:after {
   width: 50px;
   height: 70px;
   right: -5px;
@@ -1875,6 +1936,20 @@ h4.package {
   -webkit-transform: rotate(34deg);
   transform: rotate(34deg);
 }
+/* cardRec */
+
+.cardRec {
+  width: 75%;
+  margin: 0 auto;
+  margin-bottom: 20px;
+
+  img {
+    width: 100%;
+    max-height: 200px; 
+    object-fit: cover;
+  }
+}
+
 /* post */
 .post {
   background-color: #fff;

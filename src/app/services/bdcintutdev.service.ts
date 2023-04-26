@@ -16,6 +16,7 @@ export class BdcintutdevService {
   servicio: any[] = [];
   /* recurso */
   repo: any[] = [];
+  angular: any[] = [];
 
   constructor(private http: HttpClient) {
     /* sobre mi */
@@ -27,6 +28,7 @@ export class BdcintutdevService {
     this.ServicioBD();
     /* resuros */
     this.RepoBD();
+    this.AngularBD();
   }
   /* ------------------------------------------------------------sobre mi------------------------------------ */
   AptitudesBD() {
@@ -74,4 +76,10 @@ export class BdcintutdevService {
       this.repo = res || [];
     });
   }
+  AngularBD() {
+    this.http.get<any>(`${URL}/Angular.json`).subscribe((res) => {
+      this.angular = res || [];
+    });
+  }
+  /* /Angular.json */
 }

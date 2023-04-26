@@ -1,52 +1,75 @@
-<section class="content">
- <div class="block-content">
-     <h3 class="block-title">Cajón de Herramientas y Recursos</h3>
-     <div class="row">
-         <div class="col-md-10 mx-auto">
-             <div *ngFor="let repoGH of Bd.repo">
-               <div class="post">
-                <mat-card class="cardRecurso">
-                    <mat-card-header>
-                      <div mat-card-avatar class="example-header-image"></div>
-                      <mat-card-title> 
-                        <div class="post-title">
-                        <a href="#"><h2>{{ repoGH.titulo }}</h2></a>
-                    </div>
-                </mat-card-title>
-                      <mat-card-subtitle>Dog Breed</mat-card-subtitle>
-                    </mat-card-header>
-                    <img mat-card-image src="assets\Recursos\IcosTerminal.png" alt="GitHub"
-                    width="500" loading="lazy">
-                <!--     <mat-card-content>
-                      <p>
-                        The Shiba Inu is the smallest of the six original and distinct spitz breeds of dog from Japan.
-                        A small, agile dog that copes very well with mountainous terrain, the Shiba Inu was originally
-                        bred for hunting.
-                      </p>
-                    </mat-card-content> -->
-                    <mat-card-actions>
-                      <!-- <button mat-button>LIKE</button>
-                      <button mat-button>SHARE</button> -->
-                      <div class="post-body">
-                        <a class="btn" target="_blank" href="{{ repoGH.url }}">Ver Mas</a>
-                    </div>
-                    </mat-card-actions>
-                  </mat-card>
-                
-                  <!--    <div class="embed-responsive embed-responsive-16by9">
-                        <img src="assets\Recursos\IcosTerminal.png" alt="GitHub"
-                        width="500" loading="lazy">
-                     </div> -->
-              
-               <!--   <div class="post-title">
-                     <a href="#"><h2>{{ repoGH.titulo }}</h2></a>
-                 </div>
-                 <div class="post-body">
-                     <a class="btn" target="_blank" href="{{ repoGH.url }}">Ver Mas</a>
-                 </div> -->
-               </div>
-             </div>
-         </div>
-     </div>
- </div>
-</section>
+<div class="content">
+  <h3 class="block-title">Cajón de Herramientas y Recursos</h3>
+
+  <!-- repos -->
+  <div class="block-content">
+    <h4 class="block-title">Repos</h4>
+  <div class="row" style="width: 100%; margin: 0 auto;">
+    <div class="col-md-10 mx-auto">
+      <mat-card class="cardRec" *ngFor="let repoGH of Bd.repo">
+        <mat-card-header>
+          <div mat-card-avatar>
+            <img src="{{ repoGH.logoIco }}" alt="Avatar">
+          </div>
+          <mat-card-title>
+            <div class="post-title">
+              <a href="#"><h2>{{ repoGH.titulo }}</h2></a>
+            </div>
+          </mat-card-title>
+         <!--  <mat-card-subtitle>Dog Breed</mat-card-subtitle> -->
+        </mat-card-header>
+        <div mat-card-image>
+          <img src="{{ repoGH.src }}" alt="srcImg">
+        </div>
+        <mat-card-actions>
+          <div class="serviceIcon">
+            <a class="btn-download3" target="_blank" href="{{ repoGH.url }}">
+              <i [class]="repoGH.icono"></i>
+              GitHub
+            </a>
+          </div>
+          
+          </mat-card-actions>
+      </mat-card>
+    </div>
+  </div>
+</div>
+   <!-- Angular -->
+
+
+<div class="block-content">
+  <h4 class="block-title">Angular</h4>
+<div class="row" style="width: 100%; margin: 0 auto;">
+  <div class="col-md-10 mx-auto">
+    <mat-card class="cardRec" *ngFor="let angular of Bd.angular">
+      <mat-card-header>
+        <div mat-card-avatar>
+          <img src="{{ angular.logoIco }}" alt="Avatar">
+        </div>
+        <mat-card-title>
+          <div class="post-title">
+            <a href="#"><h2>{{ angular.titulo }}</h2></a>
+          </div>
+        </mat-card-title>
+       <!--  <mat-card-subtitle>Dog Breed</mat-card-subtitle> -->
+      </mat-card-header>
+      <div mat-card-image>
+        <img src="{{ angular.src }}" alt="srcImg">
+      </div>
+      <mat-card-actions>
+        <div class="serviceIcon">
+          <a class="btn-download3" target="_blank" href="{{ angular.url }}">
+            <i [class]="angular.icono"></i>
+            Docu
+          </a>
+        </div>
+        
+        </mat-card-actions>
+    </mat-card>
+  </div>
+</div>
+</div>
+
+
+</div>
+
