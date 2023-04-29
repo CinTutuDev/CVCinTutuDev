@@ -63,6 +63,8 @@ $RecursosCinTutuDev-theme: mat.define-light-theme((
        blog-block
        post
        cardRec
+       hgroup
+       certificado
     9. CONTACTO BLOCK
    10. Responsive
 
@@ -1038,6 +1040,14 @@ h2.menu-item:after {
   background-color: #dfe2e8;
 }
 
+.containerB{
+  position: relative;
+  padding: 120px 70px 30px;
+  height: auto;
+  overflow: hidden;
+  background-color: #dfe2e8;
+}
+
 .content-blocks.pop {
   left: 100%;
   opacity: 0.3;
@@ -1449,6 +1459,11 @@ label.leerMas {
 }
 label.leerMas:hover {
   color: $fuente-h4;
+}
+
+.certificado:hover {
+  color: $fuente-LeerMas !important;
+  text-decoration: underline;
 }
 
 .exp .hgroup h4 span {

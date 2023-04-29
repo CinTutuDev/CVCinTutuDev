@@ -1,8 +1,8 @@
-<div class="content">
-  <h3 class="block-title">Cajón de Herramientas y Recursos</h3>
+<div class="containerB">
+ <!--  <h3 class="block-title">Cajón de Herramientas y Recursos</h3> -->
 
   <!-- repos -->
-  <div class="block-content">
+<!--   <div class="block-content">
     <h4 class="block-title" style="padding: 20px 16px 16px;">Repos 🌳</h4>
 
   <div class="row" style="width: 100%; margin: 0 auto;">
@@ -14,10 +14,10 @@
           </div>
           <mat-card-title>
             <div class="post-title">
-              <a href="#"><h3>{{ repoGH.titulo }}</h3></a>
+              <a href="#"  [style.textDecoration]="'none'"><h3>{{ repoGH.titulo }}</h3></a>
             </div>
           </mat-card-title>
-         <!--  <mat-card-subtitle>Dog Breed</mat-card-subtitle> -->
+        
         </mat-card-header>
         <div mat-card-image>
           <img src="{{ repoGH.src }}" alt="srcImg">
@@ -34,11 +34,11 @@
       </mat-card>
     </div>
   </div>
-</div>
+</div> -->
    <!-- Angular -->
 
 
-<div class="block-content">
+<!-- <div class="block-content">
   <h4 class="block-title" style="padding: 20px 16px 16px;">Angular 🔧🔩</h4>
 <div class="row" style="width: 100%; margin: 0 auto;">
   <div class="col-md-10 mx-auto">
@@ -52,7 +52,7 @@
             <h3>{{ angular.titulo }}</h3>
           </div>
         </mat-card-title>
-       <!--  <mat-card-subtitle>Dog Breed</mat-card-subtitle> -->
+
       </mat-card-header>
       <div mat-card-image>
         <img src="{{ angular.src }}" alt="srcImg">
@@ -69,9 +69,9 @@
     </mat-card>
   </div>
 </div>
-</div>
+</div> -->
 
-<div class="block-content">
+<!-- <div class="block-content">
   <h4 class="block-title" style="padding: 20px 16px 16px;">Inspiración💡</h4>
 <div class="row" style="width: 100%; margin: 0 auto;">
   <div class="col-md-10 mx-auto">
@@ -85,7 +85,7 @@
             <h3>{{ InspiracionI.titulo }}</h3>
           </div>
         </mat-card-title>
-       <!--  <mat-card-subtitle>Dog Breed</mat-card-subtitle> -->
+    
       </mat-card-header>
       <div mat-card-image>
         <img src="{{ InspiracionI.src }}" alt="srcImg">
@@ -102,7 +102,30 @@
     </mat-card>
   </div>
 </div>
-</div>
+</div> -->
 </div>
 
+<div class="containerB">
+  <h3 class="block-title">Cajón de Herramientas y Recursos</h3>
+
+  <div class="row mt-4">
+    <div class="col-3">
+      <!-- alider -->
+      <shared-menu></shared-menu>
+    </div>
+
+    <div class="col">
+      <!-- paginas -->
+
+     <!--  <shared-home-page></shared-home-page> 
+      <shared-about-page></shared-about-page>  -->
+   <router-outlet></router-outlet>
+   
+    </div>
+
+
+
+  </div><!-- row -->
+
+</div><!-- container -->
 

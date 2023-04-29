@@ -175,6 +175,7 @@
                       *ngIf="certificacionI.URL"
                       href="{{ certificacionI.URL }}"
                       target="_blank"
+                      [ngStyle]="{'text-decoration': certificacionI.URL ? 'none' : ''}"
                       ><br /><span class="certificado">Ver Certificado</span></a
                     >
                   </h4>

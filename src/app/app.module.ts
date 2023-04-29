@@ -10,6 +10,7 @@ import { HttpClientModule } from "@angular/common/http";
 import { RecursosComponent } from './recursos/recursos.component';
 import { ContactoComponent } from './contacto/contacto.component';
 import { ProyectosComponent } from './proyectos/proyectos.component';
+import { SharedModule } from './shared/shared.module';
 /* angular material */
 
 import {MatCardModule} from '@angular/material/card';
@@ -34,7 +35,8 @@ import { MatIconModule } from '@angular/material/icon';
     BrowserAnimationsModule,
     MatGridListModule,
     MatListModule,
-    MatIconModule
+    MatIconModule,
+    SharedModule
   ],
   providers: [],
   bootstrap: [AppComponent]
