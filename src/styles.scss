@@ -69,10 +69,11 @@ $RecursosCinTutuDev-theme: mat.define-light-theme((
    10. Responsive
 
 ------------------------------------ General Styles---------------------------*/
-
+/* dfe2e8 */
 /* Varoiables globales*/
 $background-pink: rgb(230, 0, 115);
 $background-blue: rgb(18, 65, 103);
+$background-body: #dfe2e8 ;
 $background-timeline:  #7e6f90;
 
 $espaciado-estandar: 10px;
@@ -362,72 +363,14 @@ a:not([href]):not([tabindex]) {
   transform: rotate(15deg);
 }
 /* ----------------------------------------------------------------- */
+
 .btn-download3 {
-  border: none;
-  font-size: 16px; 
-  padding: 6px 20px
-}
-.btn-download3 i {
-  font-size: 24px; /* se aumenta el tamaño del icono */
-  margin-right: 5px; /* se añade un margen derecho al icono para separarlo del texto */
-}
-.btn-download3 span {
-  font-size: 20px; /* se aumenta el tamaño del texto */
+ /*  border: none; */
+  color:$fuente-LeerMas;
+  box-shadow: 0 0 15px #edd3df;
+  text-decoration: none;
 }
 
-.btn-download3:hover {
-  border: none;
-  color: #fff;
-  box-shadow: 0 0 30px #e60073;
-  /* background-color: #9699b8; */
-  letter-spacing: 2px;
-  background: rgb(230, 0, 115);
-  box-shadow: 0 0 25px rgb(230, 0, 115);
-}
-
-.btn-download3:before {
-  position: absolute;
-/*   content: "\f1d8";
-  font-family: "Font Awesome 5 Free"; */
-  top: 12px;
-  right: 16px;
-  font-size: 20px;
-}
-
-.btn-download3:hover:before {
-  -webkit-animation-duration: 1s;
-  animation-duration: 1s;
-  -webkit-animation-fill-mode: both;
-  animation-fill-mode: both;
-  -webkit-animation-iteration-count: infinite;
-  animation-iteration-count: infinite;
-  -webkit-animation-name: fadeOutDown;
-  animation-name: fadeOutDown;
-  -webkit-transform-origin: center bottom;
-  transform-origin: center bottom;
-}
-
-.btn-download3:after {
-  content: "";
-  position: absolute;
-  background-color: rgba(0, 0, 0, 0.2);
-  right: 0;
-  top: 0;
-  height: 100%;
-  width: 0;
-  z-index: -1;
-  transition: all 0.3s;
-}
-
-.btn-download3:hover:after {
-  width: 50px;
-  height: 70px;
-  right: -5px;
-  top: -5px;
-  -ms-transform: rotate(15deg);
-  -webkit-transform: rotate(15deg);
-  transform: rotate(15deg);
-}
 
 .btn.disabled {
   opacity: 1;
@@ -1010,7 +953,7 @@ h2.menu-item:after {
   overflow-y: scroll;
   top: 100%;
   left: 30%;
-  background: #fff;
+  background: $background-body;
   transition: opacity 0.7s ease-out;
   z-index: 1;
   -webkit-overflow-scrolling: touch;
@@ -1037,7 +980,7 @@ h2.menu-item:after {
   padding: 120px 70px 30px;
   height: auto;
   overflow: hidden;
-  background-color: #dfe2e8;
+  background-color: $background-body;
 }
 
 .containerB{
@@ -1045,7 +988,7 @@ h2.menu-item:after {
   padding: 120px 70px 30px;
   height: auto;
   overflow: hidden;
-  background-color: #dfe2e8;
+  background-color: $background-body;
 }
 
 .content-blocks.pop {
@@ -1953,17 +1896,6 @@ h4.package {
 }
 /* cardRec */
 
-/* .cardRec {
-  width: 75%;
-  margin: 0 auto;
-  margin-bottom: 20px;
-
-  img {
-    width: 100%;
-    max-height: 200px; 
-    object-fit: cover;
-  }
-} */
 .cardRec {
   text-align: center;
   width: 75%;
@@ -1989,6 +1921,19 @@ h4.package {
   margin-bottom: 0.5rem;
 }
 
+/* lista */
+.lista {
+  margin-bottom: 15px;
+}
+.lista:hover{
+  border: none;
+  color: #fff;
+  letter-spacing: 2px;
+  background:$background-pink;
+  box-shadow: 0 0 25px black;
+}
+
+
 /* post */
 .post {
   background-color: #fff;
@@ -2003,16 +1948,6 @@ h4.package {
   text-align: center;
 }
 
-/* .post-title {
-  text-align: center;
-}
-
-.post-title h2 {
-  font-size: 28px;
-  margin-top: 50px;
-  margin-bottom: 20px;
-}
- */
 .post-info {
   font-size: 14px;
 }

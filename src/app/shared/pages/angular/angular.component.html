@@ -1,1 +1,46 @@
-<p>angular works!</p>
+<div>
+  <div class="row">
+    <div class="col-12">
+      <h3 class="block-title" style="padding: 20px 16px 16px">
+        Docu Angular 🅰️
+      </h3>
+    </div>
+  </div>
+
+  <div class="row" *ngFor="let angularI of Bd.angular; let i = index">
+    <div class="col">
+      <!--  <h3>Información</h3> -->
+      <ul class="list-group">
+        <li class="list-group-item">
+          <strong>Logo: </strong>
+          <img
+            src="{{ angularI.logoIco }}"
+            alt="Avatar"
+            class="img-thumbnail"
+            width="50"
+          />
+        </li>
+        <li class="list-group-item">
+          <strong>Titulo: </strong>{{ angularI.titulo }}
+        </li>
+        <li class="list-group-item"><strong>Indice: </strong>{{ i + 1 }}</li>
+        <li class="list-group-item">
+          <strong>URL: </strong>
+          <a class="btn-download3" target="_blank" href="{{ angularI.url }}">
+            <i [class]="angularI.icono"></i>
+            Docu
+          </a>
+        </li>
+
+        <li class="list-group-item" style="text-align: center">
+          <img
+            src="{{ angularI.src }}"
+            alt="srcImg"
+            class="poster"
+            width="500"
+          />
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>

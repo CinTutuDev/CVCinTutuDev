@@ -1,20 +1,20 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 import { BdcintutdevService } from 'src/app/services/bdcintutdev.service';
 
 @Component({
-  selector: 'shared-angular',
-  templateUrl: './angular.component.html',
+  selector: 'repositorios-tabla',
+  templateUrl: './tabla.component.html',
   styles: [
-     `
-    /*   img {
-        width: 100px;
+    `
+      img {
+        width: 50px;
       }
       img.poster {
         width: 250px;
-      } */
+      }
     `,
   ],
 })
-export class AngularComponent {
+export class TablaComponent {
   constructor(public Bd: BdcintutdevService) {}
 }

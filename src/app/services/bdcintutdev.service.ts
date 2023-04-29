@@ -1,6 +1,8 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
+import { Observable } from 'rxjs';
 import { environment } from 'src/environments/environment';
+
 
 const URL = environment.url;
 
@@ -78,6 +80,7 @@ export class BdcintutdevService {
       this.repo = res || [];
     });
   }
+
   AngularBD() {
     this.http.get<any>(`${URL}/Angular.json`).subscribe((res) => {
       this.angular = res || [];

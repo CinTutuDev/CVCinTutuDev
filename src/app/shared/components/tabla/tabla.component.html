@@ -1,0 +1,42 @@
+<ng-container *ngTemplateOutlet="table"></ng-container>
+
+<ng-template #table>
+ 
+ <table class="table table-hover">
+  <thead>
+   <tr>
+    <th>Indice</th>
+    <th>Titulo</th>
+    <th>Logo</th>
+    <th>Icono</th>
+    <th>Imagen</th>
+   </tr>
+  </thead>
+   <tbody>
+    <tr *ngFor="let reposI of Bd.repo; let i = index">
+     <td>{{ i + 1}}</td>
+      <th>{{ reposI.titulo}} </th>
+      <td>
+       <div>
+        <img src="{{ reposI.logoIco }}" alt="Avatar">
+      </div>
+      </td>
+
+      <td>
+       <div class="serviceIcon3">
+         <a class="btn-download3" target="_blank" href="{{ reposI.url }}">
+           <i [class]="reposI.icono"></i>
+           GitHub
+         </a>
+       </div>
+      </td>
+    
+      <td>
+       <div mat-card-image>
+        <img src="{{ reposI.src }}" alt="srcImg" class="poster">
+      </div>
+      </td>
+    </tr>
+   </tbody>
+ </table>
+</ng-template>
