@@ -1276,44 +1276,29 @@ h2.menu-item:after {
 .progress {
   height: 2px;
   margin-bottom: 30px;
-  background-color: #ddd;
-  border-radius: 0;
-  box-shadow: none;
-  overflow: visible;
-  width: 90%;
+  background-color: $background-body;
+border-radius: 0;
+box-shadow: none;
+overflow: visible;
+width: 90%;
 }
-
-
 .progress-bar {
-    height: 2px;
-    line-height: 8px;
-    background-color: #666;
-    box-shadow: none;
-    position: relative;
+border-radius: 5px;
 }
 
 .progress-bar span {
-  display: block;
-  width: 100px;
-  height: 60px;
-  line-height: 40px;
-  text-align: center;
-  color: #000;
-  background: #f1f3f6;
-  font-weight: 500;
-  position: absolute;
-  top: -16px;
-  right: -30px;
+color:  #ddd;
+background: $background-timeline;
+font-size: 16px;
+font-weight: 425;
+text-align: right;
+border-radius: 5px;
 }
 
 .progress-bar-label {
-    color: #333;
-    font-weight: 500;
-    margin-bottom: 10px;
-}
-
-.progress-bar-label span {
-    font-weight: 300;
+  color: #333;
+  font-weight: 500;
+  margin-bottom: 10px;
 }
 
 .icon-list li {
