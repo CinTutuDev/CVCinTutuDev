@@ -1,1 +1,76 @@
-<p>inspiracion works!</p>
+<div>
+ <div class="row">
+   <div class="col-12">
+     <h3 class="block-title" style="padding: 20px 16px 16px">
+      Fuentes de inspiración  🌟
+     </h3>
+   </div>
+ </div>
+
+ <div class="block-content">
+ <div class="row" style="width: 100%; margin: 0 auto;">
+   <div class="col-md-10 mx-auto">
+     <mat-card class="cardRec" *ngFor="let inspiracionesI of Bd.inspiraciones">
+       <mat-card-header>
+         <div mat-card-avatar>
+           <img src="{{ inspiracionesI.logoIco }}" alt="Avatar">
+         </div>
+         <mat-card-title>
+           <div class="post-title">
+             <h3>{{ inspiracionesI.titulo }}</h3>
+           </div>
+         </mat-card-title>
+ 
+       </mat-card-header>
+       <div mat-card-image>
+         <img src="{{ inspiracionesI.src }}" alt="srcImg">
+       </div>
+       <mat-card-actions class="justify-content-center">
+           <a class="btn-download3" target="_blank" href="{{ inspiracionesI.url }}">
+             <i [class]="inspiracionesI.icono"></i>
+             Link
+           </a>
+         </mat-card-actions>
+     </mat-card>
+   </div>
+ </div>
+ </div> 
+ 
+ <!-- <div class="row" *ngFor="let angularI of Bd.angular; let i = index">
+   <div class="col">
+
+     <ul class="list-group">
+       <li class="list-group-item">
+         <strong>Logo: </strong>
+         <img
+           src="{{ angularI.logoIco }}"
+           alt="Avatar"
+           class="img-thumbnail"
+           width="50"
+         />
+       </li>
+       <li class="list-group-item">
+         <strong>Titulo: </strong>{{ angularI.titulo }}
+       </li>
+       <li class="list-group-item"><strong>Indice: </strong>{{ i + 1 }}</li>
+       <li class="list-group-item">
+         <strong>URL: </strong>
+         <a class="btn-download3" target="_blank" href="{{ angularI.url }}">
+           <i [class]="angularI.icono"></i>
+           Docu
+         </a>
+       </li>
+
+       <li class="list-group-item" style="text-align: center">
+         <img
+           src="{{ angularI.src }}"
+           alt="srcImg"
+           class="poster"
+           width="500"
+         />
+       </li>
+     </ul>
+   </div>
+ </div> -->
+</div>
+

@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { BdcintutdevService } from 'src/app/services/bdcintutdev.service';
 
 @Component({
   selector: 'shared-inspiracion',
@@ -7,5 +8,7 @@ import { Component } from '@angular/core';
   ]
 })
 export class InspiracionComponent {
+
+  constructor(public Bd: BdcintutdevService) {}
 
 }

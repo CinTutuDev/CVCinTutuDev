@@ -10,6 +10,7 @@ import { DisenioComponent } from './pages/disenio/disenio.component';
 import { CursosComponent } from './pages/cursos/cursos.component';
 import { BuscadorBoxComponent } from './components/buscador-box/buscador-box.component';
 import { TablaComponent } from './components/tabla/tabla.component';
+import { MatCardModule } from '@angular/material/card';
 
 
 
@@ -28,7 +29,8 @@ import { TablaComponent } from './components/tabla/tabla.component';
   ],
   imports: [
     CommonModule,
-    RouterModule
+    RouterModule,
+    MatCardModule
   ],
   exports: [
     /* componentes */

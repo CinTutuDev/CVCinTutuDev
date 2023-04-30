@@ -1,1 +1,38 @@
-<p>cursos works!</p>
+<div>
+ <div class="row">
+   <div class="col-12">
+     <h3 class="block-title" style="padding: 20px 16px 16px">
+      Camino al Éxito 🚀
+     </h3>
+   </div>
+ </div>
+
+ <div class="block-content">
+ <div class="row" style="width: 100%; margin: 0 auto;">
+   <div class="col-md-10 mx-auto">
+     <mat-card class="cardRec" *ngFor="let cursosI of Bd.cursos">
+       <mat-card-header>
+         <div mat-card-avatar>
+           <img src="{{ cursosI.logoIco }}" alt="Avatar">
+         </div>
+         <mat-card-title>
+           <div class="post-title">
+             <h3>{{ cursosI.titulo }}</h3>
+           </div>
+         </mat-card-title>
+ 
+       </mat-card-header>
+       <div mat-card-image>
+         <img src="{{ cursosI.src }}" alt="srcImg">
+       </div>
+       <mat-card-actions class="justify-content-center">
+           <a class="btn-download3" target="_blank" href="{{ cursosI.url }}">
+             <i [class]="cursosI.icono"></i>
+             Link
+           </a>
+         </mat-card-actions>
+     </mat-card>
+   </div>
+ </div>
+ </div> 
+</div>

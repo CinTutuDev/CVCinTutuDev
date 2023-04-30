@@ -953,7 +953,7 @@ h2.menu-item:after {
   overflow-y: scroll;
   top: 100%;
   left: 30%;
-  background: $background-body;
+  background: #FFF;
   transition: opacity 0.7s ease-out;
   z-index: 1;
   -webkit-overflow-scrolling: touch;
@@ -980,7 +980,7 @@ h2.menu-item:after {
   padding: 120px 70px 30px;
   height: auto;
   overflow: hidden;
-  background-color: $background-body;
+  background: $background-body;
 }
 
 .containerB{
@@ -1272,6 +1272,7 @@ h2.menu-item:after {
   padding-right: 0;
 }
 
+
 .progress {
   height: 2px;
   margin-bottom: 30px;
@@ -1282,18 +1283,19 @@ h2.menu-item:after {
   width: 90%;
 }
 
+
 .progress-bar {
-  height: 2px;
-  line-height: 8px;
-  background-color: #666;
-  box-shadow: none;
-  position: relative;
+    height: 2px;
+    line-height: 8px;
+    background-color: #666;
+    box-shadow: none;
+    position: relative;
 }
 
 .progress-bar span {
   display: block;
-  width: 40px;
-  height: 40px;
+  width: 100px;
+  height: 60px;
   line-height: 40px;
   text-align: center;
   color: #000;
@@ -1301,17 +1303,17 @@ h2.menu-item:after {
   font-weight: 500;
   position: absolute;
   top: -16px;
-  right: -20px;
+  right: -30px;
 }
 
 .progress-bar-label {
-  color: #333;
-  font-weight: 500;
-  margin-bottom: 10px;
+    color: #333;
+    font-weight: 500;
+    margin-bottom: 10px;
 }
 
 .progress-bar-label span {
-  font-weight: 300;
+    font-weight: 300;
 }
 
 .icon-list li {

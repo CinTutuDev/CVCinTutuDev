@@ -20,6 +20,7 @@ export class BdcintutdevService {
   repo: any[] = [];
   angular: any[] = [];
   inspiraciones: any[] = [];
+  cursos: any[] = [];
 
   constructor(private http: HttpClient) {
     /* sobre mi */
@@ -33,6 +34,7 @@ export class BdcintutdevService {
     this.RepoBD();
     this.AngularBD();
     this.InspiracionesBD();
+    this.CursosBD();
   }
   /* ------------------------------------------------------------sobre mi------------------------------------ */
   AptitudesBD() {
@@ -92,5 +94,10 @@ export class BdcintutdevService {
       this.inspiraciones = res || [];
     });
   }
-  /* https://cintutudev-default-rtdb.firebaseio.com/Inspiraciones */
+
+  CursosBD() {
+    this.http.get<any>(`${URL}/Cursos.json`).subscribe((res) => {
+      this.cursos = res || [];
+    });
+  }
 }

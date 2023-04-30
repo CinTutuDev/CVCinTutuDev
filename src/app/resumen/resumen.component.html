@@ -65,11 +65,30 @@
           aria-valuemin="0"
           aria-valuemax="100"
         >
-          <span>{{ aptitudesI.valor }}%</span>
+          <span class="valor">{{ aptitudesI.valor }}%</span>
         </div>
       </div>
     </div>
   </div>
+
+
+  <div class="block-content">
+    <h3 class="block-title">Profesional</h3>
+    <div *ngFor="let profex of Bd.aptitudes">
+      <label class="progress-bar-label">{{ profex.nombre }}</label>
+      <div class="progress">
+          <div [style.width.%]=profex.valor class="progress-bar" role="progressbar" attr.aria-valuenow="{{ profex.valor }}" 
+          aria-valuemin="0" aria-valuemax="100">
+              <span>{{ profex.valor }}%</span>
+          </div>
+      </div>
+  </div>
+</div>
+
+
+
+
+  
   <!----------------------------------------- Experiencia ------------------------------------------------>
   <div class="block-content">
     <h3 class="block-title">Experiencia</h3>
