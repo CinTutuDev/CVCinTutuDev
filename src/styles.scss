@@ -1,7 +1,6 @@
-
 // Custom Theming for Angular Material
 // For more information: https://material.angular.io/guide/theming
-@use '@angular/material' as mat;
+@use "@angular/material" as mat;
 // Plus imports for other components in your app.
 
 // Include the common styles for Angular Material. We include this here so that you only
@@ -13,27 +12,34 @@
 // (imported above). For each palette, you can optionally specify a default, lighter, and darker
 // hue. Available color palettes: https://material.io/design/color/
 $RecursosCinTutuDev-primary: mat.define-palette(mat.$indigo-palette);
-$RecursosCinTutuDev-accent: mat.define-palette(mat.$pink-palette, A200, A100, A400);
+$RecursosCinTutuDev-accent: mat.define-palette(
+  mat.$pink-palette,
+  A200,
+  A100,
+  A400
+);
 
 // The warn palette is optional (defaults to red).
 $RecursosCinTutuDev-warn: mat.define-palette(mat.$red-palette);
 
 // Create the theme object. A theme consists of configurations for individual
 // theming systems such as "color" or "typography".
-$RecursosCinTutuDev-theme: mat.define-light-theme((
-  color: (
-    primary: $RecursosCinTutuDev-primary,
-    accent: $RecursosCinTutuDev-accent,
-    warn: $RecursosCinTutuDev-warn,
+$RecursosCinTutuDev-theme: mat.define-light-theme(
+  (
+    color: (
+      primary: $RecursosCinTutuDev-primary,
+      accent: $RecursosCinTutuDev-accent,
+      warn: $RecursosCinTutuDev-warn,
+    ),
   )
-));
+);
 
 // Include theme styles for core and each component used in your app.
 // Alternatively, you can import and @include the theme mixins for each component
 // that you are using.
 @include mat.all-component-themes($RecursosCinTutuDev-theme);
 
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap");
 
 /*------------------------------------------------------------------
 
@@ -56,6 +62,7 @@ $RecursosCinTutuDev-theme: mat.define-light-theme((
        link redes/contacto 
        iconos 
     6. About Block
+       carousel
     7. PROYECTOS BLOCK
        portfolio
        Portfolio/Proyecto 
@@ -66,6 +73,7 @@ $RecursosCinTutuDev-theme: mat.define-light-theme((
        hgroup
        certificado
     9. CONTACTO BLOCK
+    
    10. Responsive
 
 ------------------------------------ General Styles---------------------------*/
@@ -73,8 +81,8 @@ $RecursosCinTutuDev-theme: mat.define-light-theme((
 /* Varoiables globales*/
 $background-pink: rgb(230, 0, 115);
 $background-blue: rgb(18, 65, 103);
-$background-body: #dfe2e8 ;
-$background-timeline:  #7e6f90;
+$background-body: #dfe2e8;
+$background-timeline: #7e6f90;
 
 $espaciado-estandar: 10px;
 $espaciado-doble: 20px;
@@ -86,7 +94,6 @@ $fuente-LeerMas: rgb(230, 0, 115);
 $fuente-normal: 1em;
 $fuente-pequena: 0.8em;
 $fuente-grande: 1em;
-
 
 $tipografia-alternativa: "Times New Roman", Times, serif;
 $tipografia-general: "Poppins", serif;
@@ -365,12 +372,11 @@ a:not([href]):not([tabindex]) {
 /* ----------------------------------------------------------------- */
 
 .btn-download3 {
- /*  border: none; */
-  color:$fuente-LeerMas;
+  /*  border: none; */
+  color: $fuente-LeerMas;
   box-shadow: 0 0 15px #edd3df;
   text-decoration: none;
 }
-
 
 .btn.disabled {
   opacity: 1;
@@ -953,7 +959,7 @@ h2.menu-item:after {
   overflow-y: scroll;
   top: 100%;
   left: 30%;
-  background: #FFF;
+  background: #fff;
   transition: opacity 0.7s ease-out;
   z-index: 1;
   -webkit-overflow-scrolling: touch;
@@ -983,7 +989,7 @@ h2.menu-item:after {
   background: $background-body;
 }
 
-.containerB{
+.containerB {
   position: relative;
   padding: 120px 70px 30px;
   height: auto;
@@ -1272,27 +1278,26 @@ h2.menu-item:after {
   padding-right: 0;
 }
 
-
 .progress {
   height: 2px;
   margin-bottom: 30px;
   background-color: $background-body;
-border-radius: 0;
-box-shadow: none;
-overflow: visible;
-width: 90%;
+  border-radius: 0;
+  box-shadow: none;
+  overflow: visible;
+  width: 90%;
 }
 .progress-bar {
-border-radius: 5px;
+  border-radius: 5px;
 }
 
 .progress-bar span {
-color:  #ddd;
-background: $background-timeline;
-font-size: 16px;
-font-weight: 425;
-text-align: right;
-border-radius: 5px;
+  color: #ddd;
+  background: $background-timeline;
+  font-size: 16px;
+  font-weight: 425;
+  text-align: right;
+  border-radius: 5px;
 }
 
 .progress-bar-label {
@@ -1437,7 +1442,7 @@ label.leerMas:hover {
   color: $background-blue;
 }
 .serviceIcon:hover {
-  color:$fuente-LeerMas;
+  color: $fuente-LeerMas;
 }
 
 .awards {
@@ -1499,7 +1504,7 @@ h4.package {
   text-align: center;
   text-indent: 1.2px;
 }
-
+/* -------------------------------------carousel------------------------------------------------------- */
 #liontestimonial.owl-carousel .owl-item img {
   width: auto;
 }
@@ -1523,7 +1528,7 @@ h4.package {
 }
 
 .testimonials:hover img {
-  border: 10px solid #666;
+  border: 10px solid $background-pink;
 }
 
 .testimonials blockquote {
@@ -1567,6 +1572,10 @@ h4.package {
   float: right;
   margin: 10px;
 }
+
+
+
+
 
 .btn-email {
   position: relative;
@@ -1891,7 +1900,7 @@ h4.package {
 
   img {
     width: 100%;
-    max-height: 200px; 
+    max-height: 200px;
     object-fit: cover;
   }
 }
@@ -1909,17 +1918,42 @@ h4.package {
 }
 
 /* lista */
-.lista {
-  margin-bottom: 15px;
-}
-.lista:hover{
-  border: none;
-  color: #fff;
-  letter-spacing: 2px;
-  background:$background-pink;
-  box-shadow: 0 0 25px black;
-}
 
+.header {
+  width: 100%;
+  padding: 1em;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+
+  .list-group {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: flex-start;
+    align-items: stretch;
+  }
+
+  .lista {
+    margin: 0.5em;
+  /*   border-radius: 15%; */
+  }
+
+  .lista:hover {
+    border: none;
+    color: #fff;
+    background: $background-pink;
+    box-shadow: 0 0 25px black;
+  }
+}
+@media (max-width: 576px) {
+  .list-group {
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+  }
+}
 
 /* post */
 .post {
@@ -2341,6 +2375,11 @@ h4.package {
  width: 80px;
 } */
 
+/*-------------------------------------------------------------------
+
+                        10. RESPONSIVE
+
+-------------------------------------------------------------------*/
 /*--------------------10. RESPONSIVE------------------------*/
 
 @media (min-width: 1920px) {
@@ -2722,12 +2761,6 @@ h4.package {
     height: 100vh;
   }
 }
-
-/*-------------------------------------------------------------------
-
-                        10. RESPONSIVE
-
--------------------------------------------------------------------*/
 
 @media (min-width: 1920px) {
   .name-block {
@@ -3503,5 +3536,11 @@ h4.package {
   background-color: transparent;
 }
 
-html, body { height: 100%; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+html,
+body {
+  height: 100%;
+}
+body {
+  margin: 0;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+}

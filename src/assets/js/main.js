@@ -44,6 +44,7 @@
             autoplayTimeout: 4000,
             autoplayHoverPause: true,
         });
+        
     });
 
     $(document).on('click','.portfolio-block, .menu-item', function() {
