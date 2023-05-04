@@ -1126,8 +1126,9 @@ h2.menu-item:after {
 }
 /* iconos */
 .social {
-  position: absolute;
-  bottom: 15%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .social li {
@@ -1138,57 +1139,60 @@ h2.menu-item:after {
 
 .social a {
   color: #fff;
-  display: inline-block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   height: 48px;
   width: 48px;
   font-size: 28px;
   border-radius: 50%;
   transition: all 0.8s;
+  text-decoration: none;
 }
 
-.social a:hover .fa-facebook-f {
+.social a:hover > .fa-facebook-f {
   font-size: 30px;
   color: #1877f2;
   box-shadow: 0 0 30px #1877f2;
   border-radius: 50%;
 }
 
-.social a:hover .fa-linkedin-in {
+.social a:hover > .fa-linkedin-in {
   font-size: 30px;
   color: #0e76a8;
   box-shadow: 0 0 30px #0e76a8;
   border-radius: 50%;
 }
 
-.social a:hover .fa-instagram {
+.social a:hover > .fa-instagram {
   font-size: 30px;
   color: #833ab4;
   box-shadow: 0 0 30px #833ab4;
   border-radius: 50%;
 }
 
-.social a:hover .fa-github-alt {
+.social a:hover > .fa-github-alt {
   font-size: 30px;
   color: #9fba36;
   box-shadow: 0 0 30px #9fba36;
   border-radius: 50%;
 }
 
-.social a:hover .fa-discord {
+.social a:hover > .fa-discord {
   font-size: 30px;
   color: #5865f2;
   box-shadow: 0 0 30px #5865f2;
   border-radius: 50%;
 }
 
-.social a:hover .fa-whatsapp {
+.social a:hover > .fa-whatsapp {
   font-size: 30px;
   color: #25d366;
   box-shadow: 0 0 30px #25d366;
   border-radius: 50%;
 }
 
-.social a:hover .fa-codepen {
+.social a:hover > .fa-codepen {
   font-size: 30px;
   color: #e60073;
   box-shadow: 0 0 30px #e60073;
@@ -1201,11 +1205,12 @@ h2.menu-item:after {
     }
   }
 }
+
+
 .social li i {
   line-height: 32px;
   font-size: 16px;
   color: #fff;
-  position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
