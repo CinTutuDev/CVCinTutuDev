@@ -18,6 +18,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import {MatGridListModule} from '@angular/material/grid-list';
 import { MatListModule } from '@angular/material/list';
 import { MatIconModule } from '@angular/material/icon';
+import {MatRadioModule} from '@angular/material/radio';
 @NgModule({
   declarations: [
     AppComponent,
@@ -25,7 +26,8 @@ import { MatIconModule } from '@angular/material/icon';
     /* componentes */
     RecursosComponent,
     ContactoComponent,
-    ProyectosComponent
+    ProyectosComponent,
+  
   ],
   imports: [
     BrowserModule,
@@ -37,6 +39,7 @@ import { MatIconModule } from '@angular/material/icon';
     MatListModule,
     MatIconModule,
     SharedModule,
+    MatRadioModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

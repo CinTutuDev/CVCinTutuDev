@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 import { BdcintutdevService } from 'src/app/services/bdcintutdev.service';
 
 @Component({
@@ -6,5 +6,15 @@ import { BdcintutdevService } from 'src/app/services/bdcintutdev.service';
   templateUrl: './cursos.component.html',
 })
 export class CursosComponent {
-  constructor(public Bd: BdcintutdevService) {}
+  /* 
+  @Input() height= 500;
+  @Input() isFullScrenn= false;
+  @Input() items : BdcintutdevService[]= [];
+  
+  public finalH: string | number=0;
+  public currentPos = 0; */
+  
+  constructor(public Bd: BdcintutdevService) {
+    /* this.finalH = this.isFullScrenn? '100vh' : `${this.height}px` */
+  }
 }

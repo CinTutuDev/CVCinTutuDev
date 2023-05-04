@@ -10,7 +10,9 @@ import { CursosComponent } from './pages/cursos/cursos.component';
 import { BuscadorBoxComponent } from './components/buscador-box/buscador-box.component';
 import { TablaComponent } from './components/tabla/tabla.component';
 import { MatCardModule } from '@angular/material/card';
+import { CarruselComponent } from './components/carrusel/carrusel.component';
 
+import {MatRadioModule} from '@angular/material/radio';
 
 
 
@@ -22,12 +24,15 @@ import { MatCardModule } from '@angular/material/card';
     InspiracionComponent,
     CursosComponent,
     BuscadorBoxComponent,
-    TablaComponent
+    TablaComponent,
+    CarruselComponent
   ],
   imports: [
     CommonModule,
     RouterModule,
-    MatCardModule
+    MatCardModule,
+
+    MatRadioModule
   ],
   exports: [
     /* componentes */
@@ -35,7 +40,9 @@ import { MatCardModule } from '@angular/material/card';
     InspiracionComponent,
     MenuComponent,
     CursosComponent,
-    BuscadorBoxComponent
+    BuscadorBoxComponent,
+    CarruselComponent,
+
 
   ]
 })
