@@ -23,5 +23,6 @@ import { BdcintutdevService } from 'src/app/services/bdcintutdev.service';
   ],
 })
 export class CarruselComponent {
+ 
   constructor(public Bd: BdcintutdevService) {}
 }
