@@ -36,7 +36,13 @@ Node: 18.12.1
 Package Manager: npm 8.19.2
 OS: win32 x64
 ```
-## Tpis comandos
+## Clonar proyecto:
+* En vez de npm i :
+```
+npm install --legacy-peer-deps
+```
+
+## Tips comandos
 
 * Componente sin archivo de prueba
 ```
