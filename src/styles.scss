@@ -1973,8 +1973,8 @@ h4.package {
   }
 
   .lista {
-    margin: 0.5em;
-    /*   border-radius: 15%; */
+    margin: 2%;
+    /* border-radius: 15%; */
   }
 
   .lista:hover {
@@ -1983,11 +1983,38 @@ h4.package {
     background: $background-pink;
     box-shadow: 0 0 25px black;
   }
+
+  .lista h4 {
+    font-size: 1.2rem;
+  }
 }
+
 @media (max-width: 576px) {
   .list-group {
-    flex-flow: row nowrap;
+    flex-flow: column nowrap;
+    justify-content: flex-start;
+    align-content: flex-start;
+  }
+}
+
+@media (max-width: 934px) {
+  .header {
     justify-content: center;
+  }
+  .list-group {
+    flex-flow: row wrap;
+    justify-content: center;
+  }
+  .lista {
+    margin: 0.5em 0.8em;
+  }
+}
+@media (max-width: 778px) {
+  .header {
+    padding: 0.5em;
+  }
+  .list-group {
+    flex-flow: column nowrap;
     align-items: center;
   }
 }
