@@ -31,9 +31,9 @@ https://angular.io/cli
 ```
  ##  📌 Versiones
  ```
-Angular CLI: 15.2.6
-Node: 18.12.1
-Package Manager: npm 8.19.2
+Angular CLI: 16.0.0
+Node: 18.16.0
+Package Manager: npm 9.5.1
 OS: win32 x64
 ```
 ## Clonar proyecto:
