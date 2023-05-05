@@ -1,7 +1,7 @@
 
 # <div style="display: flex; flex-wrap: wrap;">
-  <img src="https://readme-typing-svg.demolab.com?font=Libre+Baskerville&size=45&duration=3100&pause=500&color=e60073&center=true&vCenter=true&width=940&lines=CV-Web" align="middle" alt="fotosgram" width="100%" />
-  <img src="https://readme-typing-svg.demolab.com?font=Libre+Baskerville&size=45&duration=3100&pause=500&color=124167&center=true&vCenter=true&width=940&lines=CinTutuDev" align="middle" alt="fotosgram" width="100%" />
+  <img src="https://readme-typing-svg.demolab.com?font=Libre+Baskerville&size=45&duration=5000&pause=500&color=e60073&center=true&vCenter=true&width=940&lines=CV-Web" align="middle" alt="fotosgram" width="100%" />
+  <img src="https://readme-typing-svg.demolab.com?font=Libre+Baskerville&size=45&duration=5000&pause=500&color=124167&center=true&vCenter=true&width=940&lines=CinTutuDev" align="middle" alt="fotosgram" width="100%" />
 </div>
 
 ![bannerGH2](https://user-images.githubusercontent.com/71487857/234256705-f0b3ae7e-de83-46fb-9050-52208533e533.png)
