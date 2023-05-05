@@ -73,6 +73,7 @@ $RecursosCinTutuDev-theme: mat.define-light-theme(
        cardRec
        hgroup
        certificado
+
     9. CONTACTO BLOCK
     
    10. Responsive
@@ -1886,6 +1887,19 @@ h4.package {
   font-size: 55px;
   color: $fuente-LeerMas;
 }
+.d-block {
+  height: 350px;
+  width: 100%;
+  overflow: hidden;
+
+  img {
+    height: 100%;
+    width: auto;
+    object-fit: cover;
+  }
+}
+
+
 /* blog-block */
 .blog-block {
   position: absolute;

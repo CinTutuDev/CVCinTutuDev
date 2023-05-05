@@ -13,6 +13,7 @@ import { MatCardModule } from '@angular/material/card';
 import { CarruselComponent } from './components/carrusel/carrusel.component';
 
 import {MatRadioModule} from '@angular/material/radio';
+import { CarruselRepoComponent } from './components/carrusel-repo/carrusel-repo.component';
 
 
 
@@ -25,7 +26,8 @@ import {MatRadioModule} from '@angular/material/radio';
     CursosComponent,
     BuscadorBoxComponent,
     TablaComponent,
-    CarruselComponent
+    CarruselComponent,
+    CarruselRepoComponent,
   ],
   imports: [
     CommonModule,
@@ -42,7 +44,7 @@ import {MatRadioModule} from '@angular/material/radio';
     CursosComponent,
     BuscadorBoxComponent,
     CarruselComponent,
-
+    CarruselRepoComponent,
 
   ]
 })
