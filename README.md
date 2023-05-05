@@ -71,7 +71,7 @@ Modo bloqueado
   }
 }
 ```
-* 5º Imagen de la elboración de la BD:
+* 5º Imagen de la elaboración de la BD:
 
 ![imgBDfirebas](https://user-images.githubusercontent.com/71487857/233594497-3a48378e-a7d8-4599-a140-b03356fa267b.PNG)
 
