@@ -12,6 +12,7 @@ import { TablaComponent } from './components/tabla/tabla.component';
 import { CarruselComponent } from './components/carrusel-cursos/carrusel.component';
 import { CarruselRepoComponent } from './components/carrusel-repo/carrusel-repo.component';
 import { CarruselAngularComponent } from './components/carrusel-angular/carrusel-angular.component';
+import { CarruselInspiracionComponent } from './components/carrusel-inspiracion/carrusel-inspiracion.component';
 /*A Material */
 import { MatCardModule } from '@angular/material/card';
 import { MatRadioModule } from '@angular/material/radio';
@@ -28,6 +29,7 @@ import { MatRadioModule } from '@angular/material/radio';
     CarruselComponent,
     CarruselRepoComponent,
     CarruselAngularComponent,
+    CarruselInspiracionComponent,
   ],
   imports: [
     CommonModule,
@@ -46,6 +48,7 @@ import { MatRadioModule } from '@angular/material/radio';
     CarruselComponent,
     CarruselRepoComponent,
     CarruselAngularComponent,
+    CarruselInspiracionComponent
   ],
 })
 export class SharedModule {}
