@@ -9,13 +9,12 @@ import { RepositoriosComponent } from './pagesRecursos/repositorios/repositorios
 import { CursosComponent } from './pagesRecursos/cursos/cursos.component';
 import { BuscadorBoxComponent } from './components/buscador-box/buscador-box.component';
 import { TablaComponent } from './components/tabla/tabla.component';
-import { MatCardModule } from '@angular/material/card';
-import { CarruselComponent } from './components/carrusel/carrusel.component';
-
-import {MatRadioModule} from '@angular/material/radio';
+import { CarruselComponent } from './components/carrusel-cursos/carrusel.component';
 import { CarruselRepoComponent } from './components/carrusel-repo/carrusel-repo.component';
-
-
+import { CarruselAngularComponent } from './components/carrusel-angular/carrusel-angular.component';
+/*A Material */
+import { MatCardModule } from '@angular/material/card';
+import { MatRadioModule } from '@angular/material/radio';
 
 @NgModule({
   declarations: [
@@ -28,13 +27,14 @@ import { CarruselRepoComponent } from './components/carrusel-repo/carrusel-repo.
     TablaComponent,
     CarruselComponent,
     CarruselRepoComponent,
+    CarruselAngularComponent,
   ],
   imports: [
     CommonModule,
     RouterModule,
+    /*A Material */
     MatCardModule,
-
-    MatRadioModule
+    MatRadioModule,
   ],
   exports: [
     /* componentes */
@@ -45,7 +45,7 @@ import { CarruselRepoComponent } from './components/carrusel-repo/carrusel-repo.
     BuscadorBoxComponent,
     CarruselComponent,
     CarruselRepoComponent,
-
-  ]
+    CarruselAngularComponent,
+  ],
 })
-export class SharedModule { }
+export class SharedModule {}

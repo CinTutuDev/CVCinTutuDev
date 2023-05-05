@@ -7,37 +7,37 @@
     </div>
   </div>
 
-  
-  <div class="block-content">
-  <div class="row" style="width: 100%; margin: 0 auto;">
-    <div class="col-md-10 mx-auto">
-      <mat-card class="cardRec" *ngFor="let angular of Bd.angular">
-        <mat-card-header>
-          <div mat-card-avatar>
-            <img src="{{ angular.logoIco }}" alt="Avatar">
-          </div>
-          <mat-card-title>
-            <div class="post-title">
-              <h3>{{ angular.titulo }}</h3>
+  <div class="row">
+    <div class="col-12">
+     <app-carruselAngular></app-carruselAngular>
+    </div>
+  </div>
+
+  <div class="block-content mt-3">
+    <div class="row" style="width: 100%; margin: 0 auto">
+      <div class="col-md-10 mx-auto">
+        <mat-card class="cardRec" *ngFor="let angular of Bd.angular">
+          <mat-card-header>
+            <div mat-card-avatar>
+              <img src="{{ angular.logoIco }}" alt="Avatar" />
             </div>
-          </mat-card-title>
-  
-        </mat-card-header>
-        <div mat-card-image>
-          <img src="{{ angular.src }}" alt="srcImg">
-        </div>
-        <mat-card-actions class="justify-content-center">
+            <mat-card-title>
+              <div class="post-title">
+                <h3>{{ angular.titulo }}</h3>
+              </div>
+            </mat-card-title>
+          </mat-card-header>
+          <div mat-card-image>
+            <img src="{{ angular.src }}" alt="srcImg" />
+          </div>
+          <mat-card-actions class="justify-content-center">
             <a class="btn-download3" target="_blank" href="{{ angular.url }}">
               <i [class]="angular.icono"></i>
               Docu
             </a>
           </mat-card-actions>
-      </mat-card>
+        </mat-card>
+      </div>
     </div>
   </div>
-  </div> 
-
-
-
-
 </div>
