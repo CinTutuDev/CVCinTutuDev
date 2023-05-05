@@ -1,9 +1,9 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { RepositoriosComponent } from './shared/pages/repositorios/repositorios.component';
-import { AngularComponent } from './shared/pages/angular/angular.component';
-import { InspiracionComponent } from './shared/pages/inspiracion/inspiracion.component';
-import { CursosComponent } from './shared/pages/cursos/cursos.component';
+import { RepositoriosComponent } from './shared/pagesRecursos/repositorios/repositorios.component';
+import { AngularComponent } from './shared/pagesRecursos/angular/angular.component';
+import { InspiracionComponent } from './shared/pagesRecursos/inspiracion/inspiracion.component';
+import { CursosComponent } from './shared/pagesRecursos/cursos/cursos.component';
 
 
 const routes: Routes = [
