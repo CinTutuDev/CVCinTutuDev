@@ -37,7 +37,7 @@ Package Manager: npm 9.5.1
 OS: win32 x64
 ```
 ## Clonar proyecto:
-* En vez de npm i :
+* En lugar de 'npm i': 
 ```
 npm install --legacy-peer-deps
 ```
