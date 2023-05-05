@@ -87,7 +87,7 @@ https://cintutudev-default-rtdb.firebaseio.com/Educaci%C3%B3n.json
 ng g s services/bdcintutdev  --skip-tests
 ```
 * Creo enviroments
-* Hago peticion y compruebo:
+* Hago petición y compruebo:
 ```
 
   AptitudesBD() {
