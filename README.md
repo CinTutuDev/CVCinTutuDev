@@ -26,7 +26,7 @@ Mi proyecto de Curriculum Vitae (CV) desarrollado con Angular CLI 16 y Angular M
   </div>
 </header>
  
- ## 🎮  Creo el proyecto con las URL :
+ ## 🎮  Creo el proyecto con las URL 
 
 * Framework: Angular
 
@@ -40,7 +40,7 @@ Node: 18.16.0
 Package Manager: npm 9.5.1
 OS: win32 x64
 ```
-## Clonar proyecto:
+## Clonar proyecto
 * En lugar de 'npm i': 
 ```
 npm install --legacy-peer-deps
