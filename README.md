@@ -9,7 +9,7 @@
  
 # 🚀 Descripción del proyecto
 
-Mi proyecto de Curriculum Vitae (CV) desarrollado con Angular CLI 15 y Angular Material te permitirá visualizar toda la información sobre mi experiencia laboral, educación, habilidades y demás en tiempo real y de manera interactiva.<br> Ya no más aburridas listas sin vida, ahora podrás conocerme de manera más amena y divertida.
+Mi proyecto de Curriculum Vitae (CV) desarrollado con Angular CLI 16 y Angular Material te permitirá visualizar toda la información sobre mi experiencia laboral, educación, habilidades y demás en tiempo real y de manera interactiva.<br> Ya no más aburridas listas sin vida, ahora podrás conocerme de manera más amena y divertida.
 
 ## Funcionalidades
 
