@@ -54,11 +54,11 @@ ng g c resumen --skip-tests
 ```
 https://firebase.google.com/
 ```
-* 2º Voy a Compilación lo despliego entro en Real Database
+* 2º Voy a Compilación, lo despliego y entro en Real Database
 * 3º Seleccona el proyecto de Cloud Firestore:
 ```
 Modo de prueba
-Es el modo recomendado si recién comienzas a usar las bibliotecas cliente para dispositivos móviles y la Web, pero permite que todos lean y reemplacen tus datos. Después de realizar las pruebas, asegúrate de revisar la sección Protege tus datos.
+Es el modo recomendado si comienzas a usar las bibliotecas cliente para dispositivos móviles y la Web, pero permite que todos lean y reemplacen tus datos. Después de realizar las pruebas, asegúrate de revisar la sección Protege tus datos.
 Si quieres comenzar a usar la Web, las plataformas de Apple o el SDK de Android, selecciona el modo de prueba.
 Modo bloqueado
 ```
