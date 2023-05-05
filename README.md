@@ -1,11 +1,15 @@
 
-# <p align="center"><img src="https://readme-typing-svg.demolab.com?  font=Libre+Baskerville&size=45&duration=3100&pause=500&color=ff3d5c&center=true&vCenter=true&width=940&lines=CVWebCinTutuDev" align="middle" alt="fotosgram"  width="100%"/>
+# <div style="display: flex; flex-wrap: wrap;">
+  <img src="https://readme-typing-svg.demolab.com?font=Libre+Baskerville&size=45&duration=3100&pause=500&color=e60073&center=true&vCenter=true&width=940&lines=CV-Web" align="middle" alt="fotosgram" width="100%" />
+  <img src="https://readme-typing-svg.demolab.com?font=Libre+Baskerville&size=45&duration=3100&pause=500&color=124167&center=true&vCenter=true&width=940&lines=CinTutuDev" align="middle" alt="fotosgram" width="100%" />
+</div>
+
 ![bannerGH2](https://user-images.githubusercontent.com/71487857/234256705-f0b3ae7e-de83-46fb-9050-52208533e533.png)
  </p> 
  
 # 🚀 Descripción del proyecto
 
-Mi proyecto de Curriculum Vitae (CV) desarrollado con Angular CLI 16 y Angular Material te permitirá visualizar toda la información sobre mi experiencia laboral, educación, habilidades y demás en tiempo real y de manera interactiva.<br> Ya no más aburridas listas sin vida, ahora podrás conocerme de manera más amena y divertida.
+Mi proyecto de Curriculum Vitae (CV) desarrollado con Angular CLI 15 y Angular Material te permitirá visualizar toda la información sobre mi experiencia laboral, educación, habilidades y demás en tiempo real y de manera interactiva.<br> Ya no más aburridas listas sin vida, ahora podrás conocerme de manera más amena y divertida.
 
 ## Funcionalidades
 
@@ -54,11 +58,11 @@ ng g c resumen --skip-tests
 ```
 https://firebase.google.com/
 ```
-* 2º Voy a Compilación, lo despliego y entro en Real Database
+* 2º Voy a Compilación lo despliego entro en Real Database
 * 3º Seleccona el proyecto de Cloud Firestore:
 ```
 Modo de prueba
-Es el modo recomendado si comienzas a usar las bibliotecas cliente para dispositivos móviles y la Web, pero permite que todos lean y reemplacen tus datos. Después de realizar las pruebas, asegúrate de revisar la sección Protege tus datos.
+Es el modo recomendado si recién comienzas a usar las bibliotecas cliente para dispositivos móviles y la Web, pero permite que todos lean y reemplacen tus datos. Después de realizar las pruebas, asegúrate de revisar la sección Protege tus datos.
 Si quieres comenzar a usar la Web, las plataformas de Apple o el SDK de Android, selecciona el modo de prueba.
 Modo bloqueado
 ```
@@ -75,7 +79,7 @@ Modo bloqueado
 
 ![imgBDfirebas](https://user-images.githubusercontent.com/71487857/233594497-3a48378e-a7d8-4599-a140-b03356fa267b.PNG)
 
-* 6º Para coger la url y JSON: 
+* 6º Obtener la URL y el JSON":
 
 ![urlJSON](https://user-images.githubusercontent.com/71487857/233630122-74973d23-1010-438c-98dc-18999e5d07a8.png)
 
