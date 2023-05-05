@@ -105,7 +105,3 @@ ng g s services/bdcintutdev  --skip-tests
 - Creador de la plantilla: Anders87x
 
 
-<p align="center" style="width: 100%;">
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=cintutudev&repo=CVCinTutuDev&show_icons=true&locale=es&layout=compact&theme=radical&langs_count=6" alt="cintutudev" />
-</p>
-
