@@ -67,6 +67,7 @@ $RecursosCinTutuDev-theme: mat.define-light-theme(
        portfolio
        Portfolio/Proyecto 
     8. RECURSOS BLOCK
+       carrusel
        blog-block
        post
        cardRec
@@ -1206,7 +1207,6 @@ h2.menu-item:after {
   }
 }
 
-
 .social li i {
   line-height: 32px;
   font-size: 16px;
@@ -1578,10 +1578,6 @@ h4.package {
   margin: 10px;
 }
 
-
-
-
-
 .btn-email {
   position: relative;
 }
@@ -1867,28 +1863,28 @@ h4.package {
 }
 
 /*-------------------- 8. RECURSOS BLOCK ---------------------------*/
+/* carrusel */
 .carousel-control-prev-icon,
 .carousel-control-next-icon {
   height: 50px;
   width: 100px;
- /*  outline: black;
+  /*  outline: black;
   background-size: 100%, 100%;
   border-radius: 50%;
   border: 1px solid rgb(188, 29, 29); */
   background-image: none;
 }
 
-.carousel-control-next-icon:after
-{
-  content: '>';
+.carousel-control-next-icon:after {
+  content: ">";
   font-size: 55px;
   color: $fuente-LeerMas;
 }
 
 .carousel-control-prev-icon:after {
-  content: '<';
+  content: "<";
   font-size: 55px;
-  color:$fuente-LeerMas;
+  color: $fuente-LeerMas;
 }
 /* blog-block */
 .blog-block {
@@ -1964,7 +1960,7 @@ h4.package {
 
   .lista {
     margin: 0.5em;
-  /*   border-radius: 15%; */
+    /*   border-radius: 15%; */
   }
 
   .lista:hover {
