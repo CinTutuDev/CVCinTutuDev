@@ -31,7 +31,7 @@ https://angular.io/cli
 ```
  ##  📌 Versiones
  ```
-Angular CLI: 15.2.6
+Angular CLI: 16.0.0
 Node: 18.12.1
 Package Manager: npm 8.19.2
 OS: win32 x64
