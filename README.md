@@ -79,7 +79,7 @@ Modo bloqueado
 
 ![imgBDfirebas](https://user-images.githubusercontent.com/71487857/233594497-3a48378e-a7d8-4599-a140-b03356fa267b.PNG)
 
-* 6º Obtener la URL y el JSON":
+* 6º Cómo obtener la URL y el JSON":
 
 ![urlJSON](https://user-images.githubusercontent.com/71487857/233630122-74973d23-1010-438c-98dc-18999e5d07a8.png)
 
