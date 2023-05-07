@@ -3,7 +3,7 @@
     <h3 class="block-title">
       Del manejo de pequeñas empresas al desarrollo web
     </h3>
-    <h3 class="subheading">
+    <h3 class="subtitulo">
       ¡Hola! soy Cinta Tafur
       <strong
         >una desarrolladora web junior especializada en tecnologías front-end
@@ -11,44 +11,36 @@
     </h3>
     <p>
       Soy una apasionada de la programación y he trabajado en gestión de pymes
-      por más de 13 años. Hace tres años, decidí enfocarme en el sector
+      por más de 13 años. 🚀 Hace tres años, decidí enfocarme en el sector
       tecnológico y he completado un Bootcamp de Desarrollador Fullstack y un
       Ciclo Formativo de Grado Superior DAW en el Colegio de Fomento Las
-      Acacias-Montecastelo, Vigo.
+      Acacias-Montecastelo, Vigo. 🎓
     </p>
     <p>
       Disfruto mucho trabajando en equipo. Siempre trato de mantenerme
       actualizada en las últimas tecnologías y metodologías ágiles a través de
-      cursos en línea y formaciones independientes.
+      cursos en línea y formaciones independientes. 📚🚀
     </p>
-
     <p>
       Me considero una persona comprometida, entusiasta, curiosa, autocrítica y
       con iniciativa. Además, soy muy sociable y me encanta el buen humor en el
-      ambiente laboral.
+      ambiente laboral. 😄🤝
     </p>
-
     <p>
-      Mis habilidades en HTML5 avanzado, CSS, CSS3, SASS, LESS, JSON, XML, Java,
-      JavaScript, JQuery, Angular JS y Ionic me han preparado para trabajar como
-      desarrolladora web, especialmente en el front-end. Además, durante mi
-      formación académica he tenido la oportunidad de aplicar estos
-      conocimientos en diferentes proyectos y prácticas, lo que me ha permitido
-      consolidar y mejorar mis habilidades en esta área
+      Mis habilidades en HTML5 avanzado, CSS, CSS3, SASS, LESS, JSON, Java,
+      JavaScript, JQuery, Angular JS, Ionic, Android y metodologías ágiles me
+      han preparado para trabajar como desarrolladora web, especialmente en el
+      front-end. Además, durante mi formación académica he tenido la oportunidad
+      de aplicar estos conocimientos en diferentes proyectos y prácticas, lo que
+      me ha permitido consolidar y mejorar mis habilidades en esta área. 💻💪
     </p>
-    <div class="info-list row">
-      <div class="col-sm-6"><span>Nombre : </span>Cinta Tafur</div>
-      <div class="col-sm-6">
-        <span>Fecha de Nacimiento : </span> Septiembre 23, 1981
-      </div>
-      <div class="col-sm-6">
-        <span>Dirección : </span> España, Pontevedra, Vigo.
-      </div>
-      <div class="col-sm-6"><span>Email : </span> cintatafur@gmail.com</div>
-      <div class="col-sm-6"><span>Telefono : </span> + 34 665 828 070</div>
-      <div class="col-sm-6">
-        <span>Interes : </span> Desarrollo Web, Fullstack
-      </div>
+    <div class="listaContacto row">
+      <div class="col-sm-6"><i class="fas fa-user"></i>&nbsp; <span> Nombre:</span> Cinta Tafur</div>
+      <div class="col-sm-6"><i class="fas fa-calendar-alt"></i>&nbsp; <span> Fecha de Nacimiento:</span> Septiembre 23, 1981</div>
+      <div class="col-sm-6"><i class="fas fa-map-marker-alt"></i>&nbsp; <span> Dirección:</span> España, Pontevedra, Vigo.</div>
+      <div class="col-sm-6"><i class="fas fa-envelope"></i>&nbsp; <span>Email:</span> cintatafur@gmail.com</div>
+      <div class="col-sm-6"><i class="fas fa-phone"></i>&nbsp; <span>Teléfono:</span> +34 665 828 070</div>
+      <div class="col-sm-6"><i class="fas fa-briefcase"></i>&nbsp; <span>Interés:</span> Desarrollo Web, Fullstack</div>
     </div>
   </div>
   <!----------------------------------------- Aptitudes ------------------------------------------------>
@@ -64,18 +56,17 @@
           attr.aria-valuenow="{{ aptitudesI.valor }}"
           aria-valuemin="0"
           aria-valuemax="100"
-          
         >
-          <span class="valor" >{{ aptitudesI.valor }}%</span>
+          <span class="valor">{{ aptitudesI.valor }}%</span>
         </div>
       </div>
     </div>
   </div>
-  
+
   <!----------------------------------------- Experiencia ------------------------------------------------>
   <div class="block-content">
     <h3 class="block-title">Experiencia</h3>
-    <div class="timeline education">
+    <div class="timeline education"><br>
       <div class="row">
         <div class="col-md-12">
           <div class="exp-holder">
@@ -117,7 +108,7 @@
   <!----------------------------------------- Educacion ------------------------------------------------>
   <div class="block-content">
     <h3 class="block-title">Educación</h3>
-    <div class="timeline education">
+    <div class="timeline education"><br>
       <div class="row">
         <div class="col-md-12">
           <div class="exp-holder">
@@ -159,7 +150,7 @@
   <!----------------------------------------- Certificaciones ------------------------------------------------>
   <div class="block-content">
     <h3 class="block-title">Certificaciones</h3>
-    <div class="timeline education">
+    <div class="timeline education"><br>
       <div class="row">
         <div class="col-md-12">
           <div class="exp-holder">
@@ -177,7 +168,9 @@
                       *ngIf="certificacionI.URL"
                       href="{{ certificacionI.URL }}"
                       target="_blank"
-                      [ngStyle]="{'text-decoration': certificacionI.URL ? 'none' : ''}"
+                      [ngStyle]="{
+                        'text-decoration': certificacionI.URL ? 'none' : ''
+                      }"
                       ><br /><span class="certificado">Ver Certificado</span></a
                     >
                   </h4>
@@ -255,8 +248,6 @@
     </div>
   </div>
 
-
-
   <!-- ----------------------------------------------Correo-------------------------------------------------- -->
 
   <div class="row text-center">
@@ -270,21 +261,3 @@
     </div>
   </div>
 </section>
-
-<!--  <div class="block-content">
-     <h3 class="block-title">Awards</h3>
-     <div class="row">
-         <div class="col-md-3 col-sm-6 awards">
-             <img src="assets\images\awards\1.jpeg" alt="">
-         </div>
-         <div class="col-md-3 col-sm-6 awards">
-             <img src="assets\images\awards\2.jpeg" alt="">
-         </div>
-         <div class="col-md-3 col-sm-6 awards">
-             <img src="assets\images\awards\3.jpeg" alt="">
-         </div>
-         <div class="col-md-3 col-sm-6 awards">
-             <img src="assets\images\awards\4.jpeg" alt="">
-         </div>
-     </div>
- </div> -->

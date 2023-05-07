@@ -80,9 +80,11 @@ $RecursosCinTutuDev-theme: mat.define-light-theme(
 
 ------------------------------------ General Styles---------------------------*/
 /* dfe2e8 */
-/* Varoiables globales*/
+/* Var globales*/
 $background-pink: rgb(230, 0, 115);
 $background-blue: rgb(18, 65, 103);
+$background-blueSatu: hsl(203, 35%, 30%); // Color de fuente H4 más suave
+$background-pinkSatu: hsl(322, 100%, 45%); 
 $background-body: #dfe2e8;
 $background-timeline: #7e6f90;
 
@@ -90,6 +92,7 @@ $espaciado-estandar: 10px;
 $espaciado-doble: 20px;
 
 $color-texto: #6c6868;
+$color-textoResalt:  #333;;
 $fuente-h4: rgb(18, 65, 103);
 $fuente-LeerMas: rgb(230, 0, 115);
 
@@ -1245,14 +1248,14 @@ h2.menu-item:after {
   -webkit-transform: rotate(34deg);
   transform: rotate(34deg);
 }
-
+/* 
 .subheading {
   font-size: 30px;
   font-weight: 300;
   line-height: 2em;
   margin-bottom: 30px;
   text-transform: none;
-}
+} */
 
 .link {
   font-style: italic;
@@ -1264,7 +1267,7 @@ h2.menu-item:after {
   margin: 30px 0;
 }
 
-.info-list {
+/* .info-list {
   border-bottom: 1px solid #ddd;
   border-top: 1px solid #ddd;
   padding-bottom: 20px;
@@ -1283,8 +1286,8 @@ h2.menu-item:after {
   padding-left: 0;
   padding-right: 0;
 }
-
-.progress {
+ */
+/* .progress {
   height: 2px;
   margin-bottom: 30px;
   background-color: $background-body;
@@ -1310,7 +1313,7 @@ h2.menu-item:after {
   color: #333;
   font-weight: 500;
   margin-bottom: 10px;
-}
+} */
 
 .icon-list li {
   padding-left: 25px;
@@ -1325,7 +1328,7 @@ h2.menu-item:after {
   color: #666;
 }
 
-.timeline {
+/* .timeline {
   position: relative;
 }
 
@@ -1360,15 +1363,15 @@ h2.menu-item:after {
 .timeline.education:after {
   content: "\f349";
   color: $background-timeline;
-}
+} */
 
-.exp {
+/* .exp {
   padding: 20px 20px 0 80px;
   position: relative;
 }
 
 .exp:after {
-  background: #fff;
+  background: #ce0a0a;
   border: 2px solid #ddd;
   border-radius: 50%;
   content: "";
@@ -1394,20 +1397,20 @@ h2.menu-item:after {
 .exp .hgroup {
   margin-bottom: 5px;
   color: $fuente-h4;
-}
-label.leerMas {
+} */
+/* label.leerMas {
   color: $fuente-LeerMas;
 }
 label.leerMas:hover {
   color: $fuente-h4;
 }
-
-.certificado:hover {
+ */
+/* .certificado:hover {
   color: $fuente-LeerMas !important;
   text-decoration: underline;
-}
+} */
 
-.exp .hgroup h4 span {
+/* .exp .hgroup h4 span {
   color: $fuente-h4;
 }
 
@@ -1431,7 +1434,7 @@ label.leerMas:hover {
 .exp .hgroup h5 span.current {
   font-style: italic;
 }
-
+ */
 .service {
   text-align: center;
   padding-top: 25px;
