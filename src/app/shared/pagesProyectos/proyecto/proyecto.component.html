@@ -1,0 +1,145 @@
+
+<div class="row">
+  <div class="col-md-4">
+    <div class="card my-3" style="width: 100%">
+      <div class="card-body">
+        <h5 class="card-title">{{ proyectosData.titulo }}</h5>
+        <p class="card-text">{{ proyectosData.descripcion }}</p>
+        <!--       <a href="{{ proyectosData.urlPg }}" class="btn btn-primary">Ver más</a> -->
+      </div>
+      <a class="" href="{{ proyectosData.urlPg }}">
+        <div class="portfolio-column">
+          <div class="portfolio-hover">
+            <div class="portfolio-content">
+              <h2>{{ proyectosData.titulo }}</h2>
+              <hr />
+              <p>
+                <a
+                  class="iconito icon-github-alt"
+                  href="{{ proyectosData.urlGH }}"
+                >
+                  <span class="fa fa-github-alt"></span>
+                </a>
+              </p>
+            </div>
+            <div class="portfolio-overlay"></div>
+          </div>
+          <img
+            src="{{ proyectosData.urlImage }}"
+            alt="imagen"
+            style="width: 100%; height: auto"
+          />
+        </div>
+      </a>
+    </div>
+  </div>
+
+
+
+    <div class="col-md-4">
+      <div class="card my-3" style="width: 100%">
+        <div class="card-body">
+          <div class="d-flex align-items-center mb-3">
+            <img src="{{ proyectosData.ico}}" alt="Avatar" class="avatar">
+          
+          <h5 class="card-title">{{ proyectosData.titulo }}</h5>
+        </div>
+          <p class="card-text">{{ proyectosData.descripcion }}</p>
+          <!-- <a href="{{ proyectosData.urlPg }}" class="btn btn-primary">Ver más</a> -->
+        </div>
+        <a class="" href="{{ proyectosData.urlPg }}">
+          <div class="portfolio-column">
+            <div class="portfolio-hover">
+              <div class="portfolio-content">
+                <h2>{{ proyectosData.titulo }}</h2>
+                <hr />
+                <p>
+                  <a
+                    class="iconito icon-github-alt"
+                    href="{{ proyectosData.urlGH }}"
+                  >
+                    <span class="fa fa-github-alt"></span>
+                  </a>
+                </p>
+              </div>
+              <div class="portfolio-overlay"></div>
+            </div>
+            <img
+              src="{{ proyectosData.urlImage }}"
+              alt="imagen"
+              style="width: 100%; height: auto"
+            />
+          </div>
+        </a>
+      </div>
+    </div>
+
+  
+
+
+
+    <div class="col-md-4">
+      <div class="card my-3" style="width: 100%">
+        <a class="" href="{{ proyectosData.urlPg }}">
+          <div class="portfolio-column">
+            <div class="portfolio-hover">
+              <div class="portfolio-content">
+                <h2>{{ proyectosData.titulo }}</h2>
+                <hr />
+                <p>
+                  <a
+                    class="iconito icon-github-alt"
+                    href="{{ proyectosData.urlGH }}"
+                  >
+                    <span class="fa fa-github-alt"></span>
+                  </a>
+                </p>
+              </div>
+              <div class="portfolio-overlay"></div>
+            </div>
+            <img
+              src="{{ proyectosData.urlImage }}"
+              alt="imagen"
+              style="width: 100%; height: auto"
+            />
+          </div>
+        </a>
+        <div class="card-body">
+          <div class="d-flex align-items-center mb-3">
+            <img src="{{ proyectosData.ico}}" alt="Avatar" class="avatar">
+          
+          <h5 class="card-title">{{ proyectosData.titulo }}</h5>
+        </div>
+          <p class="card-text">{{ proyectosData.descripcion }}</p>
+          <!-- <a href="{{ proyectosData.urlPg }}" class="btn btn-primary">Ver más</a> -->
+        </div>
+      </div>
+    </div>
+  </div>
+  
+
+
+   <div class="row">
+
+<div class="col-md-4" *ngFor="let angular of Bd.angular">
+  <div class="card my-3" style="width: 100%">
+    <a class="" href="{{ angular.repoLink }}">
+      <div class="portfolio-column">
+        <div class="portfolio-hover">
+          <div class="portfolio-content">
+            <h2>{{ angular.titulo }}</h2>
+            <hr />
+            <p>
+              <a class="iconito icon-github-alt" href="https://github.com/DpdC">
+                <span class="fa fa-github-alt"></span>
+              </a>
+            </p>
+          </div>
+          <div class="portfolio-overlay"></div>
+        </div>
+        <img src="{{ angular.src }}" alt="" style="width: 100%; height: auto" />
+      </div>
+    </a>
+  </div>
+</div>
+</div>

@@ -51,6 +51,7 @@ $RecursosCinTutuDev-theme: mat.define-light-theme(
     7. PROYECTOS BLOCK
        portfolio
        Portfolio/Proyecto 
+       proyecto
     8. RECURSOS BLOCK
        carrusel
        blog-block
@@ -745,7 +746,7 @@ h2.contact.menu-item:before {
 
 h2.menu-item:after {
   position: absolute;
-  content: "";
+ /*  content: ""; */
   top: -10px;
   left: -20px;
   width: 70px;
@@ -1599,6 +1600,78 @@ h4.package {
   -webkit-transform: rotate(34deg);
   transform: rotate(34deg);
 }
+/* proyecto */
+.card {
+  width: 100%;
+ /*  box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px; */
+  margin-right: 10px;
+  margin-bottom: 10px;
+ }
+
+ .card-text {
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+
+ /* ico */
+ .iconito {
+  display: inline-block;
+  font-size: 24px; /* Ajusta el tamaño del iconito */
+  line-height: 60px; /* Ajusta la altura del círculo */
+  height: 60px; /* Ajusta la altura del círculo */
+  width: 60px; /* Ajusta el ancho del círculo */
+  margin-right: 2px;
+  color: $background-pinkSatu;
+  border-radius: 100%;
+  position: relative;
+}
+
+.iconito::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  border-radius: 100%;
+  background: #fff;
+  opacity: 0.3;
+  z-index: -1;
+}
+.iconito::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  vertical-align: middle;
+  width: 100%;
+  height: 100%;
+  transform: scale(0);
+  background: #4099ff;
+  border-radius: 100%;
+  z-index: -1;
+}
+.iconito:hover {
+  color: $background-blueSatu;
+  animation-name: bubble2;
+  animation-duration: 0.5s;
+  animation-delay: 0.1s;
+  animation-fill-mode: forwards;
+}
+.iconito:hover::after {
+  animation-name: bubble;
+  animation-duration: 0.5s;
+  animation-fill-mode: forwards;
+}
+
+
+
+
+
 /* Portfolio/Proyecto */
 .portfolio-container {
   overflow: hidden;
