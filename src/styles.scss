@@ -1,16 +1,7 @@
-// Custom Theming for Angular Material
-// For more information: https://material.angular.io/guide/theming
 @use "@angular/material" as mat;
-// Plus imports for other components in your app.
 
-// Include the common styles for Angular Material. We include this here so that you only
-// have to load a single css file for Angular Material in your app.
-// Be sure that you only ever include this mixin once!
 @include mat.core();
 
-// Define the palettes for your theme using the Material Design palettes available in palette.scss
-// (imported above). For each palette, you can optionally specify a default, lighter, and darker
-// hue. Available color palettes: https://material.io/design/color/
 $RecursosCinTutuDev-primary: mat.define-palette(mat.$indigo-palette);
 $RecursosCinTutuDev-accent: mat.define-palette(
   mat.$pink-palette,
@@ -19,11 +10,8 @@ $RecursosCinTutuDev-accent: mat.define-palette(
   A400
 );
 
-// The warn palette is optional (defaults to red).
 $RecursosCinTutuDev-warn: mat.define-palette(mat.$red-palette);
 
-// Create the theme object. A theme consists of configurations for individual
-// theming systems such as "color" or "typography".
 $RecursosCinTutuDev-theme: mat.define-light-theme(
   (
     color: (
@@ -34,9 +22,6 @@ $RecursosCinTutuDev-theme: mat.define-light-theme(
   )
 );
 
-// Include theme styles for core and each component used in your app.
-// Alternatively, you can import and @include the theme mixins for each component
-// that you are using.
 @include mat.all-component-themes($RecursosCinTutuDev-theme);
 
 @import url("https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap");
@@ -79,12 +64,14 @@ $RecursosCinTutuDev-theme: mat.define-light-theme(
    10. Responsive
 
 ------------------------------------ General Styles---------------------------*/
-/* dfe2e8 */
+
 /* Var globales*/
 $background-pink: rgb(230, 0, 115);
 $background-blue: rgb(18, 65, 103);
-$background-blueSatu: hsl(203, 35%, 30%); // Color de fuente H4 más suave
+// Color más suave
+$background-blueSatu: hsl(203, 35%, 30%); 
 $background-pinkSatu: hsl(322, 100%, 45%); 
+
 $background-body: #dfe2e8;
 $background-timeline: #7e6f90;
 
@@ -103,16 +90,7 @@ $fuente-grande: 1em;
 $tipografia-alternativa: "Times New Roman", Times, serif;
 $tipografia-general: "Poppins", serif;
 /*------------------------- body ----------------------*/
-/* body {
-  font: 400 14px "Poppins", sans-serif;
-  -webkit-font-smoothing: antialiased;
-  line-height: 30px;
-  color: #727272;
-  font-size: 16px;
-  font-weight: 300;
-  line-height: 2.2;
-  overflow-x: hidden;
-} */
+
 body {
   font: 400 14px $tipografia-general, sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -265,7 +243,6 @@ a:not([href]):not([tabindex]) {
   border: none;
   color: #fff;
   box-shadow: 0 0 30px #e60073;
-  /* background-color: #9699b8; */
   letter-spacing: 2px;
   background: rgb(230, 0, 115);
   box-shadow: 0 0 25px rgb(230, 0, 115);
@@ -314,7 +291,7 @@ a:not([href]):not([tabindex]) {
   -webkit-transform: rotate(15deg);
   transform: rotate(15deg);
 }
-/* ------------------------------------------------------------------- */
+
 .btn-download1 {
   border: none;
   font-size: 14px;
@@ -374,7 +351,6 @@ a:not([href]):not([tabindex]) {
   -webkit-transform: rotate(15deg);
   transform: rotate(15deg);
 }
-/* ----------------------------------------------------------------- */
 
 .btn-download3 {
   /*  border: none; */
@@ -426,8 +402,8 @@ a:not([href]):not([tabindex]) {
 }
 
 .preloader .anim {
-  color: #fff;
-  font-size: 60px;
+  color:$background-pink;
+  font-size: 100px;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -727,7 +703,7 @@ a:not([href]):not([tabindex]) {
 
 h2.menu-item {
   position: relative;
-  color: #fff;
+  color: #03dac6 !important;
   margin: 50px;
   font-size: 28px;
   font-weight: 600;
@@ -746,7 +722,7 @@ h2.menu-item:before {
   transition: all 0.5s ease;
 }
 
-h2.about.menu-item:before {
+/* h2.about.menu-item:before {
   content: "01";
 }
 
@@ -760,7 +736,7 @@ h2.blog.menu-item:before {
 
 h2.contact.menu-item:before {
   content: "04";
-}
+} */
 
 .menu-block:hover h2.menu-item:before {
   top: -20px;
@@ -769,7 +745,7 @@ h2.contact.menu-item:before {
 
 h2.menu-item:after {
   position: absolute;
-  content: "";
+ /*  content: ""; */
   top: -10px;
   left: -20px;
   width: 70px;
@@ -994,13 +970,13 @@ h2.menu-item:after {
   background: $background-body;
 }
 
-.containerB {
+/* .containerB {
   position: relative;
   padding: 120px 70px 30px;
   height: auto;
   overflow: hidden;
   background-color: $background-body;
-}
+} */
 
 .content-blocks.pop {
   left: 100%;
@@ -2801,6 +2777,7 @@ h4.package {
     line-height: 3em;
     margin-bottom: 0;
     display: block;
+
   }
 
   h2.menu-item:after {

@@ -27,6 +27,7 @@ import {MatRadioModule} from '@angular/material/radio';
     RecursosComponent,
     ContactoComponent,
     ProyectosComponent,
+    
   
   ],
   imports: [
