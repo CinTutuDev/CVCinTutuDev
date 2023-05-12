@@ -1,10 +1,14 @@
 @import "../../styles.scss";
 
 .github-icon {
- width: 2%; /* Ajusta el ancho según el tamaño deseado */
- height: auto; /* El alto se ajustará automáticamente para mantener la proporción */
+  width: 2%; /* Ajusta el ancho según el tamaño deseado */
+  height: auto; /* El alto se ajustará automáticamente para mantener la proporción */
 }
 
-.fondo-card{
- background-color: #1e1f26;
+.fondo-card {
+  background-color: $background-darkFondo;
+
+  .block-title {
+    border-bottom: none;
+  }
 }

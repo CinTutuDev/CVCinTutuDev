@@ -1,9 +1,12 @@
 @import "../../styles.scss";
 
 .containerB {
- position: relative;
- padding: 120px 70px 30px;
- height: auto;
- overflow: hidden;
- background-color: $background-body;
+  position: relative;
+  padding: 120px 70px 30px;
+  height: auto;
+  overflow: hidden;
+  background-color: $background-darkFondo;
+  .block-title {
+    border-bottom: none;
+  }
 }

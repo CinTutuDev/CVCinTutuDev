@@ -69,6 +69,7 @@ $RecursosCinTutuDev-theme: mat.define-light-theme(
 /* Var globales*/
 $background-pink: rgb(230, 0, 115);
 $background-blue: rgb(18, 65, 103);
+$background-darkFondo: #1e1f26;
 // Color más suave
 $background-blueSatu: #08b4a2;
 $background-pinkSatu: hsl(322, 100%, 45%);
@@ -235,6 +236,34 @@ a:not([href]):not([tabindex]) {
   color: #fff;
   outline: none;
 }
+.btn-downloadRecursos {
+  color: $background-blue;
+  text-decoration: none;
+  font-size: 22px;
+  padding: 12px 40px 12px 20px;
+
+  &:hover {
+    border: none;
+    color: #fff;
+    box-shadow: 0 0 25px $shadow-pink;
+    letter-spacing: 2px;
+    background: $background-pink;
+    box-shadow: 0 0 25px $shadow-pink;
+
+    &::before {
+      -webkit-animation-duration: 1s;
+      animation-duration: 1s;
+      -webkit-animation-fill-mode: both;
+      animation-fill-mode: both;
+      -webkit-animation-iteration-count: infinite;
+      animation-iteration-count: infinite;
+      -webkit-animation-name: fadeOutDown;
+      animation-name: fadeOutDown;
+      -webkit-transform-origin: center bottom;
+      transform-origin: center bottom;
+    }
+  }
+}
 
 .btn-downloadInicio,
 .btn-downloadGoogle,
@@ -322,19 +351,6 @@ a:not([href]):not([tabindex]) {
     font-size: 18px;
   }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 .btn.disabled {
   opacity: 1;
@@ -1463,7 +1479,6 @@ h4.package {
   color: $background-pinkSatu;
   border-radius: 100%;
   position: relative;
-  
 }
 
 .iconito::before {
@@ -1495,14 +1510,13 @@ h4.package {
   z-index: -1;
 }
 .iconito:hover {
- 
   animation-name: bubble2;
   animation-duration: 0.5s;
   animation-delay: 0.1s;
   animation-fill-mode: forwards;
-  
-    color: $background-blueSatu;
-    transform: scale(1.1);
+
+  color: $background-blueSatu;
+  transform: scale(1.1);
 }
 .iconito:hover::after {
   animation-name: bubble;
@@ -1548,7 +1562,6 @@ h4.package {
   margin-left: 0;
 }
 
-
 .portfolio-item {
   padding-bottom: 30px;
 
@@ -1584,6 +1597,7 @@ h4.package {
 }
 
 .portfolio-content {
+  margin-top: 25%;
   position: absolute;
   z-index: 201;
   top: 50%;
@@ -1626,7 +1640,6 @@ h4.package {
     transform: translateX(-50%);
   }
 }
-
 .portfolio-overlay {
   position: absolute;
   width: 100%;
@@ -1641,57 +1654,20 @@ h4.package {
   opacity: 0.8;
 }
 
-.classic .portfolio-content {
-  background: #f1f3f6;
-  position: relative;
-  top: 0;
-  transform: translateY(0);
-}
-
-.classic .portfolio-content,
-.classic .portfolio-content h2,
-.classic .portfolio-content p {
-  opacity: 1;
-  text-align: left;
-}
-
-.classic .portfolio-content h2 {
-  color: #333;
-  padding: 20px 30px 0;
-  margin-top: 0;
-
-  .portfolio-column:hover & {
-    margin-top: 0;
-  }
-}
-
-.classic .portfolio-content p {
-  color: #666;
-  margin-top: 0;
-}
-
-
-
-
-
-
-
-
-
 .portfolio-item {
   padding-bottom: 30px;
-}
 
-.portfolio-item.no-gutter {
-  padding: 0;
-  padding-bottom: 0;
-}
+  &.no-gutter {
+    padding: 0;
+    padding-bottom: 0;
+  }
 
-.portfolio-item img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover; /* Para ajustar la imagen y ocupar todo el espacio */
-  transition: transform 0.5s;
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s;
+  }
 }
 
 .portfolio-column {
@@ -1699,19 +1675,19 @@ h4.package {
   position: relative;
   width: 100%;
   transition: all 1s;
-}
 
-.portfolio-column:hover {
-  box-shadow: 0 2px 7px 1px rgba(0, 0, 0, 0.3);
-}
+  &:hover {
+    box-shadow: 0 2px 7px 1px rgba(0, 0, 0, 0.3);
 
-.portfolio-column:hover img {
-  transform: scale(1.1);
-}
+    img {
+      transform: scale(1.1);
+    }
 
-.portfolio-column:hover .portfolio-content {
-  opacity: 1;
-  cursor: pointer;
+    .portfolio-content {
+      opacity: 1;
+      cursor: pointer;
+    }
+  }
 }
 
 .portfolio-content {
@@ -1724,379 +1700,61 @@ h4.package {
   opacity: 0;
   transition: all 0.6s;
   text-align: center;
-}
 
-.portfolio-content h2 {
-  color: #fff;
-  padding: 0;
-  margin: 0;
-  margin-top: 30px;
-  text-transform: uppercase;
-  transition: all 0.6s;
-}
-
-.portfolio-column:hover .portfolio-content h2 {
-  margin-top: 20px;
-  opacity: 1;
-}
-
-.portfolio-content p {
-  color: #fff;
-  font-size: 12px;
-  font-weight: 400;
-  padding: 0;
-  margin: 0;
-  margin-top: -30px;
-  opacity: 0;
-  transition: all 0.9s;
-}
-
-.portfolio-column:hover .portfolio-content p {
-  margin-top: 0;
-  opacity: 1;
-}
-
-.portfolio-content hr {
-  width: 40px;
-  height: 1px;
-  border: 0;
-  background-color: #f1f3f6;
-  margin: 20px 0 10px;
-  position: relative;
-  left: 50%;
-  transform: translateX(-50%);
-}
-
-.portfolio-overlay {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  background-color: #181818;
-  top: 0;
-  z-index: 200;
-  opacity: 0;
-}
-
-.portfolio-column:hover .portfolio-overlay {
-  opacity: 0.8;
-}
-
-.classic .portfolio-content {
-  background: #f1f3f6;
-  position: relative;
-  top: 0;
-  transform: translateY(0);
-}
-
-.classic .portfolio-content,
-.classic .portfolio-content h2,
-.classic .portfolio-content p {
-  opacity: 1;
-  text-align: left;
-}
-
-.classic .portfolio-content h2 {
-  color: #333;
-  padding: 20px 30px 0;
-  margin-top: 0;
-}
-
-.classic .portfolio-column:hover .portfolio-content h2 {
-  margin-top: 0;
-}
-
-.classic .portfolio-content p {
-  color: #666;
-  margin-top: 0;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* 
-.portfolio-item {
-  padding-bottom: 30px;
-}
-
-.portfolio-item.no-gutter {
-  padding: 0 0;
-  padding-bottom: 0;
-}
-
-.portfolio-item img {
-  width: 100%;
-  transition: all 5s;
-}
-
-.portfolio-column {
-  overflow: hidden;
-  position: relative;
-  width: 100%;
-  transition: all 1s;
-}
-
-.portfolio-column:hover {
-  -webkit-box-shadow: 0 2px 7px 1px rgba(0, 0, 0, 0.3);
-  -moz-box-shadow: 0 2px 7px 1px rgba(0, 0, 0, 0.3);
-  box-shadow: 0 2px 7px 1px rgba(0, 0, 0, 0.3);
-}
-
-.portfolio-column:hover img {
-  transform: scale(1.1);
-}
-
-.portfolio-column:hover .portfolio-content {
-  opacity: 1;
-  cursor: pointer;
-}
-
-.portfolio-content {
-  position: absolute;
-  z-index: 201;
-  top: 50%;
-  width: 100%;
-  opacity: 0;
-  transform: translateY(-50%);
-}
-
-.portfolio-content h2 {
-  color: #fff;
-  position: relative;
-  width: 100%;
-  padding: 0;
-  margin: 0;
-  margin-top: 30px;
-  text-align: center;
-  padding: 0 30px;
-  opacity: 0;
-  text-transform: uppercase;
-  transition: all 0.6s;
-}
-
-.portfolio-column:hover .portfolio-content h2 {
-  margin-top: 20px;
-  opacity: 1;
-}
-
-.portfolio-content p {
-  color: #fff;
-  font-size: 12px;
-  font-weight: 400;
-  position: relative;
-  width: 100%;
-  padding: 0;
-  margin: 0;
-  margin-top: -30px;
-  text-align: center;
-  padding: 10px 30px;
-  opacity: 0;
-  transition: all 0.9s;
-}
-
-.portfolio-column:hover .portfolio-content p {
-  margin-top: 0;
-  opacity: 1;
-}
-
-.portfolio-content hr {
-  width: 40px;
-  height: 1px;
-  border: 0;
-  background-color: #f1f3f6;
-  margin: 20px 0 10px;
-  position: relative;
-  left: 50%;
-  transform: translateX(-50%);
-}
-
-.portfolio-overlay {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  background-color: #181818;
-  top: 0;
-  z-index: 200;
-  opacity: 0;
-}
-
-.portfolio-column:hover .portfolio-overlay {
-  opacity: 0.8;
-}
-
-.classic .portfolio-content {
-  background: #f1f3f6;
-  position: relative;
-  top: 0;
-  transform: translateY(0);
-}
-
-.classic .portfolio-content,
-.classic .portfolio-content h2,
-.classic .portfolio-content p {
-  opacity: 1;
-  text-align: left;
-}
-
-.classic .portfolio-content h2 {
-  color: #333;
-  padding: 20px 30px 0;
-  margin-top: 0;
-}
-
-.classic .portfolio-column:hover .portfolio-content h2 {
-  margin-top: 0;
-}
-
-.classic .portfolio-content p {
-  color: #666;
-  margin-top: 0;
-} */
-
-/* ******************************** */
-/* .portfolio-card {
-  position: relative;
-  overflow: hidden;
-  width: 75%;
-  height: 75%;
-
-  .portfolio-img {
-    transition: transform 0.5s;
+  h2 {
+    color: #fff;
+    padding: 0;
+    margin: 0;
+    margin-top: 30px;
+    text-transform: uppercase;
+    transition: all 0.6s;
   }
 
-  &:hover {
-    .portfolio-img {
-      transform: scale(1.1);
-    }
-
-    .portfolio-overlay {
-      opacity: 1;
-    }
+  .portfolio-column:hover & h2 {
+    margin-top: 20px;
+    opacity: 1;
   }
 
-  .portfolio-overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.8);
+  p {
+    color: #fff;
+    font-size: 12px;
+    font-weight: 400;
+    padding: 0;
+    margin: 0;
+    margin-top: -30px;
     opacity: 0;
-    transition: opacity 0.5s;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-
-    .portfolio-title {
-      color: #fff;
-      font-size: 24px;
-      margin-bottom: 10px;
-      transition: transform 0.5s;
-    }
-
-    .iconito {
-      color: $background-pinkSatu;
-      font-size: 40px;
-      transition: transform 0.5s;
-    }
+    transition: all 0.9s;
   }
 
-  &:hover {
-    .portfolio-title,
-    .iconito {
-      color: $background-blueSatu;
-      transform: scale(1.1);
-    }
+  .portfolio-column:hover & p {
+    margin-top: 0;
+    opacity: 1;
   }
 
-  .card-body {
+  hr {
+    width: 40px;
+    height: 1px;
+    border: 0;
+    background-color: #f1f3f6;
+    margin: 20px 0 10px;
     position: relative;
-    z-index: 1;
+    left: 50%;
+    transform: translateX(-50%);
   }
-} */
-
-
-/* ************************************************ */
-
-
-.project-head span {
-  color: #333;
-  font-weight: 400;
-  margin-right: 5px;
 }
 
-.project-description {
-  margin: 30px 0;
-}
-
-.project-media img {
-  margin-bottom: 30px;
-}
-
-.video-container {
-  margin-bottom: 20px;
-  padding: 0 0 56.25%;
-  position: relative;
-  width: 100%;
-}
-
-.video-container iframe {
-  border: 0 none;
-  height: 100%;
-  left: 0;
+.portfolio-overlay {
   position: absolute;
-  top: 0;
   width: 100%;
+  height: 100%;
+  background-color: #181818;
+  top: 0;
+  z-index: 200;
+  opacity: 0;
 }
 
-.carousel {
-  position: relative;
-}
-
-.carousel-control {
-  font-size: 30px;
-  opacity: 1;
-  top: 50%;
-  transform: translateY(-20%);
-}
-
-.carousel-control.left,
-.carousel-control.right {
-  background-image: none;
-}
-
-.project-nav,
-.post-nav {
-  margin-top: 50px;
-}
-
-.project-nav i,
-.post-nav i {
-  font-size: 24px;
-}
-
-.project-nav a,
-.post-nav a {
-  color: inherit;
-  font-weight: 500;
-}
-
-.project-nav a:hover,
-.post-nav a:hover {
-  color: #333;
+.portfolio-column:hover .portfolio-overlay {
+  opacity: 0.8;
 }
 
 /*-------------------- 8. RECURSOS BLOCK ---------------------------*/
