@@ -1,5 +1,5 @@
 import { Component, Input, OnInit } from '@angular/core';
-import { Proyecto } from 'src/app/models/proyecto.model';
+import { ProyectoM } from 'src/app/models/proyecto.model';
 import { ProyectoService } from 'src/app/services/proyecto.service';
 
 @Component({
@@ -8,7 +8,7 @@ import { ProyectoService } from 'src/app/services/proyecto.service';
   styles: [],
 })
 export class ProyectoComponent implements OnInit {
-  proyectoList: Proyecto[] = [];
+  proyectoList: ProyectoM[] = [];
 
   constructor(private proyectoS: ProyectoService) {}
 

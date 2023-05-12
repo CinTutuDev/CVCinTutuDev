@@ -1,6 +1,6 @@
-import { Proyecto } from 'src/app/models/proyecto.model';
+import { ProyectoM } from 'src/app/models/proyecto.model';
 
-export const PROYECTO: Proyecto[] = [
+export const PROYECTO: ProyectoM[] = [
   {
     id: 0,
     urlPg: 'https://rickmortyangular.web.app/',

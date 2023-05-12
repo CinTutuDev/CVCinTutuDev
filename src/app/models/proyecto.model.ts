@@ -1,4 +1,4 @@
-export interface Proyecto {
+export interface ProyectoM {
   id: number;
   urlPg: string;
   urlImage: string;

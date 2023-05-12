@@ -13,8 +13,10 @@ import { CarruselComponent } from './components/carrusel-cursos/carrusel.compone
 import { CarruselRepoComponent } from './components/carrusel-repo/carrusel-repo.component';
 import { CarruselAngularComponent } from './components/carrusel-angular/carrusel-angular.component';
 import { CarruselInspiracionComponent } from './components/carrusel-inspiracion/carrusel-inspiracion.component';
+import { ModalComponent } from './components/modal/modal.component';
 /* componente proyectos */
 import { ProyectoComponent } from './pagesProyectos/proyecto/proyecto.component';
+import { VideosComponent } from './components/videos/videos.component';
 /*A Material */
 import { MatCardModule } from '@angular/material/card';
 import { MatRadioModule } from '@angular/material/radio';
@@ -33,6 +35,8 @@ import { MatRadioModule } from '@angular/material/radio';
     CarruselAngularComponent,
     CarruselInspiracionComponent,
     ProyectoComponent,
+    ModalComponent,
+    VideosComponent,
   ],
   imports: [
     CommonModule,
@@ -52,7 +56,9 @@ import { MatRadioModule } from '@angular/material/radio';
     CarruselRepoComponent,
     CarruselAngularComponent,
     CarruselInspiracionComponent,
-    ProyectoComponent
+    ProyectoComponent,
+    ModalComponent,
+    VideosComponent
   ],
 })
 export class SharedModule {}

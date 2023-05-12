@@ -1,0 +1,34 @@
+<!-- <button class="btn btn-downloadFoto icon-github-alt text-center">Ver</button> -->
+<button
+  class="btn btn-downloadFoto icon-github-alt text-center mb-2 me-2"
+  (click)="openBackDropCustomClass(content)"
+>
+  Ver
+</button>
+
+<ng-template #content let-modal>
+  <div class="modal-header">
+    <h4 class="modal-title">{{ proyectoListaData.titulo }}</h4>
+    <button
+      type="button"
+      class="btn-close"
+      aria-label="Close"
+      (click)="modal.dismiss('Cross click')"
+    ></button>
+  </div>
+  <div class="modal-body">
+    <p>{{ proyectoListaData.descripcion }}&hellip;</p>
+    <!-- <img src="assets\images\proyecto\maqueta.png" alt="imgPrueba"> -->
+    <app-videos></app-videos>
+  </div>
+  <div class="modal-footer">
+    <button
+      type="button"
+      class="btn btn-downloadClose text-center mb-2 me-2"
+      (click)="modal.close('Close click')"
+    >
+      Close
+      <i class="fas fa-times"></i>
+    </button>
+  </div>
+</ng-template>

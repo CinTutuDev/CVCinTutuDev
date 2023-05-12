@@ -33,13 +33,14 @@
         </div>
       </a>
       <div class="card-footer text-center bg-opacity-10" style="border-top: none">
-        <a
+       <!--  <a
           class="btn btn-downloadFoto icon-github-alt text-center"
           href="{{ proyectoLista.urlGH }}"
-        >
-       <!--    <span class="fas fa-camera"></span> -->
-          Imagenes
-        </a>
+        >   </a> -->
+        <app-modal [proyectoListaData]="proyectoLista" ></app-modal>
+     
+         
+     
       </div>
     </div>
   </div>

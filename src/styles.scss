@@ -52,6 +52,7 @@ $RecursosCinTutuDev-theme: mat.define-light-theme(
        portfolio
        Portfolio/Proyecto 
        proyecto
+       modal proyecto
     8. RECURSOS BLOCK
        carrusel
        blog-block
@@ -74,6 +75,8 @@ $background-darkFondo: #1e1f26;
 $background-blueSatu: #08b4a2;
 $background-pinkSatu: hsl(322, 100%, 45%);
 $shadow-pink: #e60073;
+
+$backgroundRedAngular: rgb(255, 0, 0);
 
 $background-body: #dfe2e8;
 $background-timeline: #7e6f90;
@@ -265,6 +268,20 @@ a:not([href]):not([tabindex]) {
   }
 }
 
+.btn-downloadClose {
+  border: none;
+  font-size: 14px;
+  /*  padding: 16px 55px 16px 25px; */
+  background-color: $backgroundRedAngular;
+  &:hover {
+    border: none;
+    color: #fff;
+    box-shadow: 0 0 30px $background-blue;
+    letter-spacing: 2px;
+    background: $background-blueSatu;
+    box-shadow: 0 0 25px $background-blueSatu;
+  }
+}
 .btn-downloadInicio,
 .btn-downloadGoogle,
 .btn-downloadFoto {
@@ -1757,6 +1774,50 @@ h4.package {
   opacity: 0.8;
 }
 
+/* ------------------------------------------modal proyecto------------------ */
+.modal-header,
+.modal-body,
+.modal-footer {
+  background-color:$background-darkFondo;
+  color: whitesmoke;
+  text-align: center;
+}
+.modal-body {
+  border-bottom: none;
+}
+.modal-header {
+  border-bottom: none;
+}
+
+.modal-title {
+  color: whitesmoke;
+  text-align: center;
+  
+}
+
+.fondo-modal {
+  background-color: #22527c;
+}
+
+.modal-footer {
+  text-align: center; 
+}
+
+.modal-footer .btn .downloadModal {
+  text-align: center;
+  display: block; 
+  margin: 0 auto; 
+}
+.video-player {
+  width: 100%; 
+  height: auto; 
+}
+
+/* .centrado-modal {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+} */
 /*-------------------- 8. RECURSOS BLOCK ---------------------------*/
 /* carrusel */
 .carousel-control-prev-icon,
