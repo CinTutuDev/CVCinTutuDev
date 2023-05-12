@@ -7,11 +7,11 @@
 ![bannerGH2](https://user-images.githubusercontent.com/71487857/234256705-f0b3ae7e-de83-46fb-9050-52208533e533.png)
  </p> 
  
-# 🚀 Descripción del proyecto
+# 🚀Descripción del proyecto
 
 Mi proyecto de Curriculum Vitae (CV) desarrollado con Angular CLI 16 y Angular Material te permitirá visualizar toda la información sobre mi experiencia laboral, educación, habilidades y demás en tiempo real y de manera interactiva.<br> Ya no más aburridas listas sin vida, ahora podrás conocerme de manera más amena y divertida.
 
-## Funcionalidades
+## 🎯Funcionalidades
 
 * Visualización de información en tiempo real y de manera interactiva.
 * Actualización automática de los datos gracias a la conexión a una base de datos en Firebase.
@@ -26,7 +26,7 @@ Mi proyecto de Curriculum Vitae (CV) desarrollado con Angular CLI 16 y Angular M
   </div>
 </header>
  
- ## 🎮  Creo el proyecto con las URL 
+ ## 🎮Creo el proyecto con las URL 
 
 * Framework: Angular
 
@@ -40,19 +40,19 @@ Node: 18.16.0
 Package Manager: npm 9.5.1
 OS: win32 x64
 ```
-## Clonar proyecto
+## 📥Clonar proyecto
 * En lugar de 'npm i': 
 ```
 npm install --legacy-peer-deps
 ```
 
-## Tips comandos
+## 💡Tips comandos
 
 * Componente sin archivo de prueba
 ```
 ng g c resumen --skip-tests
 ```
-## Creo la Base de Datos en firebase
+## 🔥Creo la Base de Datos en firebase
 
 * 1º Creo proyecto en firebase:
 ```
