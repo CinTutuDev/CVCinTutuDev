@@ -1,13 +1,22 @@
-import { Component, Input } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 import { Proyecto } from 'src/app/models/proyecto.model';
-import { PROYECTO } from 'src/data/mock.proyectos';
+import { ProyectoService } from 'src/app/services/proyecto.service';
+
 @Component({
   selector: 'app-proyecto',
   templateUrl: './proyecto.component.html',
   styles: [],
 })
-export class ProyectoComponent {
-  constructor() {}
+export class ProyectoComponent implements OnInit {
+  proyectoList: Proyecto[] = [];
 
-  proyectoList: Proyecto[] = PROYECTO;
+  constructor(private proyectoS: ProyectoService) {}
+
+  getProyectoList(): void {
+    this.proyectoList = this.proyectoS.getProyecto();
+  }
+
+  ngOnInit(): void {
+    this.getProyectoList();
+  }
 }
