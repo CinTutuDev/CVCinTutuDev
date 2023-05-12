@@ -40,6 +40,13 @@ Node: 18.16.0
 Package Manager: npm 9.5.1
 OS: win32 x64
 ```
+## 📚Librerias
+```
+https://getbootstrap.com/docs/5.1/getting-started/introduction/
+```
+```
+https://ng-bootstrap.github.io/#/home
+```
 ## 📥Clonar proyecto
 * En lugar de 'npm i': 
 ```
