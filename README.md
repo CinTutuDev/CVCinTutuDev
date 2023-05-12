@@ -86,7 +86,7 @@ Modo bloqueado
 ```
 https://cintutudev-default-rtdb.firebaseio.com/Educaci%C3%B3n.json
 ```
-## Crear servicio 
+## 💾Crear servicio 
 ```
 ng g s services/bdcintutdev  --skip-tests
 ```
@@ -101,9 +101,15 @@ ng g s services/bdcintutdev  --skip-tests
     });
   }
  ```
+ 
+## 👀Mostrar datos creando archivos
+
+```
+https://angular.io/tutorial/tour-of-heroes/toh-pt2
+```
 
 
-## Créditos y Agradecimientos
+## 🎉Créditos y Agradecimientos
 
 - Plantilla de Github utilizada como base para este proyecto: https://github.com/Anders87x/Template_CVAbastidas_Angular
 - Creador de la plantilla: Anders87x
