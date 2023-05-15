@@ -10,6 +10,7 @@ export const PROYECTO: ProyectoM[] = [
     titulo: 'Rick & Morty',
     descripcion:
       'Explorador de Personajes de Rick y Morty: Proyecto realizado con Angular y Bootstrap con Integración de la API de Rick y Morty',
+    demo: '/assets/videos/VideoCV.mp4',
   },
   {
     id: 4,
@@ -20,6 +21,7 @@ export const PROYECTO: ProyectoM[] = [
     titulo: 'GYM Angular CRUD',
     descripcion:
       'Angular 15 que utiliza la biblioteca de componentes MateriaUI. Además, se integra con Json-Server para el registro y gestión de usuarios en un contexto de un gimnasio.',
+    demo: '',
   },
 
   {
@@ -30,6 +32,7 @@ export const PROYECTO: ProyectoM[] = [
     ico: 'assets/icos/hipo.png',
     titulo: 'Cinta´s News',
     descripcion: 'Aplicación de noticias desarrollada con Angular e Ionic',
+    demo: '',
   },
   {
     id: 2,
@@ -40,6 +43,7 @@ export const PROYECTO: ProyectoM[] = [
     titulo: 'Tutu´s Movies',
     descripcion:
       'Aplicación que muestra películas actuales, uso de storage, consumo de APIS y mucho más. ',
+    demo: '',
   },
   {
     id: 3,
@@ -50,5 +54,6 @@ export const PROYECTO: ProyectoM[] = [
     titulo: 'App Maqueta',
     descripcion:
       'Aplicación que utiliza todos los componentes de Ionic como maquetas para su diseño.',
+    demo: '',
   },
 ];

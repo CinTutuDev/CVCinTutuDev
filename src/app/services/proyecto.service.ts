@@ -8,8 +8,10 @@ import { ProyectoM } from '../models/proyecto.model';
 export class ProyectoService {
   /* Proyecto es el modelo/interface que uso como plantilla para mi data PROYECTO */
   proyectoList: ProyectoM[] = PROYECTO;
-
-  constructor() {}
+ 
+  constructor() {
+    this.getProyecto();
+  }
 
   getProyecto():ProyectoM[]{
     return this.proyectoList;

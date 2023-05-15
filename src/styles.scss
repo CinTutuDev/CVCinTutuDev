@@ -1778,10 +1778,15 @@ h4.package {
 .modal-header,
 .modal-body,
 .modal-footer {
-  background-color:$background-darkFondo;
+  background-color: $background-darkFondo;
   color: whitesmoke;
   text-align: center;
 }
+
+.btn-close {
+  background-color: $background-blueSatu;
+}
+
 .modal-body {
   border-bottom: none;
 }
@@ -1792,7 +1797,6 @@ h4.package {
 .modal-title {
   color: whitesmoke;
   text-align: center;
-  
 }
 
 .fondo-modal {
@@ -1800,17 +1804,22 @@ h4.package {
 }
 
 .modal-footer {
-  text-align: center; 
+  text-align: center;
+  flex-direction: column;
+  border-top: none;
+}
+.fa-regular{
+  animation-duration: 2s;
 }
 
 .modal-footer .btn .downloadModal {
   text-align: center;
-  display: block; 
-  margin: 0 auto; 
+  display: block;
+  margin: 0 auto;
 }
 .video-player {
-  width: 100%; 
-  height: auto; 
+  width: 100%;
+  height: auto;
 }
 
 /* .centrado-modal {
@@ -1843,6 +1852,18 @@ h4.package {
   color: $fuente-LeerMas;
 }
 .d-block {
+  /* height: 350px; */
+  width: 100%;
+  /* overflow: hidden; */
+
+  img {
+    height: 100%;
+    width: auto;
+    object-fit: cover;
+  }
+}
+
+.block {
   height: 350px;
   width: 100%;
   overflow: hidden;

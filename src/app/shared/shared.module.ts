@@ -16,7 +16,7 @@ import { CarruselInspiracionComponent } from './components/carrusel-inspiracion/
 import { ModalComponent } from './components/modal/modal.component';
 /* componente proyectos */
 import { ProyectoComponent } from './pagesProyectos/proyecto/proyecto.component';
-import { VideosComponent } from './components/videos/videos.component';
+/* import { VideosComponent } from './components/videos/videos.component'; */
 /*A Material */
 import { MatCardModule } from '@angular/material/card';
 import { MatRadioModule } from '@angular/material/radio';
@@ -36,7 +36,7 @@ import { MatRadioModule } from '@angular/material/radio';
     CarruselInspiracionComponent,
     ProyectoComponent,
     ModalComponent,
-    VideosComponent,
+    /* VideosComponent, */
   ],
   imports: [
     CommonModule,
@@ -58,7 +58,7 @@ import { MatRadioModule } from '@angular/material/radio';
     CarruselInspiracionComponent,
     ProyectoComponent,
     ModalComponent,
-    VideosComponent
+   
   ],
 })
 export class SharedModule {}

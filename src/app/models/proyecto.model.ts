@@ -6,4 +6,5 @@ export interface ProyectoM {
   ico: string;
   titulo: string;
   descripcion: string;
+  demo: string;
 }
