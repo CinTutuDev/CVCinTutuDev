@@ -10,7 +10,7 @@ export const PROYECTO: ProyectoM[] = [
     titulo: 'Rick & Morty',
     descripcion:
       'Explorador de Personajes de Rick y Morty: Proyecto realizado con Angular y Bootstrap con Integración de la API de Rick y Morty',
-    demo: '/assets/videos/VideoCV.mp4',
+    demo: '/assets/videos/demoR&M.mp4',
   },
   {
     id: 4,
