@@ -1,18 +1,18 @@
-
 <div class="row row-cols-1 row-cols-md-3 g-4">
-  <div class="col-xl-4 col-lg-6 col-md-6 col-sm-12 col-12" *ngFor="let proyectoLista of proyectoList">
-    <div class="card h-100 shadow mb-3 " style="width: 100%;  background-color: #23242c;">
+  <div
+    class="col-xl-4 col-lg-6 col-md-6 col-sm-12 col-12"
+    *ngFor="let proyectoLista of proyectoList"
+  >
+    <div
+      class="card h-100 shadow mb-3"
+      style="width: 100%; background-color: #23242c"
+    >
       <a class="" href="{{ proyectoLista.urlPg }}">
         <div class="portfolio-column">
           <div class="portfolio-hover">
             <div class="portfolio-content">
-         
-        <!--         <div class="d-flex align-items-center mb-3"></div> -->
-             <!--    <p class="card-text descripcion-proyecto">{{ proyectoLista.descripcion }}</p> -->
-             
-
               <h2>{{ proyectoLista.titulo }}</h2>
-              <hr />
+              <br />
               <p>
                 <a
                   class="iconito icon-github-alt"
@@ -24,7 +24,6 @@
             </div>
             <div class="portfolio-overlay"></div>
           </div>
-
           <img
             src="{{ proyectoLista.urlImage }}"
             alt="imagen"
@@ -32,63 +31,12 @@
           />
         </div>
       </a>
-      <div class="card-footer text-center bg-opacity-10" style="border-top: none">
-       <!--  <a
-          class="btn btn-downloadFoto icon-github-alt text-center"
-          href="{{ proyectoLista.urlGH }}"
-        >   </a> -->
-        <app-modal [proyectoListaData]="proyectoLista" ></app-modal>
-     
-         
-     
+      <div
+        class="card-footer text-center bg-opacity-10"
+        style="border-top: none"
+      >
+        <app-modal [proyectoListaData]="proyectoLista"></app-modal>
       </div>
     </div>
   </div>
 </div>
-
-
-<!-- <div class="row m-0 contenedor my-4 d-flex justify-content-center flex-wrap">
-  <div
-    class="col-xl-4 col-lg-6 col-md-6 col-sm-12 col-12"
-    *ngFor="let proyectoLista of proyectoList"
-  >
-    <div class="card my-3 shadow portfolio-card">
-      <a class="" href="{{ proyectoLista.urlPg }}">
-        <div class="card-header p-0">
-          <img
-            src="{{ proyectoLista.urlImage }}"
-            alt="imagen"
-            class="card-img-top portfolio-img"
-          />
-
-          <div class="portfolio-overlay">
-            <h2 class="portfolio-title">{{ proyectoLista.titulo }}</h2>
-            <hr />
-            <p>
-              <a
-                class="iconito icon-github-alt"
-                href="{{ proyectoLista.urlGH }}"
-              >
-                <span class="fa fa-github-alt"></span>
-              </a>
-            </p>
-          </div>
-        </div>
-      </a>
-      <div class="card-body">
-        <h5 class="card-title">{{ proyectoLista.titulo }}</h5>
-        <p class="card-text">{{ proyectoLista.descripcion }}</p>
-      </div>
-      <div class="card-footer text-center">
-        <a
-          class="btn btn-primary icon-github-alt"
-          href="{{ proyectoLista.urlGH }}"
-        >
-          <span class="fas fa-camera"></span>
-          Imagenes
-        </a>
-      </div>
-    </div>
-  </div>
-</div>
- -->
