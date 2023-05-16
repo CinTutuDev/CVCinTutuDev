@@ -1423,6 +1423,8 @@ h4.package {
 
 .btn-email {
   position: relative;
+  border-bottom:none;
+  border-top: none;
 }
 
 .btn-email:before {
@@ -1430,7 +1432,7 @@ h4.package {
   left: 0;
   top: 45px;
   content: "";
-  border-top: 1px solid #f1f3f6;
+  border-top: none;
   width: 100%;
 }
 
