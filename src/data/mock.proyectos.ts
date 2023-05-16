@@ -42,8 +42,8 @@ export const PROYECTO: ProyectoM[] = [
     ico: 'assets/icos/camara32px.png',
     titulo: 'Tutu´s Movies',
     descripcion:
-      'Aplicación que muestra películas actuales, uso de storage, consumo de APIS y mucho más. ',
-    demo: '',
+      'Aplicación móvil hecha con Angular e Ionic es una plataforma para explorar películas. Permite hacer scroll horizontal en la cartelera, cargar más películas, ver descripciones detalladas, guardar favoritos y por géneros. Incluye un buscador, usa almacenamiento local y consume una API de películas',
+    demo: '/assets/videos/demoTutusMovies.mp4',
   },
   {
     id: 4,
