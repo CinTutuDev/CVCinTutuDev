@@ -1,5 +1,5 @@
 
-import { BdcintutdevService } from './../services/bdcintutdev.service';
+import { BdcintutdevService } from '../../services/bdcintutdev.service';
 import { Component, OnInit } from '@angular/core';
 @Component({
   selector: 'app-resumen',

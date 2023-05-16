@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { BdcintutdevService } from '../services/bdcintutdev.service';
+import { BdcintutdevService } from '../../services/bdcintutdev.service';
 import { DomSanitizer } from '@angular/platform-browser';
 
 @Component({
