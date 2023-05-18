@@ -14,11 +14,11 @@ export const PROYECTO: ProyectoM[] = [
   },
   {
     id: 1,
-    urlPg: 'https://github.com/CinTutuDev/AngularCRUD',
+    urlPg: '',
     urlImage: '/assets/images/proyecto/gym.png',
     urlGH: 'https://github.com/CinTutuDev/AngularCRUD',
     ico: '/assets/icos/corredor.jpg',
-    titulo: '',
+    titulo: 'GYM TuTu´s',
     descripcion:
       'La aplicación está desarrollada utilizando Angular 15, Angular Material y Bootstrap como herramientas principales. Su objetivo es permitir el registro de usuarios para un gimnasio mediante la creación de un archivo JSON.',
     demo: '/assets/videos/demoGYM.mp4',
@@ -53,7 +53,7 @@ export const PROYECTO: ProyectoM[] = [
     ico: 'assets/icos/Triki.png',
     titulo: 'App Maqueta',
     descripcion:
-      'Aplicación que utiliza todos los componentes de Ionic como maquetas para su diseño.',
-    demo: '',
+      'App que te ofrece un ejemplo completo y funcional de una aplicación hecha con Ionic. Con casi todos los componentes de Ionic y ejemplos prácticos, puedes utilizarla como referencia para tus proyectos futuros. Es una herramienta valiosa que te ahorrará tiempo y esfuerzo al proporcionarte código y configuraciones listas para usar. En resumen, "App Maqueta" es un recurso útil para desarrollar proyectos de Ionic de manera eficiente.',
+    demo: '/assets/videos/demoAppMaqueta.mp4',
   },
 ];
