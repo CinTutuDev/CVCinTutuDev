@@ -56,4 +56,15 @@ export const PROYECTO: ProyectoM[] = [
       'App que te ofrece un ejemplo completo y funcional de una aplicación hecha con Ionic. Con casi todos los componentes de Ionic y ejemplos prácticos, puedes utilizarla como referencia para tus proyectos futuros. Es una herramienta valiosa que te ahorrará tiempo y esfuerzo al proporcionarte código y configuraciones listas para usar. En resumen, "App Maqueta" es un recurso útil para desarrollar proyectos de Ionic de manera eficiente.',
     demo: '/assets/videos/demoAppMaqueta.mp4',
   },
+  {
+    id: 5,
+    urlPg: '',
+    urlImage: '/assets/images/proyecto/LogoRP.png',
+    urlGH: 'https://github.com/CinTutuDev/FCT-RitaPoP',
+    ico: '/assets/icos/icoRP.png',
+    titulo: 'FCT RitaPoP',
+    descripcion:
+      'El proyecto es un CRM desarrollado durante un bootcamp en la empresa Imatia, utilizando Angular en el frontend y Java Spring Boot en el backend. Cuenta con funcionalidades de visualización de datos y roles de usuarios. Permite gestionar clientes, visualizar ventas y asignar roles de administrador o gestor. El proyecto demuestra habilidades en desarrollo de aplicaciones CRM y en la implementación de funcionalidades clave para la gestión de clientes y ventas.',
+    demo: '/assets/videos/demoRitaPoP1.mp4',
+  },
 ];
