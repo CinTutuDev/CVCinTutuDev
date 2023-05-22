@@ -1,5 +1,13 @@
-<h3 class="block-title border-bottom-0" style="padding: 20px 16px 16px">Tabla de Repos 👷</h3>
+<!-- <h3 class="block-title border-bottom-0" style="padding: 20px 16px 16px">Tabla de Repos 👷</h3>
 <hr />
+<div> -->
+  <div class="row">
+    <div class="col-12">
+      <h3 class="block-title border-bottom-0" style="padding: 20px 16px 16px">
+        Tabla de Repos 👷
+      </h3>
+    </div>
+  </div>
 
 <div class="row">
   <div class="col-12">
@@ -7,6 +15,63 @@
   </div>
 </div>
 
+<div class="block-content">
+  <div class="block-content mt-3">
+    <div class="row" style="width: 100%; margin: 0 auto">
+      <div class="col-md-10 mx-auto">
+        <mat-card
+          class="cardRec"
+          *ngFor="let repoI of Bd.repo"
+        >
+          <mat-card-header>
+            <div mat-card-avatar>
+              <img src="{{ repoI.logoIco }}" alt="Avatar" />
+            </div>
+            <mat-card-title>
+              <div class="post-title">
+                <h3>{{ repoI.titulo }}</h3>
+              </div>
+            </mat-card-title>
+          </mat-card-header>
+          <div mat-card-image>
+            <img src="{{ repoI.src }}" alt="srcImg" />
+          </div>
+          <mat-card-actions class="justify-content-center ">
+            <a
+              class="btn-downloadRecursos "
+              target="_blank"
+              href="{{ repoI.url }}"
+            >
+              <i [class]="repoI.icono"></i>
+              Link
+            </a>
+          </mat-card-actions>
+        </mat-card>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- 
 <div class="block-content mt-3">
   <div class="row">
     <div class="col">
@@ -14,3 +79,4 @@
     </div>
   </div>
 </div>
+ -->
