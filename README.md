@@ -122,5 +122,13 @@ https://angular.io/tutorial/tour-of-heroes/toh-pt2
 - Creador de la plantilla: Anders87x
 
 
-Aquí puedes encontrar mi repositorio de GitHub, donde puedes explorar algunos de mis proyectos:
+👻Aquí puedes encontrar mi repositorio de GitHub, donde puedes explorar algunos de mis proyectos:
 [![GitHub](https://i.imgur.com/9I6NRUm.png)](https://github.com/CinTutuDev)
+
+
+<div align="center">
+ <img src="https://github.com/argyleink/transition.css/blob/main/gif/wipe-up.gif?raw=true" />
+</div>
+
+
+
