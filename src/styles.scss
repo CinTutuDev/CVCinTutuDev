@@ -508,10 +508,10 @@ a:not([href]):not([tabindex]) {
   z-index: 0;
 }
 
-.home.img-bg {
+/* .home.img-bg {
   background: url(../src/assets/images/bg/demo.jpeg);
   background-size: cover;
-}
+} */
 
 .home .bgScroll {
   animation: 40s linear 0s normal none infinite running bgScroll;
