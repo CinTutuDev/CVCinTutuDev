@@ -198,7 +198,9 @@ ul {
 
 strong,
 small {
-  color: #333;
+  color: red;
+  font-size: 18px;
+  line-height: 32px;
 }
 
 /* Buttons */
@@ -2366,15 +2368,19 @@ h4.package {
 }
 
 #contact_form .form-control {
-  background-color: transparent;
+  background-color: $fuente-bluePastel;
+  color: $color-textoResalt;
   -webkit-box-shadow: none;
   box-shadow: none;
   border: none;
   border-bottom: 1px solid #727272;
   border-radius: 0;
   width: 100%;
-  font-size: 14px;
+  font-size: 24px;
   transition: all 0.3s;
+}
+.form-control #email{
+  color: $fuente-LeerMas;
 }
 
 #contact_form .form-control:focus {

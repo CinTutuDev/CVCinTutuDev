@@ -1,4 +1,4 @@
-<!--
+<!-- <section class="content">
  <div class="block-content">
      <h3 class="block-title">Contacto</h3>
      <div class="row">
@@ -54,20 +54,48 @@
      </div>
  </div>
 </section> -->
-<section class="nav content" >
-  <h1 class="saludos">Hola, Soy</h1>
+
+<section class="nav" >
+ <!--  <h1 class="saludos">Hola, Soy</h1> -->
   <h3 class="span loader">
-    <span class="m">C</span><span class="m">i</span><span class="m">n</span
-    ><span class="m">t</span><span class="m">a</span
-    ><span class="m">&nbsp;</span><span class="m">T</span
-    ><span class="m">a</span><span class="m">f</span><span class="m">u</span
-    ><span class="m">r</span><span class="m">,</span><br />
-    <span class="m">&nbsp;</span><span class="m">d</span><span class="m">e</span
-    ><span class="m">s</span><span class="m">a</span><span class="m">r</span
-    ><span class="m">r</span><span class="m">o</span><span class="m">l</span
-    ><span class="m">a</span><span class="m">&nbsp;</span
-    ><span class="m">f</span><span class="m">r</span><span class="m">o</span
-    ><span class="m">n</span><span class="m">t</span><span class="m">e</span
-    ><span class="m">n</span><span class="m">d</span><span class="m"></span>
+    <span class="m">C</span><span class="m">i</span><span class="m">n</span><span class="m">t</span><span class="m">a</span>
+    <span class="m">&nbsp;</span>
+    <span class="m">T</span><span class="m">a</span><span class="m">f</span><span class="m">u</span><span class="m">r</span>
+    <span class="m">&nbsp;</span>
+    <span class="m">C</span><span class="m">e</span><span class="m">r</span><span class="m">r</span><span class="m">e</span><span class="m">j</span><span class="m">ó</span><span class="m">n</span>
+    <span class="m">&nbsp;</span>
   </h3>
+
+
+  <div class="block-content">
+    <h3 class="block-title">Formulario de contacto</h3>
+    <div class="row">
+      <div class="col-md-12">
+        <form class="contact-form" action="https://formsubmit.co/6fb3a89c4ac279240907cc1b363f0488" method="POST" id="contact_form" (ngSubmit)="submitForm()">
+          <div class="form-control-wrap">
+            <div id="message" class="alert alert-danger alert-dismissible fade">{{errorMessage}}</div>
+
+            <div class="form-group">
+              <label for="name" class="form-control" >Nombre</label>
+              <input type="text" class="form-control" id="fname" placeholder="Nombre*" name="fname" [(ngModel)]="formData.name" required [ngClass]="{'error': !formData.name}">
+            </div>
+
+            <div class="form-group mar-top-40">
+              <input type="email" class="form-control" id="email" placeholder="Correo Electrónico*" name="email" [(ngModel)]="formData.email" required>
+            </div>
+
+            <div class="form-group mar-top-60">
+              <textarea class="form-control" rows="10" name="comment" id="comment" placeholder="Su Mensaje" [(ngModel)]="formData.message"></textarea>
+            </div>
+
+            <div class="form-group mar-top-40">
+              <button type="submit" class="btn v7">Enviar Mensaje</button>
+              <input type="hidden" name="_next" value="https://yourdomain.co/thanks.html">
+              <input type="hidden" name="_captcha" value="false">
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
 </section>

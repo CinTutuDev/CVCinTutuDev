@@ -5,6 +5,16 @@
   box-sizing: border-box;
 }
 
+.block-content{
+  margin-top: 5%;
+}
+.form-control{
+  color: whitesmoke;
+}
+.error {
+  border-color: red;
+  color: red;
+}
 .nav,
 .slider {
   display: flex;

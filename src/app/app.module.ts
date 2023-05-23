@@ -20,6 +20,7 @@ import { MatListModule } from '@angular/material/list';
 import { MatIconModule } from '@angular/material/icon';
 import {MatRadioModule} from '@angular/material/radio';
 import { ProyectosComponent } from './pages/proyectos/proyectos.component';
+import { FormsModule } from '@angular/forms';
 @NgModule({
   declarations: [
     AppComponent,
@@ -28,8 +29,8 @@ import { ProyectosComponent } from './pages/proyectos/proyectos.component';
     RecursosComponent,
     ContactoComponent,
     ProyectosComponent,
-    
-  
+
+
   ],
   imports: [
     BrowserModule,
@@ -42,6 +43,7 @@ import { ProyectosComponent } from './pages/proyectos/proyectos.component';
     MatIconModule,
     SharedModule,
     MatRadioModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
