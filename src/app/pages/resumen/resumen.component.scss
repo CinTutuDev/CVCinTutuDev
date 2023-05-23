@@ -1,24 +1,42 @@
 @import "/src/styles.scss";
 
+.content {
+  background-color: #1e1f26;
+  .block-title {
+    border-bottom: none;
+  }
+  p {
+    color: $color-textoResumen;
+    font-family: $tipografia-general;
+  }
 
+  .progress-bar-label {
+    color: $fuente-bluePastel;
+  }
+}
 .subtitulo {
   font-size: 30px;
   font-weight: 300;
   line-height: 2em;
   margin-bottom: 30px;
   text-transform: none;
+  color: $fuente-bluePastel;
+  strong {
+    color: $fuente-bluePastel;
+  }
 }
-
 .listaContacto {
-  border-bottom: 1px solid $background-timeline;
-  border-top: 1px solid $background-timeline;
+  color: $color-textoResumen !important;
+  font-family: $tipografia-general;
+  border-bottom: none;
+  border-top: none;
   padding-bottom: 20px;
   padding-top: 20px;
   margin: 20px 0;
   overflow: auto;
 
   span {
-    color: $color-textoResalt;
+    color: $color-textoResumen !important;
     font-weight: 400;
     margin-right: 5px;
   }
@@ -28,13 +46,13 @@
     padding-right: 0;
   }
   .fas {
-    color: $background-timeline;
+    color: $background-blueSatu;
   }
 }
 .progress {
   height: 2px;
   margin-bottom: 30px;
-  background-color: $background-body;
+  background-color: $background-darkFondo;
   border-radius: 0;
   box-shadow: none;
   overflow: visible;
@@ -44,8 +62,8 @@
     border-radius: 5px;
 
     span {
-      color: $background-body;
-      background: $background-timeline;
+      color: $color-textoResalt;
+      background: $background-body;
       font-size: 16px;
       font-weight: 425;
       text-align: right;
@@ -61,188 +79,126 @@
 }
 
 .timeline {
- position: relative;
+  position: relative;
 
- &:before {
-   background: $background-body;
-   bottom: 0;
-   content: "";
-   left: 18px;
-   position: absolute;
-   top: 50px;
-   width: 1px;
-   height: 75%;
- }
+  &:before {
+    background: $background-body;
+    bottom: 0;
+    content: "";
+    left: 18px;
+    position: absolute;
+    top: 50px;
+    width: 1px;
+    height: 75%;
+  }
 
- &:after {
-   font-family: "Ionicons";
-   top: 0;
-   left: -5px;
-   width: 50px;
-   height: 50px;
-   position: absolute;
-   text-align: center;
-   color: $background-body;
-   font-size: 36px;
-   line-height: 45px;
- }
+  &:after {
+    font-family: "Ionicons";
+    top: 0;
+    left: -5px;
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    text-align: center;
+    color: $background-body;
+    font-size: 36px;
+    line-height: 45px;
+  }
 
- &.experience:after {
-   content: "\f356";
- }
+  &.experience:after {
+    content: "\f356";
+  }
 
- &.education:after {
-   content: "\f349";
-   color: $background-timeline;
- }
+  &.education:after {
+    content: "\f349";
+    color: $background-blueSatu;
+  }
 }
 
 .exp {
- padding: 20px 20px 0 80px;
- position: relative;
+  padding: 20px 20px 0 80px;
+  position: relative;
 
- &:after {
-   background:$background-timeline;
-   border: 2px solid $background-body;
-   border-radius: 50%;
-   content: "";
-   height: 20px;
-   left: 9px;
-   position: absolute;
-   text-align: center;
-   top: 24px;
-   width: 20px;
- }
+  &:after {
+    background: $background-blueSatu;
+    border: 2px solid $background-blueSatu;
+    border-radius: 50%;
+    content: "";
+    height: 20px;
+    left: 9px;
+    position: absolute;
+    text-align: center;
+    top: 24px;
+    width: 20px;
+  }
 
- .exp-holder {
-   margin-top: 70px;
- }
+  .exp-holder {
+    margin-top: 70px;
+  }
 
- .hgroup h4,
- .hgroup h5 {
-   display: table-cell;
-   text-transform: none;
-   margin-bottom: 10px;
- }
+  .hgroup h4,
+  .hgroup h5 {
+    display: table-cell;
+    text-transform: none;
+    margin-bottom: 10px;
+    border-bottom: none;
+  }
 
- .hgroup {
-   margin-bottom: 5px;
-   color: $fuente-h4;
- }
+  .hgroup {
+    margin-bottom: 5px;
+    color: $fuente-h4;
+  }
+  .texto-color {
+    color: $color-textoResalt;
+  }
 }
+.texto-exp {
+  label.text-label {
+    color: $color-textoResumen;
+  }
 
-label.leerMas {
- color: $fuente-LeerMas;
+  label.leerMas {
+    color: $fuente-LeerMas;
 
- &:hover {
-   color: $fuente-h4;
- }
+    &:hover {
+      color: $background-blueSatu;
+    }
+  }
+}
+.certificado {
+  color: $fuente-bluePastel !important;
+
 }
 .certificado:hover {
- color: $fuente-LeerMas !important;
- text-decoration: underline;
+  color: $fuente-LeerMas !important;
+  text-decoration: none;
 }
+.service{
+  h4{
+    color: $color-textoResumen;
+  }
+}
+
 .exp .hgroup h4 span {
- color: $fuente-h4;
+  color: $color-textoResumen;
 }
 
 .exp .hgroup h5 {
- font-size: 14px;
- font-weight: 400;
- text-align: right;
- color: #727272;
- padding-left: 60px;
- position: relative;
+  font-size: 14px;
+  font-weight: 400;
+  text-align: right;
+  color: #727272;
+  padding-left: 60px;
+  position: relative;
 
- &:before {
-   color: $background-body;
-   content: "/";
-   left: 30px;
-   position: absolute;
- }
+  &:before {
+    color: $background-body;
+    content: "/";
+    left: 30px;
+    position: absolute;
+  }
 }
 
 .exp .hgroup h5 span.current {
- font-style: italic;
+  font-style: italic;
 }
-/* #liontestimonial.owl-carousel .owl-item img {
- width: auto;
-}
-
-.testimonials {
- background: #f1f3f6;
- border: 1px solid #f1f3f6;
- position: relative;
- margin: 50px 0;
-
- img {
-   position: absolute;
-   top: -45px;
-   left: 50%;
-   transform: translateX(-50%);
-   width: 90px;
-   height: 90px;
-   border: 10px solid #fff;
-   border-radius: 50%;
- }
-
- &:hover img {
-   border: 10px solid $background-pink;
- }
-
- blockquote {
-   border-left: none;
-   color: #333;
-   font-size: 20px;
-   margin-top: 40px;
-   padding: 40px 15px;
-   text-align: center;
-
-   .quote {
-     display: block;
-     margin-top: 20px;
-     font-size: 14px;
-     color: #727272;
-
-     span {
-       font-weight: 700;
-     }
-   }
- }
-
- #liontestimonial .owl-nav {
-   color: #666;
-   cursor: pointer;
-   font-size: 30px;
-   padding: 10px;
-   left: 50%;
-   position: absolute;
-   bottom: -25px;
-   transform: translateX(-50%);
-   z-index: 999999999;
-
-   .owl-prev {
-     float: left;
-     margin: 10px;
-   }
-
-   .owl-next {
-     float: right;
-     margin: 10px;
-   }
- }
-}
-.btn-email {
- position: relative;
-
- &:before {
-   position: absolute;
-   left: 0;
-   top: 45px;
-   content: "";
-   border-top: 1px solid #f1f3f6;
-   width: 100%;
- }
-}
- */
- 

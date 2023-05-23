@@ -1,51 +1,72 @@
 <section class="content" id="about">
   <div class="block-content">
-    <h3 class="block-title">
+    <h3 class="block-title text-center">
       Del manejo de pequeñas empresas al desarrollo web
     </h3>
-    <h3 class="subtitulo">
+    <h3 class="subtitulo text-center">
       ¡Hola! soy Cinta Tafur
       <strong
         >una desarrolladora web junior especializada en tecnologías front-end
       </strong>
     </h3>
-    <p>
-      Soy una apasionada de la programación y he trabajado en gestión de pymes
-      por más de 13 años. 🚀 Hace tres años, decidí enfocarme en el sector
-      tecnológico y he completado un Bootcamp de Desarrollador Fullstack y un
-      Ciclo Formativo de Grado Superior DAW en el Colegio de Fomento Las
-      Acacias-Montecastelo, Vigo. 🎓
-    </p>
-    <p>
-      Disfruto mucho trabajando en equipo. Siempre trato de mantenerme
-      actualizada en las últimas tecnologías y metodologías ágiles a través de
-      cursos en línea y formaciones independientes. 📚🚀
-    </p>
-    <p>
-      Me considero una persona comprometida, entusiasta, curiosa, autocrítica y
-      con iniciativa. Además, soy muy sociable y me encanta el buen humor en el
-      ambiente laboral. 😄🤝
-    </p>
-    <p>
-      Mis habilidades en HTML5 avanzado, CSS, CSS3, SASS, LESS, JSON, Java,
-      JavaScript, JQuery, Angular JS, Ionic, Android y metodologías ágiles me
-      han preparado para trabajar como desarrolladora web, especialmente en el
-      front-end. Además, durante mi formación académica he tenido la oportunidad
-      de aplicar estos conocimientos en diferentes proyectos y prácticas, lo que
-      me ha permitido consolidar y mejorar mis habilidades en esta área. 💻💪
-    </p>
-    <div class="listaContacto row">
-      <div class="col-sm-6"><i class="fas fa-user"></i>&nbsp; <span> Nombre:</span> Cinta Tafur</div>
-      <div class="col-sm-6"><i class="fas fa-calendar-alt"></i>&nbsp; <span> Fecha de Nacimiento:</span> Septiembre 23, 1981</div>
-      <div class="col-sm-6"><i class="fas fa-map-marker-alt"></i>&nbsp; <span> Dirección:</span> España, Pontevedra, Vigo.</div>
-      <div class="col-sm-6"><i class="fas fa-envelope"></i>&nbsp; <span>Email:</span> cintatafur@gmail.com</div>
-      <div class="col-sm-6"><i class="fas fa-phone"></i>&nbsp; <span>Teléfono:</span> +34 665 828 070</div>
-      <div class="col-sm-6"><i class="fas fa-briefcase"></i>&nbsp; <span>Interés:</span> Desarrollo Web, Fullstack</div>
+    <div class="text-lg-center text-md-center text-sm-center text-xl-center">
+      <p>
+        Soy una apasionada de la programación y he trabajado en gestión de pymes
+        por más de 13 años. 🚀 Hace tres años, decidí enfocarme en el sector
+        tecnológico y he completado un Bootcamp de Desarrollador Fullstack y un
+        Ciclo Formativo de Grado Superior DAW en el Colegio de Fomento Las
+        Acacias-Montecastelo, Vigo. 🎓
+      </p>
+      <p>
+        Disfruto mucho trabajando en equipo. Siempre trato de mantenerme
+        actualizada en las últimas tecnologías y metodologías ágiles a través de
+        cursos en línea y formaciones independientes. 📚🚀
+      </p>
+      <p>
+        Me considero una persona comprometida, entusiasta, curiosa, autocrítica
+        y con iniciativa. Además, soy muy sociable y me encanta el buen humor en
+        el ambiente laboral. 😄🤝
+      </p>
+      <p>
+        Mis habilidades en HTML5 avanzado, CSS, CSS3, SASS, LESS, JSON, Java,
+        JavaScript, JQuery, Angular JS, Ionic, Android y metodologías ágiles me
+        han preparado para trabajar como desarrolladora web, especialmente en el
+        front-end. Además, durante mi formación académica he tenido la
+        oportunidad de aplicar estos conocimientos en diferentes proyectos y
+        prácticas, lo que me ha permitido consolidar y mejorar mis habilidades
+        en esta área. 💻💪
+      </p>
+    </div>
+    <div class="listaContacto row justify-content-center">
+      <h3 class="block-title text-center">Información de contacto 📩</h3>
+      <div class="col-sm-6">
+        <i class="fas fa-user"></i>&nbsp; <span> Nombre:</span> Cinta Tafur
+      </div>
+      <div class="col-sm-6">
+        <i class="fas fa-calendar-alt"></i>&nbsp;
+        <span> Fecha de Nacimiento:</span> Septiembre 23, 1981
+      </div>
+      <div class="col-sm-6">
+        <i class="fas fa-map-marker-alt"></i>&nbsp;
+        <span> Dirección:</span> España, Pontevedra, Vigo.
+      </div>
+      <div class="col-sm-6">
+        <i class="fas fa-envelope"></i>&nbsp;
+        <span>Email:</span> cintatafur@gmail.com
+      </div>
+      <div class="col-sm-6">
+        <i class="fas fa-phone"></i>&nbsp; <span>Teléfono:</span> +34 665 828
+        070
+      </div>
+      <div class="col-sm-6">
+        <i class="fas fa-briefcase"></i>&nbsp; <span>Interés:</span> Desarrollo
+        Web, Fullstack
+      </div>
     </div>
   </div>
   <!----------------------------------------- Aptitudes ------------------------------------------------>
   <div class="block-content">
-    <h3 class="block-title">Aptitudes</h3>
+    <h3 class="block-title text-center">Aptitudes 🏆</h3>
     <div *ngFor="let aptitudesI of Bd.aptitudes">
       <label class="progress-bar-label">{{ aptitudesI.nombre }}</label>
       <div class="progress">
@@ -65,8 +86,9 @@
 
   <!----------------------------------------- Experiencia ------------------------------------------------>
   <div class="block-content">
-    <h3 class="block-title">Experiencia</h3>
-    <div class="timeline education"><br>
+    <h3 class="block-title text-center">Experiencia 🧭</h3>
+    <div class="timeline education">
+      <br />
       <div class="row">
         <div class="col-md-12">
           <div class="exp-holder">
@@ -76,15 +98,16 @@
                   <h4>
                     <span>{{ experienciaI.empresa }}</span
                     ><br />
-                    {{ experienciaI.cargo }}
+                    <span>{{ experienciaI.cargo }}</span>
 
                     <br />
-                    {{ experienciaI.fecha }}
+                    <span>{{ experienciaI.fecha }}</span>
                   </h4>
                   <br />
                 </div>
-                <div>
+                <div class="texto-exp">
                   <label
+                    class="text-label"
                     [innerHTML]="
                       experienciaI.descripcion
                         | slice : 0 : (experienciaI.leerMas ? undefined : 250)
@@ -107,8 +130,9 @@
   </div>
   <!----------------------------------------- Educacion ------------------------------------------------>
   <div class="block-content">
-    <h3 class="block-title">Educación</h3>
-    <div class="timeline education"><br>
+    <h3 class="block-title text-center">Educación 📚</h3>
+    <div class="timeline education">
+      <br />
       <div class="row">
         <div class="col-md-12">
           <div class="exp-holder">
@@ -118,14 +142,15 @@
                   <h4>
                     <span>{{ educacionI.institucion }}</span>
                     <br />
-                    {{ educacionI.titulo }}
+                    <span> {{ educacionI.titulo }}</span>
                     <br />
-                    {{ educacionI.fecha }}
+                    <span>{{ educacionI.fecha }}</span>
                   </h4>
                   <br />
                 </div>
-                <div>
+                <div class="texto-exp">
                   <label
+                    class="text-label"
                     [innerHTML]="
                       educacionI.descripcion
                         | slice : 0 : (educacionI.leerMas ? undefined : 250)
@@ -149,8 +174,9 @@
 
   <!----------------------------------------- Certificaciones ------------------------------------------------>
   <div class="block-content">
-    <h3 class="block-title">Certificaciones</h3>
-    <div class="timeline education"><br>
+    <h3 class="block-title text-center">Certificaciones 📜</h3>
+    <div class="timeline education">
+      <br />
       <div class="row">
         <div class="col-md-12">
           <div class="exp-holder">
@@ -160,10 +186,13 @@
                   <h4>
                     <span>{{ certificacionI.empresa }}</span
                     ><br />
-                    {{ certificacionI.nombre }}
+                    <span> {{ certificacionI.nombre }}</span>
                     <br />
-                    {{ certificacionI.fecha }}<br />
-                    <h4>Id: {{ certificacionI.idCredencial }}</h4>
+                    <span>{{ certificacionI.fecha }}</span
+                    ><br />
+                    <h4>
+                      <span> Id: {{ certificacionI.idCredencial }}</span>
+                    </h4>
                     <a
                       *ngIf="certificacionI.URL"
                       href="{{ certificacionI.URL }}"
@@ -175,8 +204,9 @@
                     >
                   </h4>
                 </div>
-                <div>
+                <div class="texto-exp">
                   <label
+                    class="text-label"
                     [innerHTML]="
                       certificacionI.descripcion
                         | slice : 0 : (certificacionI.leerMas ? undefined : 250)
@@ -199,7 +229,7 @@
   </div>
   <!----------------------------------------- Servicios ------------------------------------------------>
   <div class="block-content">
-    <h3 class="block-title">Servicios</h3>
+    <h3 class="block-title text-center">Servicios 🧰</h3>
     <div class="row">
       <div
         class="col-md-4 col-sm-6 service"
@@ -208,9 +238,12 @@
         <div class="serviceIcon">
           <i [class]="servicioI.icono"></i>
         </div>
-        <h4>{{ servicioI.nombre }}</h4>
-        <div>
+        <span>
+          <h4>{{ servicioI.nombre }}</h4></span
+        >
+        <div class="texto-exp">
           <label
+            class="text-label"
             [innerHTML]="
               servicioI.descripcion
                 | slice : 0 : (servicioI.leerMas ? undefined : 60)
@@ -229,7 +262,7 @@
   <!----------------------------------------- Reconocimientos ------------------------------------------------>
 
   <div class="block-content">
-    <h3 class="block-title">Reconocimientos</h3>
+    <h3 class="block-title text-center">Reconocimientos : 🌟</h3>
     <div class="row">
       <div id="liontestimonial" class="owl-carousel owl-theme">
         <div *ngFor="let reconocientoI of Bd.reconocimientos">

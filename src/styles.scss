@@ -29,28 +29,28 @@ $RecursosCinTutuDev-theme: mat.define-light-theme(
 /*------------------------------------------------------------------
 
     [Indice de contenido]
-  
+
     0. General Styles
-       texts 
+       texts
        body
-       Buttons 
+       Buttons
     1. Preloader
     2. Home Styles
-       overlay 
-       opacity 
+       overlay
+       opacity
        HERO SLIDER
     3. Menu Styles
-       cabecera Menu 
+       cabecera Menu
     4. Page Content
         donde van componetes:(<app-proyectos></app-proyectos>...)
     5. Name Block
-       link redes/contacto 
-       iconos 
+       link redes/contacto
+       iconos
     6. About Block
        carousel
     7. PROYECTOS BLOCK
        portfolio
-       Portfolio/Proyecto 
+       Portfolio/Proyecto
        proyecto
        modal proyecto
     8. RECURSOS BLOCK
@@ -62,7 +62,7 @@ $RecursosCinTutuDev-theme: mat.define-light-theme(
        certificado
 
     9. CONTACTO BLOCK
-    
+
    10. Responsive
 
 ------------------------------------ General Styles---------------------------*/
@@ -78,13 +78,14 @@ $shadow-pink: #e60073;
 
 $backgroundRedAngular: rgb(255, 0, 0);
 
-$background-body: #dfe2e8;
+$background-body: whitesmoke;
 $background-timeline: #7e6f90;
 
 $espaciado-estandar: 10px;
 $espaciado-doble: 20px;
 
 $color-texto: #6c6868;
+$color-textoResumen: whitesmoke;
 $color-textoResalt: #333;
 $fuente-h4: rgb(18, 65, 103);
 $fuente-LeerMas: rgb(230, 0, 115);
@@ -508,11 +509,6 @@ a:not([href]):not([tabindex]) {
   z-index: 0;
 }
 
-/* .home.img-bg {
-  background: url(../src/assets/images/bg/demo.jpeg);
-  background-size: cover;
-} */
-
 .home .bgScroll {
   animation: 40s linear 0s normal none infinite running bgScroll;
   background: black url(../src/assets/images/bg/scroll.jpeg) repeat scroll
@@ -628,21 +624,6 @@ a:not([href]):not([tabindex]) {
   height: 100vh;
 }
 
-.slide.one {
-  background: url(../src/assets/images/slider/slide1.jpeg) 48% 48%;
-  background-size: cover;
-}
-
-.slide.two {
-  background: url(../src/assets/images/slider/slide2.jpeg) 48% 48%;
-  background-size: cover;
-}
-
-.slide.three {
-  background: url(../src/assets/images/slider/slide3.jpeg) 48% 48%;
-  background-size: cover;
-}
-
 #lionhero .owl-nav {
   color: #fff;
   cursor: pointer;
@@ -675,7 +656,7 @@ a:not([href]):not([tabindex]) {
 #liontextslider .owl-item.active {
   visibility: visible;
 }
-/* 
+/*
 #video-wrapper {
  position: fixed;
  top: 0;
@@ -941,6 +922,7 @@ h2.menu-item:after {
 }
 
 /*---------------------- 4. Page Content (<app-proyectos></app-proyectos>...)------------------------*/
+
 .content-blocks {
   position: fixed;
   width: 70%;
@@ -1287,7 +1269,7 @@ h2.menu-item:after {
 .serviceIcon {
   font-size: 30px;
   margin-bottom: 10px;
-  color: $background-blue;
+  color: $background-blueSatu;
 }
 .serviceIcon:hover {
   color: $fuente-LeerMas;
@@ -1358,8 +1340,8 @@ h4.package {
 }
 
 .testimonials {
-  background: #f1f3f6;
-  border: 1px solid #f1f3f6;
+  background-color: #23242c;
+  border: 1px solid #23242c;
   position: relative;
   margin: 50px 0;
 }
@@ -1371,7 +1353,7 @@ h4.package {
   transform: translateX(-50%);
   width: 90px;
   height: 90px;
-  border: 10px solid #fff;
+  border: 10px solid $background-blueSatu;
   border-radius: 50%;
 }
 
@@ -1380,8 +1362,9 @@ h4.package {
 }
 
 .testimonials blockquote {
+  background-color: #23242c;
   border-left: none;
-  color: #333;
+  color:$color-textoResumen;
   font-size: 20px;
   margin-top: 40px;
   padding: 40px 15px;
@@ -1392,7 +1375,7 @@ h4.package {
   display: block;
   margin-top: 20px;
   font-size: 14px;
-  color: #727272;
+  color: $color-textoResumen;
 }
 
 .testimonials .quote span {
@@ -1400,7 +1383,7 @@ h4.package {
 }
 
 #liontestimonial .owl-nav {
-  color: #666;
+  color:$color-textoResumen;
   cursor: pointer;
   font-size: 30px;
   padding: 10px;
