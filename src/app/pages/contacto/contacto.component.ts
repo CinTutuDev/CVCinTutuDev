@@ -18,28 +18,24 @@ export class ContactoComponent {
   constructor(private http: HttpClient) {}
 
   submitForm() {
-    // Validar el formulario antes de enviarlo
     if (!this.validateForm()) {
       return;
     }
-
-    // Configurar los encabezados de la solicitud
     const headers = new HttpHeaders({ 'Content-Type': 'application/json' });
 
-    // Realizar la solicitud POST al servidor con los datos del formulario
-    this.http.post('url_del_servidor', this.formData, { headers })
+    this.http.post('https://formsubmit.co/6fb3a89c4ac279240907cc1b363f0488', this.formData, { headers })
       .subscribe(
         response => {
           console.log('Respuesta del servidor:', response);
-
-          // Restablecer el formulario después del envío exitoso
-          this.resetForm();
+          alert('El formulario se envió correctamente. ¡Gracias por contactarnos!');
         },
         error => {
           console.error('Error al enviar el formulario:', error);
           this.errorMessage = 'Ocurrió un error al enviar el formulario. Por favor, inténtalo de nuevo más tarde.';
         }
       );
+      alert('El formulario se envió correctamente. ¡Gracias por contactarnos!');
+    /*   this.resetForm(); */
   }
 
   validateForm(): boolean {
@@ -57,14 +53,9 @@ export class ContactoComponent {
   }
 
   resetForm() {
-    // Restablecer los valores del formulario
-    this.formData = {
-      name: '',
-      email: '',
-      message: ''
-    };
-
-    // Restablecer el mensaje de error
-    this.errorMessage = '';
+    this.formData.name = '';
+    this.formData.email = '';
+    this.formData.message = '';
   }
+
 }
