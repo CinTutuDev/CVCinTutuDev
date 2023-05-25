@@ -347,10 +347,10 @@ a:not([href]):not([tabindex]) {
 .btn-downloadInicio {
   &::before {
     content: "\f019";
-  font-family: "Font Awesome 5 Free";
-  font-size: 18px;
+    font-family: "Font Awesome 5 Free";
+    font-size: 18px;
   }
-  }
+}
 
 .btn-downloadGoogle {
   &::before {
@@ -1365,7 +1365,7 @@ h4.package {
 .testimonials blockquote {
   background-color: #23242c;
   border-left: none;
-  color:$color-textoResumen;
+  color: $color-textoResumen;
   font-size: 20px;
   margin-top: 40px;
   padding: 40px 15px;
@@ -1384,7 +1384,7 @@ h4.package {
 }
 
 #liontestimonial .owl-nav {
-  color:$color-textoResumen;
+  color: $color-textoResumen;
   cursor: pointer;
   font-size: 30px;
   padding: 10px;
@@ -1407,7 +1407,7 @@ h4.package {
 
 .btn-email {
   position: relative;
-  border-bottom:none;
+  border-bottom: none;
   border-top: none;
 }
 
@@ -1794,7 +1794,7 @@ h4.package {
   flex-direction: column;
   border-top: none;
 }
-.fa-regular{
+.fa-regular {
   animation-duration: 2s;
 }
 
@@ -2378,7 +2378,7 @@ h4.package {
   font-size: 16px;
   transition: all 0.3s;
 }
-.form-control #email{
+.form-control #email {
   color: $fuente-LeerMas;
 }
 
