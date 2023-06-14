@@ -2561,88 +2561,7 @@ h4.package {
   }
 }
 
-@media (min-width: 981px) and (max-width: 1024px) {
-  .name-block {
-    -ms-transform: rotate(-34deg);
-    -webkit-transform: rotate(-34deg);
-    transform: rotate(-34deg);
-    left: -190px;
-    top: 10px;
-  }
 
-  .about-block {
-    -ms-transform: rotate(-34deg);
-    -webkit-transform: rotate(-34deg);
-    transform: rotate(-34deg);
-    left: 382px;
-    top: -150px;
-  }
-
-  .portfolio-block {
-    -ms-transform: rotate(-34deg);
-    -webkit-transform: rotate(-34deg);
-    transform: rotate(-34deg);
-    left: 577px;
-    top: 89px;
-  }
-
-  .blog-block {
-    -ms-transform: rotate(-34deg);
-    -webkit-transform: rotate(-34deg);
-    transform: rotate(-34deg);
-    left: 772px;
-    top: 428px;
-  }
-
-  .contact-block {
-    -ms-transform: rotate(-34deg);
-    -webkit-transform: rotate(-34deg);
-    transform: rotate(-34deg);
-    left: 365px;
-    top: 538px;
-  }
-}
-
-@media (max-width: 1024px) {
-  .name-block-container h1 {
-    font-size: 40px;
-    line-height: 1.1;
-  }
-
-  .name-block-container h1 span,
-  .name-block-container h2 {
-    font-size: 22px;
-    min-height: 22px;
-  }
-
-  .menu2 .name-block {
-    padding: 0 0 0 20px;
-  }
-
-  .menu2 .name-block-container h1 {
-    font-size: 50px;
-  }
-
-  .menu2 .name-block-container h1 span,
-  .menu2 .name-block-container h2 {
-    font-size: 26px;
-    min-height: 26px;
-  }
-
-  .inline-menu-container {
-    font-size: 14px;
-    right: 10px;
-    width: 69%;
-  }
-
-  .inline-menu li {
-    padding: 0 10px;
-  }
-
-  .content {
-    padding: 120px 50px 50px;
-  }
-}
 
 @media (min-width: 768px) and (max-width: 980px) {
   .name-block {
@@ -2887,11 +2806,11 @@ h4.package {
   .inline-menu-container,
   .close-pop {
     right: 0;
-    width: 70%;
+    width: 100%;
   }
 }
 
-@media (min-width: 1025px) and (max-width: 1280px) {
+@media (min-width: 1023px) and (max-width: 1280px) {
   .name-block {
     -ms-transform: rotate(-34deg);
     -webkit-transform: rotate(-34deg);
@@ -2982,6 +2901,47 @@ h4.package {
     top: 538px;
   }
 }
+/* @media (min-width: 981px) and (max-width: 1024px) {
+  .name-block {
+    -ms-transform: rotate(-34deg);
+    -webkit-transform: rotate(-34deg);
+    transform: rotate(-34deg);
+    left: -190px;
+    top: 10px;
+  }
+
+  .about-block {
+    -ms-transform: rotate(-34deg);
+    -webkit-transform: rotate(-34deg);
+    transform: rotate(-34deg);
+    left: 382px;
+    top: -150px;
+  }
+
+  .portfolio-block {
+    -ms-transform: rotate(-34deg);
+    -webkit-transform: rotate(-34deg);
+    transform: rotate(-34deg);
+    left: 577px;
+    top: 89px;
+  }
+
+  .blog-block {
+    -ms-transform: rotate(-34deg);
+    -webkit-transform: rotate(-34deg);
+    transform: rotate(-34deg);
+    left: 772px;
+    top: 428px;
+  }
+
+  .contact-block {
+    -ms-transform: rotate(-34deg);
+    -webkit-transform: rotate(-34deg);
+    transform: rotate(-34deg);
+    left: 365px;
+    top: 538px;
+  }
+} */
 
 @media (max-width: 1024px) {
   .name-block-container h1 {
@@ -3010,9 +2970,9 @@ h4.package {
   }
 
   .inline-menu-container {
-    font-size: 14px;
+    font-size: 12px;
     right: 10px;
-    width: 69%;
+ /*    width: 69%; */
   }
 
   .inline-menu li {
@@ -3023,6 +2983,49 @@ h4.package {
     padding: 120px 50px 50px;
   }
 }
+
+/*
+@media (max-width: 1024px) {
+  .name-block-container h1 {
+    font-size: 40px;
+    line-height: 1.1;
+  }
+
+  .name-block-container h1 span,
+  .name-block-container h2 {
+    font-size: 22px;
+    min-height: 22px;
+  }
+
+  .menu2 .name-block {
+    padding: 0 0 0 20px;
+  }
+
+  .menu2 .name-block-container h1 {
+    font-size: 50px;
+  }
+
+  .menu2 .name-block-container h1 span,
+  .menu2 .name-block-container h2 {
+    font-size: 26px;
+    min-height: 26px;
+  }
+
+  .inline-menu-container {
+    font-size: 12px;
+    right: 10px;
+
+  }
+
+  .inline-menu li {
+    padding: 0 10px;
+  }
+
+  .content {
+    padding: 120px 50px 50px;
+  }
+ }
+ */
 
 @media (min-width: 768px) and (max-width: 980px) {
   .name-block {
@@ -3531,11 +3534,13 @@ h4.package {
   color: #f5f5f5;
 }
 
+
 @media (max-width: 1024px) {
   .buy-now {
     display: none;
   }
 }
+
 
 .cursor {
   background-color: transparent;
