@@ -2506,6 +2506,7 @@ h4.package {
 @media (max-width: 1280px) {
   .inline-menu-container,
   .close-pop {
+    font-size: 12px;
     right: 0;
     width: 100%;
   }
@@ -2755,63 +2756,7 @@ h4.package {
   }
 }
 
-@media (max-width: 1280px) {
-  .inline-menu-container,
-  .close-pop {
-    right: 0;
-    width: 100%;
-  }
-}
 
-@media (min-width: 1023px) and (max-width: 1280px) {
-  .name-block {
-    -ms-transform: rotate(-34deg);
-    -webkit-transform: rotate(-34deg);
-    transform: rotate(-34deg);
-    left: -200px;
-    top: -80px;
-  }
-
-  .about-block {
-    -ms-transform: rotate(-34deg);
-    -webkit-transform: rotate(-34deg);
-    transform: rotate(-34deg);
-    left: 419px;
-    top: -160px;
-    width: 350px;
-    height: 300px;
-  }
-
-  .portfolio-block {
-    -ms-transform: rotate(-34deg);
-    -webkit-transform: rotate(-34deg);
-    transform: rotate(-34deg);
-    left: 586px;
-    top: 88px;
-    width: 350px;
-    height: 300px;
-  }
-
-  .blog-block {
-    -ms-transform: rotate(-34deg);
-    -webkit-transform: rotate(-34deg);
-    transform: rotate(-34deg);
-    left: 753px;
-    top: 335px;
-    width: 350px;
-    height: 300px;
-  }
-
-  .contact-block {
-    -ms-transform: rotate(-34deg);
-    -webkit-transform: rotate(-34deg);
-    transform: rotate(-34deg);
-    left: 900px;
-    top: -70px;
-    width: 350px;
-    height: 300px;
-  }
-}
 
 @media (min-width: 981px) and (max-width: 1024px) {
   .name-block {
@@ -3037,9 +2982,7 @@ h4.package {
   }
 }
 @media (max-width: 800px) {
-  /* .inline-menu-container {
-    width: 100%;
-    left: 0;} */
+
   .nav{
       margin-top: 5%;
       font-size: 10px !important;
