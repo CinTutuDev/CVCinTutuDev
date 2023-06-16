@@ -2462,6 +2462,18 @@ h4.package {
 }
 
 @media (min-width: 1280px) and (max-width: 1919px) {
+  h2.block-title{
+    margin-left: 25px;
+  }
+  .block-title {
+    font-size: 30px;
+    text-transform: uppercase;
+    color: $fuente-LeerMas;
+    padding-bottom: 1px;
+    border-bottom: 1px solid #ddd;
+    margin-bottom: 0px;
+    font-weight: 600;
+  }
   .name-block {
     -ms-transform: rotate(-34deg);
     -webkit-transform: rotate(-34deg);
@@ -2513,6 +2525,18 @@ h4.package {
 }
 
 @media (min-width: 1025px) and (max-width: 1280px) {
+  h2.block-title{
+    margin-left: 25px;
+  }
+  .block-title {
+    font-size: 30px;
+    text-transform: uppercase;
+    color: $fuente-LeerMas;
+    padding-bottom: 1px;
+    border-bottom: 1px solid #ddd;
+    margin-bottom: 0px;
+    font-weight: 600;
+  }
   .name-block {
     -ms-transform: rotate(-34deg);
     -webkit-transform: rotate(-34deg);
@@ -2565,6 +2589,18 @@ h4.package {
 
 
 @media (min-width: 768px) and (max-width: 980px) {
+  h2.block-title{
+    margin-left: 25px;
+  }
+  .block-title {
+    font-size: 30px;
+    text-transform: uppercase;
+    color: $fuente-LeerMas;
+    padding-bottom: 1px;
+    border-bottom: 1px solid #ddd;
+    margin-bottom: 0px;
+    font-weight: 600;
+  }
   .name-block {
     -ms-transform: rotate(-34deg);
     -webkit-transform: rotate(-34deg);
@@ -2758,7 +2794,19 @@ h4.package {
 
 
 
-@media (min-width: 981px) and (max-width: 1024px) {
+@media (min-width: 981px) and (max-width: 1025px) {
+  h2.block-title{
+    margin-left: 25px;
+  }
+  .block-title {
+    font-size: 30px;
+    text-transform: uppercase;
+    color: $fuente-LeerMas;
+    padding-bottom: 1px;
+    border-bottom: 1px solid #ddd;
+    margin-bottom: 0px;
+    font-weight: 600;
+  }
   .name-block {
     -ms-transform: rotate(-34deg);
     -webkit-transform: rotate(-34deg);
@@ -2801,6 +2849,7 @@ h4.package {
 }
 
 @media (max-width: 1024px) {
+
   .name-block-container h1 {
     font-size: 40px;
     line-height: 1.1;
@@ -2982,9 +3031,21 @@ h4.package {
   }
 }
 @media (max-width: 800px) {
+  h2.block-title{
+    margin-left: 25px;
+  }
+  .block-title {
+    font-size: 18px;
+    text-transform: uppercase;
+    color: $fuente-LeerMas;
+    padding-bottom: 1px;
+    border-bottom: 1px solid #ddd;
+    margin-bottom: 0px;
+    font-weight: 600;
+  }
 
   .nav{
-      margin-top: 5%;
+    /*   margin-top: 5%; */
       font-size: 10px !important;
       display: flex;
       flex-wrap: wrap;
@@ -3445,6 +3506,16 @@ h4.package {
 }
 
 @media (max-width: 576px) {
+  .block-title {
+    font-size: 12px;
+    text-transform: uppercase;
+    color: $fuente-LeerMas;
+    padding-bottom: 1px;
+    border-bottom: 1px solid #ddd;
+    margin-bottom: 0px;
+    font-weight: 600;
+  }
+
   .menu4 .inline-menu li {
     font-size: 12px;
     padding: 0 7px;
@@ -3467,6 +3538,9 @@ h4.package {
   .inline-menu {
     /*   margin-right: 1; */
       font-size: 12px;
+    }
+    .inline-menu li {
+      padding: 0 8px;
     }
   .home {
     position: relative;
