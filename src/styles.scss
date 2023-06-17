@@ -2663,7 +2663,13 @@ h4.package {
   .m {
     font-size: 14px; // Ajusta el tamaño de fuente para dispositivos móviles hasta 767px de ancho
   }
-
+  .btn-downloadGoogle {
+    margin-top: -1%;
+    background-color: $background-blueSatu;
+    border: none;
+    font-size: 13px;
+    padding: 15px 45px 15px 20px;
+  }
 }
 
 @media (max-width: 980px) {
@@ -2890,51 +2896,6 @@ h4.package {
   }
 }
 
-@media (min-width: 768px) and (max-width: 980px) {
-  .name-block {
-    -ms-transform: rotate(-34deg);
-    -webkit-transform: rotate(-34deg);
-    transform: rotate(-34deg);
-    left: -190px;
-    top: 10px;
-  }
-
-  .about-block {
-    -ms-transform: rotate(-34deg);
-    -webkit-transform: rotate(-34deg);
-    transform: rotate(-34deg);
-    left: 382px;
-    top: -150px;
-  }
-
-  .portfolio-block {
-    -ms-transform: rotate(-34deg);
-    -webkit-transform: rotate(-34deg);
-    transform: rotate(-34deg);
-    left: 577px;
-    top: 89px;
-  }
-
-  .blog-block {
-    -ms-transform: rotate(-34deg);
-    -webkit-transform: rotate(-34deg);
-    transform: rotate(-34deg);
-    left: 336px;
-    top: 548px;
-  }
-
-  .contact-block {
-    -ms-transform: rotate(-34deg);
-    -webkit-transform: rotate(-34deg);
-    transform: rotate(-34deg);
-    left: 9px;
-    top: 780px;
-  }
-
-  .project {
-    width: 50%;
-  }
-}
 
 @media (max-width: 980px) {
   .inline-menu {
@@ -3532,6 +3493,14 @@ h4.package {
   .comment .col-sm-10 {
     width: 83.3333%;
   }
+  .btn-downloadGoogle {
+    margin-top: -2%;
+    background-color: $background-blueSatu;
+    border: none;
+    font-size: 12px;
+    padding: 10px 45px 10px 20px;
+  }
+
 }
 
 @media (max-width: 375px) {
