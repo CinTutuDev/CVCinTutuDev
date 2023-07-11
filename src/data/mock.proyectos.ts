@@ -67,4 +67,15 @@ export const PROYECTO: ProyectoM[] = [
       'El proyecto es un CRM desarrollado durante un bootcamp en la empresa Imatia, utilizando Angular en el frontend y Java Spring Boot en el backend. Cuenta con funcionalidades de visualización de datos y roles de usuarios. Permite gestionar clientes, visualizar ventas y asignar roles de administrador o gestor. El proyecto demuestra habilidades en desarrollo de aplicaciones CRM y en la implementación de funcionalidades clave para la gestión de clientes y ventas.',
     demo: '/assets/videos/demoRitaPoP1.mp4',
   },
+  {
+    id: 6,
+    urlPg: 'https://tutu-gifs.netlify.app/',
+    urlImage: '/assets/images/proyecto/gifs.png',
+    urlGH: 'https://github.com/CinTutuDev/GifsApp',
+    ico: '/assets/icos/gif.png',
+    titulo: 'Tutu Gifs',
+    descripcion:
+      'El proyecto del curso "Angular: de cero a experto" con Fernando Herrera abarca los siguientes elementos: Modularización de la aplicación, componentes, ViewChild, servicios, historial de bsuquedas, Api Keys, LocalStorage, peticiones HTTP',
+    demo: '/assets/videos/demoTutuGifs.mp4',
+  },
 ];
