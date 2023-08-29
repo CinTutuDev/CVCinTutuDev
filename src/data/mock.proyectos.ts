@@ -78,4 +78,15 @@ export const PROYECTO: ProyectoM[] = [
       'El proyecto del curso "Angular: de cero a experto" con Fernando Herrera abarca los siguientes elementos: Modularización de la aplicación, componentes, ViewChild, servicios, historial de bsuquedas, Api Keys, LocalStorage, peticiones HTTP',
     demo: '/assets/videos/demoTutuGifs.mp4',
   },
+  {
+    id: 7,
+    urlPg: 'https://app-country-explore.netlify.app/',
+    urlImage: '/assets/images/proyecto/appCountry.png',
+    urlGH: 'https://github.com/CinTutuDev/CountryApp',
+    ico: '/assets/icos/country.png',
+    titulo: 'App Country',
+    descripcion:
+      'En mi recorrido con el curso "Angular: de cero a experto" de Fernando Herrera, construí otra aplicación abordando conceptos clave: Rutas y navegación; Componentes personalizados; Manejo de datos y tipado; Consumo de APIs y optimización; Uso avanzado de RxJS; Almacenamiento local; Patrones de diseño y reutilización. Desde fundamentos de Single Page Applications hasta carga perezosa, la app de países exploró sugerencias, debouncing y estados de consulta. ',
+    demo: '/assets/videos/demoAppCountry.mp4',
+  },
 ];
