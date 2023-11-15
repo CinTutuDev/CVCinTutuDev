@@ -89,4 +89,15 @@ export const PROYECTO: ProyectoM[] = [
       'En mi recorrido con el curso "Angular: de cero a experto" de Fernando Herrera, construí otra aplicación abordando conceptos clave: Rutas y navegación; Componentes personalizados; Manejo de datos y tipado; Consumo de APIs y optimización; Uso avanzado de RxJS; Almacenamiento local; Patrones de diseño y reutilización. Desde fundamentos de Single Page Applications hasta carga perezosa, la app de países exploró sugerencias, debouncing y estados de consulta. ',
     demo: '/assets/videos/demoAppCountry.mp4',
   },
+  {
+    id: 8,
+    urlPg: 'https://tweempus.netlify.app/',
+    urlImage: '/assets/images/proyecto/capturaTweempus.png',
+    urlGH: 'https://github.com/CinTutuDev/Tweempus',
+    ico: '/assets/icos/TW.jpg',
+    titulo: 'Tweempus',
+    descripcion:
+      'El curso "Desarrollo de Aplicaciones Web con Angular 16" de campusMVP, liderado por David García, destaca la creación de "Tweempus," una app Angular16 que registra usuarios en JSON. Incluye diseño responsive, FormBuilder para formularios reactivos, servicios de autenticación, y migración a SCSS.',
+    demo: '/assets/videos/DemoTweempus.mp4',
+  },
 ];
